@@ -1,0 +1,4512 @@
+{
+    "fetch_time_seconds": 1219.8632719516754,
+    "api_calls_made": 2668,
+    "data": {
+        "2024": {
+            "October": {
+                "commits": 6,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 2,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "Qxx12": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 3,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Kaveh": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 4,
+                "committers": {
+                    "gitforhlp": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "YYP": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "haozexiang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 14,
+                "committers": {
+                    "plainheart": {
+                        "commits": 10,
+                        "extensions": [
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "lishangyu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "hxada": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 24,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 5,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "semla": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 11,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 6,
+                "committers": {
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "cogic": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Christian": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deft": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 4,
+                "committers": {
+                    "plainheart": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 3,
+                "committers": {
+                    "plainheart": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 18,
+                "committers": {
+                    "plainheart": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 9,
+                        "extensions": [
+                            "json",
+                            "vue",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 3,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2023": {
+            "December": {
+                "commits": 7,
+                "committers": {
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 7,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Said Nukhulov": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Abdul": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 4,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "luozejian": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 7,
+                "committers": {
+                    "plainheart": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "ChepteaCatalin": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "linghao.su": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 7,
+                "committers": {
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Daniel Hill": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 16,
+                "committers": {
+                    "plainheart": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "50": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "linghao.su": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 2,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "jpliu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 5,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 7,
+                "committers": {
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Julie Pagano": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "linghao.su": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 8,
+                "committers": {
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ezekiel": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Elay Gelbart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "zakwu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 9,
+                "committers": {
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 4,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "json"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 5,
+                "committers": {
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    }
+                }
+            }
+        },
+        "2022": {
+            "December": {
+                "commits": 19,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Lam Tang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 27,
+                "committers": {
+                    "susiwen8": {
+                        "commits": 8,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 8,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "alexanderStoeckl": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 11,
+                "committers": {
+                    "Lam Tang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "vue",
+                            "md",
+                            "yaml",
+                            "js"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "yaml",
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ry": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 28,
+                "committers": {
+                    "plainheart": {
+                        "commits": 12,
+                        "extensions": [
+                            "json",
+                            "yaml",
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 16,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 8,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Matthew Peveler": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "yangyp5": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 15,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "yangyp5": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "kyle": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 26,
+                "committers": {
+                    "plainheart": {
+                        "commits": 10,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "jiawulin001": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "ren-wei": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 17,
+                "committers": {
+                    "plainheart": {
+                        "commits": 6,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "Ville Brofeldt": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Matthew Peveler": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 21,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "json"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Matthew Peveler": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "jiawulin001": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 33,
+                "committers": {
+                    "Zhongxiang Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "jiawulin001": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 7,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "mpolverini": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 24,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 7,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 6,
+                        "extensions": [
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "J.P": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Rain120": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Atlas-lili": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ramon Medeiros": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 36,
+                "committers": {
+                    "plainheart": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "zhongyunya": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 18,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "css"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "vamsi": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Rain120": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "wangsuyan": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2021": {
+            "December": {
+                "commits": 18,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 7,
+                        "extensions": [
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "vincentfong": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "ren-wei": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "md",
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 14,
+                "committers": {
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "pissang": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "alex2wong": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 30,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "David Dangerfield": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "kongmoumou": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Map1en_": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 14,
+                        "extensions": [
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 8,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "map",
+                            "md",
+                            "css"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "makeupsomething": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 13,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "AmosChenYQ": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "",
+                            "ttf",
+                            "svg",
+                            "css",
+                            "ico",
+                            "woff",
+                            "otf",
+                            "md",
+                            "yml",
+                            "jpg",
+                            "js",
+                            "map",
+                            "json",
+                            "woff2",
+                            "html",
+                            "eot",
+                            "mp4",
+                            "xml",
+                            "png",
+                            "scss",
+                            "vue",
+                            "gif"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 10,
+                "committers": {
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 5,
+                        "extensions": [
+                            "",
+                            "ttf",
+                            "svg",
+                            "css",
+                            "ico",
+                            "woff",
+                            "otf",
+                            "md",
+                            "yml",
+                            "jpg",
+                            "js",
+                            "map",
+                            "json",
+                            "woff2",
+                            "html",
+                            "eot",
+                            "mp4",
+                            "xml",
+                            "png",
+                            "scss",
+                            "gif"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 2,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 4,
+                "committers": {
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 31,
+                "committers": {
+                    "100pah": {
+                        "commits": 11,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 8,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Kyriakos Georgiou": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 15,
+                "committers": {
+                    "susiwen8": {
+                        "commits": 4,
+                        "extensions": [
+                            "yaml",
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "yaml",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Clark": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 29,
+                "committers": {
+                    "plainheart": {
+                        "commits": 7,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 7,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "njq": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "edtam": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "FeynmanCheng": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Clark": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 66,
+                "committers": {
+                    "pissang": {
+                        "commits": 36,
+                        "extensions": [
+                            "",
+                            "png",
+                            "md",
+                            "html",
+                            "js",
+                            "gif"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "zakwu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 6,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 7,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "fajiaopaopao": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "\u201cchentong\u201d": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "nick22nd": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "lizhihua": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "yufeng04": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "baxtergu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2020": {
+            "December": {
+                "commits": 55,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 13,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 11,
+                        "extensions": [
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 20,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Ville Brofeldt": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Faruk SIRKINTI": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 35,
+                "committers": {
+                    "100pah": {
+                        "commits": 12,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "puxiao": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 10,
+                        "extensions": [
+                            "js",
+                            "png",
+                            "vue",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 14,
+                "committers": {
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "yufeng04": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 32,
+                "committers": {
+                    "xiaohai": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 30,
+                        "extensions": [
+                            "gitignore",
+                            "gitattributes",
+                            "json",
+                            "ttf",
+                            "svg",
+                            "vue",
+                            "woff",
+                            "md",
+                            "css",
+                            "eot",
+                            "js",
+                            "map"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 58,
+                "committers": {
+                    "pissang": {
+                        "commits": 37,
+                        "extensions": [
+                            "eslintignore",
+                            "editorconfig",
+                            "gitignore",
+                            "babelrc",
+                            "json",
+                            "scss",
+                            "vue",
+                            "md",
+                            "gitkeep",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 13,
+                        "extensions": [
+                            "babelrc",
+                            "json",
+                            "scss",
+                            "vue",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 1,
+                        "extensions": [
+                            "vue"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "scss",
+                            "md"
+                        ]
+                    },
+                    "yangcongming": {
+                        "commits": 2,
+                        "extensions": [
+                            "vue"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 30,
+                "committers": {
+                    "Zhongxiang.Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "Simon Knox": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 1,
+                        "extensions": [
+                            "js"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "ttf",
+                            "woff2",
+                            "scss",
+                            "svg",
+                            "vue",
+                            "woff",
+                            "md",
+                            "jpg",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 4,
+                        "extensions": [
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 10,
+                        "extensions": [
+                            "json",
+                            "ttf",
+                            "woff2",
+                            "scss",
+                            "svg",
+                            "vue",
+                            "woff",
+                            "md",
+                            "jpg",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Joy Chen": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "zakwu": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 85,
+                "committers": {
+                    "pissang": {
+                        "commits": 45,
+                        "extensions": [
+                            "ttf",
+                            "json",
+                            "woff2",
+                            "scss",
+                            "svg",
+                            "vue",
+                            "woff",
+                            "md",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "ttf",
+                            "woff2",
+                            "scss",
+                            "svg",
+                            "vue",
+                            "woff",
+                            "md",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 6,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 14,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 10,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Brian Lewis": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wdingding": {
+                        "commits": 1,
+                        "extensions": [
+                            "js",
+                            "scss",
+                            "vue"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Matthias": {
+                        "commits": 1,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 34,
+                "committers": {
+                    "100pah": {
+                        "commits": 6,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Maxime Song": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "plainheart": {
+                        "commits": 8,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Wdingding": {
+                        "commits": 4,
+                        "extensions": [
+                            "sketch",
+                            "gitignore",
+                            "png",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "woff",
+                            "pptx",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "fuyuanjian": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Zhongxiang.Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "alex2wong": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 5,
+                "committers": {
+                    "100pah": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "hejun": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 18,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "alex2wong": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 11,
+                "committers": {
+                    "susiwen8": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 8,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 21,
+                "committers": {
+                    "deqingli": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "vue",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 4,
+                        "extensions": [
+                            "sh",
+                            "sketch",
+                            "gitignore",
+                            "png",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "woff",
+                            "pptx",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2019": {
+            "December": {
+                "commits": 49,
+                "committers": {
+                    "100pah": {
+                        "commits": 11,
+                        "extensions": [
+                            "sh",
+                            "",
+                            "gitignore",
+                            "png",
+                            "babelrc",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "scss",
+                            "vue",
+                            "woff",
+                            "pptx",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 26,
+                        "extensions": [
+                            "sh",
+                            "sketch",
+                            "gitignore",
+                            "png",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "scss",
+                            "vue",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 6,
+                        "extensions": [
+                            "",
+                            "png",
+                            "babelrc",
+                            "json",
+                            "ttf",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "SHUANG SU": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 32,
+                "committers": {
+                    "Balaji S": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 23,
+                        "extensions": [
+                            "",
+                            "sketch",
+                            "png",
+                            "babelrc",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "scss",
+                            "vue",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "SHUANG SU": {
+                        "commits": 5,
+                        "extensions": [
+                            "sh",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 28,
+                "committers": {
+                    "pissang": {
+                        "commits": 4,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "ChrisShen93": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "SHUANG SU": {
+                        "commits": 13,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "json",
+                            "jpg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 7,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "yml",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Kimura": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 31,
+                "committers": {
+                    "SHUANG SU": {
+                        "commits": 12,
+                        "extensions": [
+                            "sh",
+                            "sketch",
+                            "png",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "yml",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "A321Zjg": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 7,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "Dinger": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 5,
+                        "extensions": [
+                            "sketch",
+                            "png",
+                            "less",
+                            "ttf",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "Steven Cobb": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "McChen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 11,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 4,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "json",
+                            "jpg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 7,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "png",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "jpeg"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 6,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "png",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "jpeg"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "lauraMon": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "sh",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 14,
+                "committers": {
+                    "sushuang": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "sh",
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "susiwen8": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "cuijian": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "cuijian-dexter": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Clement Ho": {
+                        "commits": 2,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 6,
+                "committers": {
+                    "simjes": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Clement Ho": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Jose Vargas": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 9,
+                "committers": {
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "css",
+                            "html"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Jose Vargas": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 17,
+                "committers": {
+                    "Jose Vargas": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 4,
+                        "extensions": [
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "travis",
+                            "md",
+                            "yml"
+                        ]
+                    },
+                    "Steven Cobb": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "cuijian": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 28,
+                "committers": {
+                    "Clement Ho": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 14,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "Kaio Duarte": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 4,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "\u7fa1\u8f99": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "gnijuohz": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2018": {
+            "December": {
+                "commits": 4,
+                "committers": {
+                    "sushuang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 9,
+                "committers": {
+                    "sushuang": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 4,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "map",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 4,
+                "committers": {
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "map",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 30,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Justineo": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "svg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 20,
+                        "extensions": [
+                            "json",
+                            "svg",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "sh",
+                            "json",
+                            "md",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 8,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "sh",
+                            "json",
+                            "md",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 4,
+                        "extensions": [
+                            "",
+                            "sh",
+                            "json",
+                            "md",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 14,
+                "committers": {
+                    "sushuang": {
+                        "commits": 9,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "json",
+                            "mp4",
+                            "svg",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 3,
+                        "extensions": [
+                            "sketch",
+                            "xml",
+                            "png",
+                            "html",
+                            "scss",
+                            "map",
+                            "md",
+                            "yml",
+                            "jpg",
+                            "js",
+                            "css"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "html",
+                            "svg"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 4,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "Daniel Matos": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 2,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "md",
+                            "tpl"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 20,
+                "committers": {
+                    "Yi Shen": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Kimura": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 13,
+                        "extensions": [
+                            "png",
+                            "json",
+                            "svg",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "hiwanz": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 8,
+                "committers": {
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "png",
+                            "less",
+                            "ttf",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 5,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 22,
+                "committers": {
+                    "sushuang": {
+                        "commits": 14,
+                        "extensions": [
+                            "less",
+                            "png",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 4,
+                        "extensions": [
+                            "png",
+                            "less",
+                            "ttf",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 1,
+                        "extensions": [
+                            "html",
+                            "png",
+                            "css"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 18,
+                "committers": {
+                    "sushuang": {
+                        "commits": 12,
+                        "extensions": [
+                            "html",
+                            "png",
+                            "md",
+                            "json"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "png",
+                            "md",
+                            "html"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 72,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 24,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "html",
+                            "json",
+                            "md",
+                            "jpg"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 30,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "html",
+                            "json",
+                            "md",
+                            "jpg"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 18,
+                        "extensions": [
+                            "less",
+                            "png",
+                            "jpg",
+                            "md",
+                            "css",
+                            "html"
+                        ]
+                    }
+                }
+            }
+        },
+        "2017": {
+            "December": {
+                "commits": 6,
+                "committers": {
+                    "sushuang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Mars Wong": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Jonathan Avila": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 23,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 5,
+                        "extensions": [
+                            "json",
+                            "png",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 14,
+                        "extensions": [
+                            "png",
+                            "json",
+                            "pptx",
+                            "md",
+                            "css",
+                            "html"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 7,
+                "committers": {
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 11,
+                "committers": {
+                    "sushuang": {
+                        "commits": 8,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "jingsam": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 40,
+                "committers": {
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "sushuang": {
+                        "commits": 37,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "json",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "saiyagg": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 18,
+                "committers": {
+                    "pah100": {
+                        "commits": 12,
+                        "extensions": [
+                            "mp3",
+                            "ttf",
+                            "pptx",
+                            "css",
+                            "webp",
+                            "hdr",
+                            "woff",
+                            "md",
+                            "7/lib/font/league-gothic/license",
+                            "jpg",
+                            "js",
+                            "dbf",
+                            "shp",
+                            "json",
+                            "html",
+                            "7/lib/font/source-sans-pro/license",
+                            "eot",
+                            "sh",
+                            "sketch",
+                            "png"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 6,
+                        "extensions": [
+                            "sketch",
+                            "png",
+                            "shp",
+                            "json",
+                            "jpg",
+                            "webp",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "dbf"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 66,
+                "committers": {
+                    "pah100": {
+                        "commits": 32,
+                        "extensions": [
+                            "sketch",
+                            "png",
+                            "json",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 17,
+                        "extensions": [
+                            "sketch",
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 7,
+                        "extensions": [
+                            "sketch",
+                            "xml",
+                            "png",
+                            "json",
+                            "scss",
+                            "map",
+                            "md",
+                            "yml",
+                            "html",
+                            "js",
+                            "css"
+                        ]
+                    },
+                    "Yi Shen": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "liyanan": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 48,
+                "committers": {
+                    "pah100": {
+                        "commits": 23,
+                        "extensions": [
+                            "sh",
+                            "xml",
+                            "png",
+                            "mp3",
+                            "hdr",
+                            "json",
+                            "jpg",
+                            "scss",
+                            "yml",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 10,
+                        "extensions": [
+                            "js",
+                            "sketch",
+                            "xml",
+                            "png",
+                            "json",
+                            "jpg",
+                            "scss",
+                            "txt",
+                            "yml",
+                            "md",
+                            "css",
+                            "html",
+                            "mp4",
+                            "map"
+                        ]
+                    },
+                    "pissang": {
+                        "commits": 12,
+                        "extensions": [
+                            "sh",
+                            "mp3",
+                            "png",
+                            "hdr",
+                            "json",
+                            "jpg",
+                            "md",
+                            "css",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Derek Howard": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 76,
+                "committers": {
+                    "pissang": {
+                        "commits": 46,
+                        "extensions": [
+                            "sketch",
+                            "png",
+                            "html",
+                            "json",
+                            "mp4",
+                            "md",
+                            "css",
+                            "jpg",
+                            "js",
+                            "gif"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 26,
+                        "extensions": [
+                            "sketch",
+                            "xml",
+                            "png",
+                            "json",
+                            "jpg",
+                            "md",
+                            "yml",
+                            "html",
+                            "js",
+                            "css"
+                        ]
+                    },
+                    "baidu": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 79,
+                "committers": {
+                    "pissang": {
+                        "commits": 25,
+                        "extensions": [
+                            "sh",
+                            "sketch",
+                            "",
+                            "gitignore",
+                            "png",
+                            "7/lib/font/league-gothic/license",
+                            "hdr",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "7/lib/font/source-sans-pro/license",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js",
+                            "gif"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 35,
+                        "extensions": [
+                            "",
+                            "ttf",
+                            "css",
+                            "gitignore",
+                            "hdr",
+                            "woff",
+                            "txt",
+                            "md",
+                            "yml",
+                            "jpg",
+                            "js",
+                            "map",
+                            "json",
+                            "html",
+                            "eot",
+                            "sh",
+                            "xml",
+                            "png",
+                            "scss"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 13,
+                        "extensions": [
+                            "sh",
+                            "",
+                            "xml",
+                            "png",
+                            "gitignore",
+                            "hdr",
+                            "ttf",
+                            "json",
+                            "jpg",
+                            "scss",
+                            "woff",
+                            "yml",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js",
+                            "map"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 3,
+                        "extensions": [
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "dengxiaohong01": {
+                        "commits": 2,
+                        "extensions": [
+                            "html",
+                            "xml",
+                            "png",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 20,
+                "committers": {
+                    "dengxiaohong01": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 5,
+                        "extensions": [
+                            "html",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 5,
+                        "extensions": [
+                            "html",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "png",
+                            "scss",
+                            "txt",
+                            "lock",
+                            "md",
+                            "css",
+                            "html",
+                            "gif"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 4,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 56,
+                "committers": {
+                    "100pah": {
+                        "commits": 35,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "7/lib/font/league-gothic/license",
+                            "less",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "7/lib/font/source-sans-pro/license",
+                            "woff",
+                            "pptx",
+                            "md",
+                            "yml",
+                            "html",
+                            "eot",
+                            "js",
+                            "css"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 15,
+                        "extensions": [
+                            "",
+                            "ttf",
+                            "svg",
+                            "css",
+                            "ico",
+                            "gitignore",
+                            "woff",
+                            "otf",
+                            "md",
+                            "yml",
+                            "jpg",
+                            "js",
+                            "less",
+                            "json",
+                            "woff2",
+                            "html",
+                            "eot",
+                            "sh",
+                            "xml",
+                            "png",
+                            "scss",
+                            "lock"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 4,
+                        "extensions": [
+                            ""
+                        ]
+                    }
+                }
+            }
+        },
+        "2016": {
+            "December": {
+                "commits": 13,
+                "committers": {
+                    "lang": {
+                        "commits": 3,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 7,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "7/lib/font/league-gothic/license",
+                            "ttf",
+                            "jpg",
+                            "7/lib/font/source-sans-pro/license",
+                            "woff",
+                            "pptx",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "sh",
+                            "",
+                            "gitignore",
+                            "png",
+                            "less",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 58,
+                "committers": {
+                    "lang": {
+                        "commits": 22,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 29,
+                        "extensions": [
+                            "sh",
+                            "png",
+                            "less",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 7,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 26,
+                "committers": {
+                    "100pah": {
+                        "commits": 15,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Yang Zhonghua": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "deqingli": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 12,
+                "committers": {
+                    "100pah": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Wenli Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Dafrok": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 17,
+                "committers": {
+                    "lang": {
+                        "commits": 7,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 7,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 55,
+                "committers": {
+                    "lang": {
+                        "commits": 24,
+                        "extensions": [
+                            "sh",
+                            "gitignore",
+                            "png",
+                            "less",
+                            "json",
+                            "ttf",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "100pah": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 22,
+                        "extensions": [
+                            "json",
+                            "png",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "zhangwenli01": {
+                        "commits": 3,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 96,
+                "committers": {
+                    "pah100": {
+                        "commits": 26,
+                        "extensions": [
+                            "js",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 58,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "zhangwenli01": {
+                        "commits": 6,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 119,
+                "committers": {
+                    "pah100": {
+                        "commits": 31,
+                        "extensions": [
+                            "png",
+                            "json",
+                            "md",
+                            "html",
+                            "js"
+                        ]
+                    },
+                    "Ovilia": {
+                        "commits": 13,
+                        "extensions": [
+                            "json",
+                            "js",
+                            "md",
+                            "html"
+                        ]
+                    },
+                    "zhangwenli01": {
+                        "commits": 12,
+                        "extensions": [
+                            "json",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 63,
+                        "extensions": [
+                            "html",
+                            "js",
+                            "md",
+                            "json"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 25,
+                "committers": {
+                    "lang": {
+                        "commits": 16,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 9,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 42,
+                "committers": {
+                    "lang": {
+                        "commits": 32,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 10,
+                        "extensions": [
+                            "sh",
+                            "js",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 31,
+                "committers": {
+                    "pah100": {
+                        "commits": 14,
+                        "extensions": [
+                            "sh",
+                            "js",
+                            "png",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 17,
+                        "extensions": [
+                            "sh",
+                            "js",
+                            "png",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 116,
+                "committers": {
+                    "pah100": {
+                        "commits": 51,
+                        "extensions": [
+                            "sh",
+                            "less",
+                            "png",
+                            "ttf",
+                            "json",
+                            "jpg",
+                            "svg",
+                            "woff",
+                            "es6",
+                            "md",
+                            "css",
+                            "html",
+                            "eot",
+                            "js"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 65,
+                        "extensions": [
+                            "sh",
+                            "json",
+                            "es6",
+                            "md",
+                            "js"
+                        ]
+                    }
+                }
+            }
+        },
+        "2015": {
+            "December": {
+                "commits": 38,
+                "committers": {
+                    "baidu": {
+                        "commits": 6,
+                        "extensions": [
+                            "json",
+                            "gitignore",
+                            "md"
+                        ]
+                    },
+                    "lang": {
+                        "commits": 16,
+                        "extensions": [
+                            "gitignore",
+                            "less",
+                            "json",
+                            "es6",
+                            "md",
+                            "css",
+                            "js"
+                        ]
+                    },
+                    "pah100": {
+                        "commits": 13,
+                        "extensions": [
+                            "sh",
+                            "gitignore",
+                            "less",
+                            "json",
+                            "es6",
+                            "md",
+                            "css",
+                            "html",
+                            "js",
+                            "0/license"
+                        ]
+                    },
+                    "shenyi01": {
+                        "commits": 1,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "css"
+                        ]
+                    },
+                    "hanbingbing": {
+                        "commits": 2,
+                        "extensions": [
+                            "json",
+                            "md",
+                            "css"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
