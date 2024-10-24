@@ -3,13 +3,11 @@ import mailbox
 import os
 import random
 import tempfile
-from bs4 import BeautifulSoup
 import requests
 import logging
 import json
 import time
 from itertools import cycle
-from urllib.parse import quote
 from app.config import Config
 
 # Configure logging
