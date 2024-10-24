@@ -1,1 +1,1 @@
-*Open source sustainability tracker for ASF*
+**Open source sustainability tracker for ASF**
