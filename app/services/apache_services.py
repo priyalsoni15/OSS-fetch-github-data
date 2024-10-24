@@ -14,36 +14,6 @@ from app.config import Config
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def fetch_apache_repositories_from_website():
-    logging.info("Fetching Apache repositories from the website...")
-    repos = []
-    api_calls = 0
-    try:
-        # Apache provides a JSON file with project metadata
-        base_url = "https://projects.apache.org/json/foundation/projects.json"
-        response = requests.get(base_url)
-        api_calls += 1
-        if response.status_code != 200:
-            logging.error(f"Error fetching Apache repositories from website: {response.status_code} {response.text}")
-            return repos
-        
-        projects_data = response.json()
-        for project_name, project_info in projects_data.items():
-            # Each project may have multiple repositories
-            scm = project_info.get('scm', {})
-            git_repos = scm.get('git', [])
-            for repo in git_repos:
-                repos.append(repo)
-        
-        logging.info(f"Fetched {len(repos)} repositories from the website.")
-    except requests.exceptions.RequestException as e:
-        logging.error(f"Request failed: {e}")
-    
-    # Save repos data to JSON file
-    with open("apache_repos_website.json", "w") as json_file:
-        json.dump(repos, json_file, indent=4)
-    
-    return repos
 
 def fetch_apache_repositories_from_github():
     logging.info("Fetching Apache repositories from GitHub...")
@@ -129,34 +99,15 @@ def fetch_apache_repositories_from_github():
             continue
 
     # Save repos data to JSON file
-    with open("apache_repos_github.json", "w") as json_file:
+    output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'parent')
+    os.makedirs(output_dir, exist_ok=True)
+    output_file = os.path.join(output_dir, 'apache_repos_github.json')
+    with open(output_file, "w") as json_file:
         json.dump(repos, json_file, indent=4)
 
     return repos
 
-def merge_repositories(website_repos, github_repos):
-    logging.info("Merging repositories from website and GitHub...")
-    # Extract repository names from URLs for comparison
-    website_repo_names = [repo.split('/')[-1].replace('.git', '') for repo in website_repos]
-    github_repo_names = [repo.split('/')[-1] for repo in github_repos]
-    merged_repos = list(set(website_repo_names + github_repo_names))
-    logging.info(f"Total merged repositories: {len(merged_repos)}")
-    
-    # Save merged repos data to JSON file
-    with open("apache_repos_merged.json", "w") as json_file:
-        json.dump(merged_repos, json_file, indent=4)
-    
-    return merged_repos
-
-def merge_repos_temp():
-    # Fetch repositories from both sources
-    website_repos = fetch_apache_repositories_from_website()
-    github_repos = fetch_apache_repositories_from_github()
-    merged_repos = merge_repositories(website_repos, github_repos)
-    return merged_repos
-
 # --- The functions below are for fetching the Apache Mailing list data ---
-
 
 def fetch_mailing_list_data(repo_name):
     logger.info(f"Fetching mailing list data for repository: {repo_name}")

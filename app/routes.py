@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, redirect, url_for
 from app.services.graphql_services import fetch_commits_service, fetch_repos_for_org
-from app.services.apache_services import fetch_apache_mailing_list_data, merge_repos_temp
+from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -12,7 +12,7 @@ def landing_page():
 # [Tested] This would fetch all the repos from the Apache organization
 @main_routes.route('/fetch_repos', methods=['GET'])
 def fetch_repos():
-    repos = fetch_repos_for_org()
+    repos = fetch_apache_repositories_from_github()
     return jsonify(repos), 200
 
 # [Tested] This will fetch all the commits for a github repo
@@ -21,11 +21,6 @@ def fetch_commits():
     message = fetch_commits_service()
     return jsonify({'message': message}), 200
 
-# [Pending]
-@main_routes.route('/merge_repos', methods=['GET'])
-def fetch_merge_repositories():
-    message = merge_repos_temp()
-    return jsonify({'message': message}), 200
 
 # [Tested] This will fetch the mailing list data for Apache organization
 # [Additional functionality] Currently, the repo list is manual, once this is complete, I want to fetch the repos from the json or stored files.

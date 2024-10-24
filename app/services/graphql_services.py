@@ -266,7 +266,7 @@ def fetch_commits_service():
             "data": data
         }
         # Save final data to JSON file
-        output_dir = os.path.join('out', 'apache')
+        output_dir = os.path.join('out', 'apache', 'github')
         os.makedirs(output_dir, exist_ok=True)
         with open(os.path.join(output_dir, f"github_data_{repo.name}.json"), "w") as json_file:
             json.dump(output, json_file, indent=4)
