@@ -6,6 +6,10 @@ class Config:
     REPOSITORIES = [
         "https://github.com/apache/skywalking-cli.git",
     ]
+    
+    APACHE_REPOSITORIES = [
+        "https://lists.apache.org/list.html?dev@arrow.apache.org",
+    ]
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod

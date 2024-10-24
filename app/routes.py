@@ -27,7 +27,8 @@ def fetch_merge_repositories():
     message = merge_repos_temp()
     return jsonify({'message': message}), 200
 
-# [Pending] This will fetch the mailing list data for Apache organization
+# [Tested] This will fetch the mailing list data for Apache organization
+# [Additional functionality] Currently, the repo list is manual, once this is complete, I want to fetch the repos from the json or stored files.
 @main_routes.route('/fetch_mailing_list', methods=['GET'])
 def fetch_mailing_list_apache():
     message = fetch_apache_mailing_list_data()
