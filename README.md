@@ -2,7 +2,7 @@
 
 
 Open source sustainability tracker for ASF
-is a Flask application that fetches and processes mailing list data from Apache projects. It downloads mailing list archives, parses them, and extracts useful information for analysis.
+is a Flask application that fetches and processes github repos and mailing list data from Apache Software Foundation projects (incubated, mature, or incubating). It uses Github GraphQL API and GitHub REST API to collect and analyze data from GitHub repo commits, issues, etc. It also downloads mailing list archives, parses them, and extracts useful information for analysis. 
 
 ## Installation
 
