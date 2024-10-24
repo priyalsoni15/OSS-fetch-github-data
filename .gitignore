@@ -398,4 +398,8 @@ FodyWeavers.xsd
 *.sln.iml
 
 # Virtual environment
-venv
+venv/
+
+instance/
+
+.env
