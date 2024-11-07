@@ -5,7 +5,7 @@ def create_app():
     app = Flask(__name__)
     
     # Enable CORS
-    CORS(app, resources={r"*": {"origins": "https://oss-project-navigator.vercel.app"}})
+    CORS(app, resources={r"*": {"origins": "*"}})
     
     # Load configuration
     app.config.from_object('app.config.Config')
