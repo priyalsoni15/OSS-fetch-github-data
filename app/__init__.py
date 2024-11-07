@@ -1,8 +1,12 @@
 from flask import Flask
+from flask_cors import CORS
 
 def create_app():
     app = Flask(__name__)
-
+    
+    # Enable CORS
+    CORS(app, resources={r"*": {"origins": "https://oss-project-navigator.vercel.app"}})
+    
     # Load configuration
     app.config.from_object('app.config.Config')
 

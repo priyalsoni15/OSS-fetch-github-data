@@ -1,5 +1,3 @@
-# processing.py
-
 import os
 import json
 import re

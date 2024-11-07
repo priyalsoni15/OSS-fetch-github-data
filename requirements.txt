@@ -40,3 +40,5 @@ urllib3==2.2.3
 Werkzeug==3.0.4
 wrapt==1.16.0
 yarl==1.15.2
+flask-cors==5.0.0
+gunicorn==23.0.0
