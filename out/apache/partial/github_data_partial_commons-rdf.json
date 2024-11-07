@@ -1,0 +1,1208 @@
+{
+    "fetch_time_seconds": 11.309680938720703,
+    "api_calls_made": 18,
+    "data": {
+        "2024": {
+            "November": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 34,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 19,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 15,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 22,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 14,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 8,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 47,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 37,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 12,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 15,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 24,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 13,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 18,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 20,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 17,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 11,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 24,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 15,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2023": {
+            "December": {
+                "commits": 14,
+                "committers": {
+                    "Sebb": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": []
+                    }
+                }
+            },
+            "November": {
+                "commits": 19,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 17,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 27,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 19,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 7,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 20,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 11,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 9,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 12,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 13,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "StepSecurity Bot": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 4,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 13,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 10,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 16,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2022": {
+            "December": {
+                "commits": 16,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 7,
+                        "extensions": []
+                    }
+                }
+            },
+            "November": {
+                "commits": 7,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 11,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 6,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 13,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 8,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 18,
+                "committers": {
+                    "sebbASF": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 13,
+                        "extensions": []
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2021": {
+            "December": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 7,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sebb": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 4,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2020": {
+            "December": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "November": {
+                "commits": 5,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2019": {
+            "August": {
+                "commits": 2,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2018": {
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 7,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 7,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 8,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "ajs6f": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2017": {
+            "December": {
+                "commits": 13,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 7,
+                        "extensions": []
+                    },
+                    "Sergio Fernandez": {
+                        "commits": 2,
+                        "extensions": []
+                    },
+                    "ajs6f": {
+                        "commits": 2,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "November": {
+                "commits": 18,
+                "committers": {
+                    "Aaron Coburn": {
+                        "commits": 2,
+                        "extensions": []
+                    },
+                    "A. Soroka": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 13,
+                        "extensions": []
+                    },
+                    "ajs6f": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 31,
+                "committers": {
+                    "Christopher Johnson": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 26,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 8,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 5,
+                        "extensions": []
+                    },
+                    "ajs6f": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Rob Tompkins": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 4,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 24,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 24,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 34,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 22,
+                        "extensions": []
+                    },
+                    "Guohui Xiao": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "Aaron Coburn": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2016": {
+            "November": {
+                "commits": 63,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 50,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 160,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 158,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 130,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 130,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 39,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 39,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 53,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 53,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 37,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 8,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 28,
+                        "extensions": []
+                    },
+                    "Lewis John McGibbney": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 95,
+                "committers": {
+                    "Lewis John McGibbney": {
+                        "commits": 6,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 87,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 48,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 48,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 2,
+                "committers": {
+                    "ggregory": {
+                        "commits": 2,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2015": {
+            "December": {
+                "commits": 3,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "October": {
+                "commits": 1,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "September": {
+                "commits": 2,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 28,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 13,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 14,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 3,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 34,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 16,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 10,
+                        "extensions": []
+                    },
+                    "Sergio Fernandez": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "Andy Seaborne": {
+                        "commits": 2,
+                        "extensions": []
+                    },
+                    "Benedikt Ritter": {
+                        "commits": 3,
+                        "extensions": []
+                    }
+                }
+            },
+            "April": {
+                "commits": 94,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 66,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 21,
+                        "extensions": []
+                    },
+                    "Andy Seaborne": {
+                        "commits": 5,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Benedikt Ritter": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "March": {
+                "commits": 50,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 12,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 36,
+                        "extensions": []
+                    },
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Ian Dunlop": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "February": {
+                "commits": 9,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            },
+            "January": {
+                "commits": 134,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 23,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 106,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 5,
+                        "extensions": []
+                    }
+                }
+            }
+        },
+        "2014": {
+            "December": {
+                "commits": 4,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 3,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "November": {
+                "commits": 2,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "August": {
+                "commits": 13,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 4,
+                        "extensions": []
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 9,
+                        "extensions": []
+                    }
+                }
+            },
+            "July": {
+                "commits": 42,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 32,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 10,
+                        "extensions": []
+                    }
+                }
+            },
+            "June": {
+                "commits": 65,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 26,
+                        "extensions": []
+                    },
+                    "Peter Ansell": {
+                        "commits": 27,
+                        "extensions": []
+                    },
+                    "Andy Seaborne": {
+                        "commits": 12,
+                        "extensions": []
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1828 @@
+{
+    "fetch_time_seconds": 70.44240093231201,
+    "api_calls_made": 18,
+    "data": {
+        "2024": {
+            "November": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 34,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 19,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 15,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 22,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 14,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 8,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 47,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 37,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 12,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 15,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 24,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 13,
+                        "extensions": [
+                            "yml",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 18,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 20,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 17,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 11,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 24,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 15,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2023": {
+            "December": {
+                "commits": 14,
+                "committers": {
+                    "Sebb": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml",
+                            "md"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 19,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 17,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 2,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 27,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 19,
+                        "extensions": [
+                            "yml",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 7,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 20,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 11,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 9,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml",
+                            "java"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 12,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 13,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 3,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "StepSecurity Bot": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 4,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 13,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 6,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": [
+                            "yml",
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 10,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "yaml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 16,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "yaml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "java",
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 5,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2022": {
+            "December": {
+                "commits": 16,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 9,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 7,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 7,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 7,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "txt"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 11,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 6,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "md",
+                            "jacoco"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 13,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 8,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 18,
+                "committers": {
+                    "sebbASF": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 13,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2021": {
+            "December": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 7,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": [
+                            "yml",
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    },
+                    "Sebb": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "txt"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 2,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 4,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2020": {
+            "December": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 5,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 5,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 3,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2019": {
+            "August": {
+                "commits": 2,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Sebb": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2018": {
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 7,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 7,
+                        "extensions": [
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 8,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "gitignore",
+                            "md"
+                        ]
+                    },
+                    "ajs6f": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 2,
+                        "extensions": [
+                            ""
+                        ]
+                    }
+                }
+            }
+        },
+        "2017": {
+            "December": {
+                "commits": 13,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 7,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Sergio Fernandez": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "txt"
+                        ]
+                    },
+                    "ajs6f": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "gitignore"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 18,
+                "committers": {
+                    "Aaron Coburn": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "A. Soroka": {
+                        "commits": 1,
+                        "extensions": [
+                            "gitignore"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 13,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "txt"
+                        ]
+                    },
+                    "ajs6f": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "gitignore",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 31,
+                "committers": {
+                    "Christopher Johnson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 26,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "nt",
+                            "jacoco",
+                            "japicmp",
+                            "java",
+                            "json",
+                            "rdftermfactory",
+                            "rdf",
+                            "jsonld",
+                            "ttl",
+                            "nq",
+                            "trig"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 8,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "ajs6f": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Rob Tompkins": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 4,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 1,
+                "committers": {
+                    "Aaron Coburn": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 24,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 24,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "json",
+                            "jsonld"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 34,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 22,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "jacoco",
+                            "txt",
+                            "java",
+                            "svg",
+                            "yml",
+                            "nomnoml",
+                            "png"
+                        ]
+                    },
+                    "Guohui Xiao": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 6,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Aaron Coburn": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2016": {
+            "November": {
+                "commits": 63,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 50,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "jacoco",
+                            "txt",
+                            "java",
+                            "svg",
+                            "yml"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Gary Gregory": {
+                        "commits": 10,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 160,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 158,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "rdffactory",
+                            "txt",
+                            "java",
+                            "rdftermfactory",
+                            "rdf",
+                            "nomnoml",
+                            "yml",
+                            "jsonld",
+                            "ttl",
+                            "properties",
+                            "png"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 2,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 130,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 130,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "nt",
+                            "jacoco",
+                            "txt",
+                            "japicmp",
+                            "java",
+                            "rdftermfactory",
+                            "rdf",
+                            "nomnoml",
+                            "gitignore",
+                            "jsonld",
+                            "ttl",
+                            "prefs",
+                            "nq",
+                            "trig",
+                            "properties",
+                            "png"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 39,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 39,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "txt",
+                            "java",
+                            "rdftermfactory",
+                            "classpath",
+                            "project",
+                            "ttl",
+                            "prefs",
+                            "properties"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 53,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 53,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "nt",
+                            "txt",
+                            "java",
+                            "rdf",
+                            "jsonld",
+                            "ttl",
+                            "nq",
+                            "trig"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 37,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 8,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 28,
+                        "extensions": [
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    },
+                    "Lewis John McGibbney": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 95,
+                "committers": {
+                    "Lewis John McGibbney": {
+                        "commits": 6,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 87,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "txt",
+                            "java",
+                            "rdftermfactory",
+                            "yml",
+                            "jsonld",
+                            "gitignore"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 48,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 48,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "properties",
+                            "txt",
+                            "java",
+                            "rdftermfactory",
+                            "classpath",
+                            "project",
+                            "ttl",
+                            "gitignore",
+                            "prefs",
+                            "mf",
+                            "png"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 2,
+                "committers": {
+                    "ggregory": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2015": {
+            "December": {
+                "commits": 3,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 1,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 2,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 28,
+                "committers": {
+                    "Andy Seaborne": {
+                        "commits": 13,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "java",
+                            "gitignore",
+                            "ttl",
+                            "properties"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 14,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "vm"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 3,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "vm"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 34,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 16,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "vm"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 10,
+                        "extensions": [
+                            "",
+                            "vm",
+                            "java",
+                            "rdftermfactory",
+                            "png"
+                        ]
+                    },
+                    "Sergio Fernandez": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "xml"
+                        ]
+                    },
+                    "Andy Seaborne": {
+                        "commits": 2,
+                        "extensions": [
+                            ""
+                        ]
+                    },
+                    "Benedikt Ritter": {
+                        "commits": 3,
+                        "extensions": [
+                            "rdftermfactory",
+                            "java",
+                            "vm"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 94,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 66,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "nomnoml",
+                            "png"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 21,
+                        "extensions": [
+                            "xcf",
+                            "xml",
+                            "md",
+                            "txt",
+                            "java",
+                            "png"
+                        ]
+                    },
+                    "Andy Seaborne": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Benedikt Ritter": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 50,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 12,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "txt"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 36,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "yml",
+                            "patch"
+                        ]
+                    },
+                    "Andy Seaborne": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Ian Dunlop": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 9,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 134,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 23,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "yml",
+                            "patch",
+                            "png"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 106,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "txt",
+                            "java",
+                            "patch",
+                            "png"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    }
+                }
+            }
+        },
+        "2014": {
+            "December": {
+                "commits": 4,
+                "committers": {
+                    "Stian Soiland-Reyes": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 2,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Stian Soiland-Reyes": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 13,
+                "committers": {
+                    "Peter Ansell": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "md"
+                        ]
+                    },
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 9,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 42,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 32,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "txt",
+                            "java",
+                            "patch",
+                            "png"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 10,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "yml",
+                            "gitignore",
+                            "patch"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 65,
+                "committers": {
+                    "Sergio Fern\u00e1ndez": {
+                        "commits": 26,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "md",
+                            "java",
+                            "gitignore",
+                            "png"
+                        ]
+                    },
+                    "Peter Ansell": {
+                        "commits": 27,
+                        "extensions": [
+                            "xml",
+                            "java",
+                            "md"
+                        ]
+                    },
+                    "Andy Seaborne": {
+                        "commits": 12,
+                        "extensions": [
+                            "java",
+                            "md"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
