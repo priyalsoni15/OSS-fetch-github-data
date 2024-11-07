@@ -1,6 +1,9 @@
 from flask import Blueprint, jsonify, redirect, url_for
-from app.services.graphql_services import fetch_commits_service, fetch_repos_for_org
+from app.services.graphql_services import fetch_commits_service
 from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github
+import os
+
+from app.services.processing import process_sankey_data
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -21,6 +24,17 @@ def fetch_commits():
     message = fetch_commits_service()
     return jsonify({'message': message}), 200
 
+# [Tested] Create technical network for Apache projects [1 project each]
+# Remember the limitation here is that the .json file should be present to be processed further
+@main_routes.route('/api/tech_net/<project_name>', methods=['GET'])
+def get_sankey_data(project_name):
+    # Define the path to your data directory
+    DATA_DIR = os.path.join('out', 'apache', 'github')  # Adjust the path as needed
+
+    sankey_data = process_sankey_data(project_name, DATA_DIR)
+    if sankey_data is None:
+        return jsonify({'error': 'Project not found'}), 404
+    return jsonify(sankey_data), 200
 
 # [Tested] This will fetch the mailing list data for Apache organization
 # [Additional functionality] Currently, the repo list is manual, once this is complete, I want to fetch the repos from the json or stored files.
