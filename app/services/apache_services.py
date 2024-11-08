@@ -122,13 +122,21 @@ def fetch_apache_projects_data():
         projects = []
 
         for project_key, project_info in data.items():
+            # Parse and format dates
+            start_date_raw = project_info.get('start_date', '')
+            end_date_raw = project_info.get('end_date', '')
+
+            # Convert dates to 'YYYY-MM-DD' format
+            start_date = parse_date(start_date_raw)
+            end_date = parse_date(end_date_raw)
+
             project = {
                 'name': project_info.get('name', 'N/A'),
                 'description': project_info.get('description', 'N/A'),
                 'homepage': project_info.get('homepage', 'N/A'),
                 'status': project_info.get('project_status', 'N/A'),
-                'start_date': project_info.get('start_date', 'N/A'),
-                'end_date': project_info.get('end_date', 'N/A'),
+                'start_date': start_date or 'N/A',
+                'end_date': end_date or 'N/A',
                 'category': project_info.get('category', []),
                 'mailing_list': project_info.get('mailing_list', []),
                 'sponsor': project_info.get('sponsor', 'N/A')
@@ -152,6 +160,25 @@ def fetch_apache_projects_data():
     except json.JSONDecodeError as e:
         logger.error(f"JSON decode error: {e}")
         return []
+
+def parse_date(date_str):
+    """Parses date strings from the Apache projects data and formats them as 'YYYY-MM-DD'."""
+    if not date_str:
+        return None
+    try:
+        # Try parsing the date in known formats
+        date_formats = ['%Y/%m/%d', '%Y-%m-%d', '%Y-%m', '%Y']
+        for fmt in date_formats:
+            try:
+                date_obj = datetime.strptime(date_str, fmt)
+                return date_obj.strftime('%Y-%m-%d')
+            except ValueError:
+                continue
+        logger.warning(f"Unknown date format: {date_str}")
+        return None
+    except Exception as e:
+        logger.error(f"Error parsing date '{date_str}': {e}")
+        return None
 
 
 # --- The functions below are for fetching the Apache Mailing list data ---

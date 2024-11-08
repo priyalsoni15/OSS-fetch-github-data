@@ -1,7 +1,8 @@
 from flask import Blueprint, jsonify, redirect, url_for
 from app.services.graphql_services import fetch_commits_service
 from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_apache_projects_data 
-import os, json
+import os
+import json
 
 from app.services.processing import process_sankey_data_all
 
@@ -39,7 +40,6 @@ def get_sankey_data(project_name):
 # This will fetch all the projects from Apache website
 @main_routes.route('/api/projects', methods=['GET'])
 def get_apache_projects():
-    # Define the path to your projects data
     output_file = os.path.join(os.getcwd(), 'out', 'apache', 'projects', 'apache_projects.json')
 
     # If the file exists, read from it
@@ -49,9 +49,8 @@ def get_apache_projects():
     else:
         # If the file doesn't exist, fetch the data
         projects = fetch_apache_projects_data()
-
-    if not projects:
-        return jsonify({'error': 'Failed to fetch Apache projects data'}), 500
+        if not projects:
+            return jsonify({'error': 'Failed to fetch Apache projects data'}), 500
 
     return jsonify({'projects': projects}), 200
 
@@ -65,4 +64,6 @@ def fetch_mailing_list_apache():
 # [Tested] For any other API routes than the one mentioned, redirect it to the landing page/home-page
 @main_routes.route('/<path:invalid_path>')
 def handle_invalid_path(invalid_path):
+    if invalid_path.startswith('api/'):
+        return jsonify({'error': 'Invalid API endpoint'}), 404
     return redirect(url_for('main_routes.landing_page'))
