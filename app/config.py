@@ -4,7 +4,7 @@ import logging
 class Config:
     ORG_NAME = os.environ.get('ORG_NAME')
     REPOSITORIES = [
-        "https://github.com/apache/commons-rdf.git",
+        "https://github.com/apache/curator.git",
     ]
     
     APACHE_REPOSITORIES = [

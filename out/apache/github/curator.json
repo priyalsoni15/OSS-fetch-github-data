@@ -1,0 +1,3504 @@
+{
+    "fetch_time_seconds": 115.21427798271179,
+    "api_calls_made": 29,
+    "data": {
+        "2024": {
+            "October": {
+                "commits": 2,
+                "committers": {
+                    "Philipp Dolif": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Kezhu Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 3,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Pablo Francisco P\u00e9rez Hidalgo": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 5,
+                "committers": {
+                    "shalk(xiao kun)": {
+                        "commits": 1,
+                        "extensions": [
+                            "git-blame-ignore-revs"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "gitignore",
+                            "groovy",
+                            "xml",
+                            "yml"
+                        ]
+                    },
+                    "Hexiaoqiao": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 3,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Laurent Goujon": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "yml",
+                            "properties",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 3,
+                "committers": {
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2023": {
+            "December": {
+                "commits": 2,
+                "committers": {
+                    "shenjianeng": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Hannah Chi": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 4,
+                "committers": {
+                    "Sergey Nuyanzin": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "yml",
+                            "properties",
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 3,
+                "committers": {
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 10,
+                "committers": {
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "yml",
+                            "java",
+                            "yaml",
+                            "css",
+                            "png",
+                            "confluence"
+                        ]
+                    },
+                    "Kezhu Wang": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Slavik": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 5,
+                "committers": {
+                    "dependabot[bot]": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Kezhu Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "yml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 4,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "groovy",
+                            "xml",
+                            "cmd",
+                            "properties",
+                            "yml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 11,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "yaml",
+                            "java",
+                            "yml"
+                        ]
+                    },
+                    "Adam's": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Ryan Ruel": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "David Copley": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 8,
+                "committers": {
+                    "Denes Daniel": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 4,
+                        "extensions": [
+                            "",
+                            "toml",
+                            "xml",
+                            "properties",
+                            "cmd",
+                            "md",
+                            "yml",
+                            "java",
+                            "yaml",
+                            "txt"
+                        ]
+                    },
+                    "Kezhu Wang": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Kezhu Wang": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2022": {
+            "November": {
+                "commits": 2,
+                "committers": {
+                    "tison": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 2,
+                "committers": {
+                    "Enrico Olivelli": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Matthias Pohl": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 1,
+                "committers": {
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 3,
+                "committers": {
+                    "tison": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Sergey Nuyanzin": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 11,
+                "committers": {
+                    "Jo\u00e3o Alves": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 6,
+                        "extensions": [
+                            "xml",
+                            "md",
+                            "java",
+                            "yaml",
+                            "confluence"
+                        ]
+                    },
+                    "Kezhu Wang": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "properties",
+                            "xml"
+                        ]
+                    },
+                    "Roman Leventov": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "exceptionfactory": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 6,
+                "committers": {
+                    "tison": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Paul Boutes": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 3,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "belugabehr": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Jingguo Yao": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 2,
+                "committers": {
+                    "sdk2": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 4,
+                "committers": {
+                    "Horv\u00e1th D\u00f3ra": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Enrico Olivelli": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 4,
+                "committers": {
+                    "Nicol\u00f2 Boschi": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Martin Grigorov": {
+                        "commits": 2,
+                        "extensions": [
+                            "yaml",
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2021": {
+            "December": {
+                "commits": 1,
+                "committers": {
+                    "Nicol\u00f2 Boschi": {
+                        "commits": 1,
+                        "extensions": [
+                            "md",
+                            "yaml",
+                            "yml"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 1,
+                "committers": {
+                    "Scott Kirkpatrick": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 3,
+                "committers": {
+                    "tison": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Matthew E. Dawson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "faucct": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 3,
+                "committers": {
+                    "Ryan Ruel": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "wx930910": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 7,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "liran2000": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Qiang Zhao": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Enrico Olivelli": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Colin Kuo": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 1,
+                "committers": {
+                    "Francesco Nigro": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 3,
+                "committers": {
+                    "Paul Boutes": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Ammar Khaku": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 1,
+                "committers": {
+                    "Josh Slocum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 4,
+                "committers": {
+                    "wangjie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Enrico Olivelli": {
+                        "commits": 3,
+                        "extensions": [
+                            "py",
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2020": {
+            "November": {
+                "commits": 1,
+                "committers": {
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 1,
+                "committers": {
+                    "Tam\u00e1s P\u00e9nzes": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 1,
+                "committers": {
+                    "hjyun": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 4,
+                "committers": {
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Enrico Olivelli": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 2,
+                "committers": {
+                    "Enrico Olivelli": {
+                        "commits": 1,
+                        "extensions": [
+                            "vm"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "vm",
+                            "xml",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 9,
+                "committers": {
+                    "Enrico Olivelli": {
+                        "commits": 5,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "md",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 18,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 4,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "chevaris": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "tison": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 18,
+                "committers": {
+                    "randgalt": {
+                        "commits": 16,
+                        "extensions": [
+                            "xml",
+                            "confluence",
+                            "java"
+                        ]
+                    },
+                    "bigmarvin": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml",
+                            "confluence"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 8,
+                "committers": {
+                    "bigmarvin": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "properties",
+                            "md",
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "tison": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 4,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Oleksandr Porunov": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 3,
+                "committers": {
+                    "Shay Shimony": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Roelof Naude": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "\u5eb7\u667a\u51ac": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2019": {
+            "November": {
+                "commits": 3,
+                "committers": {
+                    "Tatu Saloranta": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "dependabot[bot]": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 1,
+                "committers": {
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 10,
+                "committers": {
+                    "Shay Shimony": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 6,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 8,
+                "committers": {
+                    "Stephan Hohe": {
+                        "commits": 1,
+                        "extensions": [
+                            "confluence"
+                        ]
+                    },
+                    "Shay Shimony": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "confluence",
+                            "java"
+                        ]
+                    },
+                    "Aldrin Seychell": {
+                        "commits": 1,
+                        "extensions": [
+                            "rdf",
+                            "xml",
+                            "yml",
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "abcdenis": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "asdf2014": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 8,
+                "committers": {
+                    "Enrico Olivelli": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "yml"
+                        ]
+                    },
+                    "Shay Shimony": {
+                        "commits": 2,
+                        "extensions": [
+                            "rdf",
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "shayshim": {
+                        "commits": 1,
+                        "extensions": [
+                            "rdf",
+                            "xml"
+                        ]
+                    },
+                    "Emre Tetik": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 3,
+                "committers": {
+                    "Aldrin Seychell": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Shay Shimony": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "JiriOndrusek": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 4,
+                "committers": {
+                    "shayshim": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "rdf",
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 12,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 3,
+                        "extensions": [
+                            "md",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Beluga Behr": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 8,
+                        "extensions": [
+                            "md",
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 17,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 1,
+                        "extensions": [
+                            "md"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 15,
+                        "extensions": [
+                            "java",
+                            "yml",
+                            "confluence"
+                        ]
+                    },
+                    "Roman Leventov": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 6,
+                "committers": {
+                    "randgalt": {
+                        "commits": 5,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Roman Leventov": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2018": {
+            "December": {
+                "commits": 55,
+                "committers": {
+                    "randgalt": {
+                        "commits": 42,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Roman Leventov": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "hebelala": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Hendrik Haddorp": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "josh gruenberg": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 7,
+                "committers": {
+                    "Roman Leventov": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "nickhill": {
+                        "commits": 5,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 2,
+                "committers": {
+                    "Max-Pudov": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 9,
+                "committers": {
+                    "Rama": {
+                        "commits": 6,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 3,
+                "committers": {
+                    "Rama": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "rsouhrain": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Martin Betak": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 1,
+                "committers": {
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 24,
+                "committers": {
+                    "randgalt": {
+                        "commits": 17,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Enrico Olivelli": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Christopher McTague": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 3,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 8,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "krajcsovszkig-ms": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "javando": {
+                        "commits": 6,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 2,
+                "committers": {
+                    "Karl-Philipp Richter": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Lee Dongjin": {
+                        "commits": 1,
+                        "extensions": [
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 10,
+                "committers": {
+                    "randgalt": {
+                        "commits": 7,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "nickhill": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 7,
+                "committers": {
+                    "nickhill": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2017": {
+            "December": {
+                "commits": 11,
+                "committers": {
+                    "randgalt": {
+                        "commits": 10,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 2,
+                "committers": {
+                    "randgalt": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 2,
+                "committers": {
+                    "Kenneth McFarland": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 5,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 3,
+                "committers": {
+                    "hebelala": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 105,
+                "committers": {
+                    "randgalt": {
+                        "commits": 99,
+                        "extensions": [
+                            "xml",
+                            "properties",
+                            "json",
+                            "md",
+                            "sh",
+                            "java",
+                            "thrift",
+                            "txt",
+                            "css",
+                            "png",
+                            "confluence"
+                        ]
+                    },
+                    "Fangmin Lyu": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "szekizoli": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Kenco": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "rdf",
+                            "xml",
+                            "properties",
+                            "md",
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Niv Singer": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 1,
+                "committers": {
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": []
+                    }
+                }
+            },
+            "May": {
+                "commits": 11,
+                "committers": {
+                    "randgalt": {
+                        "commits": 7,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Colm O hEigeartaigh": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Stig Rohde D\u00f8ssing": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 21,
+                "committers": {
+                    "randgalt": {
+                        "commits": 14,
+                        "extensions": [
+                            "",
+                            "rdf",
+                            "xml",
+                            "md",
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Fangmin Lyu": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Stig Rohde D\u00f8ssing": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 22,
+                "committers": {
+                    "Fangmin Lyu": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Alex Kira": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 9,
+                        "extensions": [
+                            "",
+                            "java",
+                            "confluence",
+                            "md"
+                        ]
+                    },
+                    "OZAWA Tsuyoshi": {
+                        "commits": 1,
+                        "extensions": [
+                            "confluence"
+                        ]
+                    },
+                    "Tsuyoshi Ozawa": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "confluence",
+                            "md"
+                        ]
+                    },
+                    "Kenco": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "szekizoli": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 9,
+                "committers": {
+                    "randgalt": {
+                        "commits": 6,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Tsuyoshi Ozawa": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Zoltan Szekeres": {
+                        "commits": 2,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 81,
+                "committers": {
+                    "Zoltan Szekeres": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 75,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Tsuyoshi Ozawa": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "ayanamist": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Sylvain Wallez": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2016": {
+            "December": {
+                "commits": 18,
+                "committers": {
+                    "Sylvain Wallez": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 11,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Imesha": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Charles Ruhland": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 15,
+                "committers": {
+                    "Imesha": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 9,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Fangmin Lyu": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "eolivelli": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "allenlyu": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Evan Pollan": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 3,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 4,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "gtully": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Henrik Nordvik": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 4,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Mark Payne": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 43,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 39,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Julie Kim": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 79,
+                "committers": {
+                    "randgalt": {
+                        "commits": 58,
+                        "extensions": [
+                            "xml",
+                            "json",
+                            "java",
+                            "yaml",
+                            "confluence"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 15,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Algirdas Rascius": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Raymond Maug\u00e9": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 5,
+                "committers": {
+                    "randgalt": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Jorge Montero": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Ulrich Geilmann": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 12,
+                "committers": {
+                    "randgalt": {
+                        "commits": 9,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "nirdothan": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 36,
+                "committers": {
+                    "Dimitar Dyankov": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 26,
+                        "extensions": [
+                            "xml",
+                            "confluence",
+                            "java"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 9,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 34,
+                "committers": {
+                    "randgalt": {
+                        "commits": 32,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Joe Littlejohn": {
+                        "commits": 1,
+                        "extensions": [
+                            "confluence"
+                        ]
+                    }
+                }
+            }
+        },
+        "2015": {
+            "December": {
+                "commits": 3,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 5,
+                "committers": {
+                    "Mike Drob": {
+                        "commits": 1,
+                        "extensions": []
+                    },
+                    "Grant Henke": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Joe Littlejohn": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 40,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 7,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 31,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Glen Wallace": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Alexey Serba": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 64,
+                "committers": {
+                    "randgalt": {
+                        "commits": 60,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Njal Karevoll": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 90,
+                "committers": {
+                    "Cam McKenzie": {
+                        "commits": 7,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 58,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 8,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 4,
+                        "extensions": [
+                            "thrift",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Ioannis Canellos": {
+                        "commits": 8,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Alex Brasetvik": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 14,
+                "committers": {
+                    "Scott Blum": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Leandro Nunes": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 6,
+                        "extensions": [
+                            "thrift",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Tsuyoshi Ozawa": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 14,
+                "committers": {
+                    "randgalt": {
+                        "commits": 11,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Zhihong Zhang": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Tom Dyas": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 49,
+                "committers": {
+                    "randgalt": {
+                        "commits": 39,
+                        "extensions": [
+                            "thrift",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 10,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 32,
+                "committers": {
+                    "Alexander Makarenko": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 5,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 25,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 3,
+                "committers": {
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "David Kesler": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 4,
+                "committers": {
+                    "David Kesler": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 42,
+                "committers": {
+                    "Mark Petrovic": {
+                        "commits": 1,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 33,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Jesse Wilson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            }
+        },
+        "2014": {
+            "December": {
+                "commits": 8,
+                "committers": {
+                    "randgalt": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Karthik Kambatla": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "gopi": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 11,
+                "committers": {
+                    "Ricardo Ferreira": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Ioannis Canellos": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "confluence"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Brien Wheeler": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 21,
+                "committers": {
+                    "Scott Blum": {
+                        "commits": 13,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "sdapeng(Sun Dapeng)": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Brien Wheeler": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Leon Stein": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 4,
+                "committers": {
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Scott Blum": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 45,
+                "committers": {
+                    "Scott Blum": {
+                        "commits": 10,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 11,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 13,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 7,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Karthik Kumar": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Karel Vervaeke": {
+                        "commits": 2,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 45,
+                "committers": {
+                    "Scott Blum": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Mike Drob": {
+                        "commits": 6,
+                        "extensions": [
+                            "",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 23,
+                        "extensions": [
+                            "rdf",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Cam McKenzie": {
+                        "commits": 8,
+                        "extensions": [
+                            "",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Cameron McKenzie": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Patrick Peralta": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 51,
+                "committers": {
+                    "Cameron McKenzie": {
+                        "commits": 13,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 38,
+                        "extensions": [
+                            "xml",
+                            "sh",
+                            "java",
+                            "thrift",
+                            "txt",
+                            "png",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 88,
+                "committers": {
+                    "randgalt": {
+                        "commits": 81,
+                        "extensions": [
+                            "xml",
+                            "json",
+                            "sh",
+                            "java",
+                            "thrift",
+                            "txt",
+                            "png",
+                            "confluence"
+                        ]
+                    },
+                    "Dominic Wong": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "eceejcr": {
+                        "commits": 4,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 16,
+                "committers": {
+                    "randgalt": {
+                        "commits": 15,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "Ted Pearson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 15,
+                "committers": {
+                    "randgalt": {
+                        "commits": 13,
+                        "extensions": [
+                            "png",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "Joe Littlejohn": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "David Trott": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 17,
+                "committers": {
+                    "randgalt": {
+                        "commits": 17,
+                        "extensions": [
+                            "",
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 6,
+                "committers": {
+                    "randgalt": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "confluence"
+                        ]
+                    }
+                }
+            }
+        },
+        "2013": {
+            "December": {
+                "commits": 1,
+                "committers": {
+                    "randgalt": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 32,
+                "committers": {
+                    "randgalt": {
+                        "commits": 32,
+                        "extensions": [
+                            "",
+                            "rdf",
+                            "xml",
+                            "java",
+                            "txt",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 9,
+                "committers": {
+                    "randgalt": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Ioannis Canellos": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 27,
+                "committers": {
+                    "randgalt": {
+                        "commits": 21,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "jordan.zimmerman": {
+                        "commits": 6,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 1,
+                "committers": {
+                    "Ioannis Canellos": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 14,
+                "committers": {
+                    "Ioannis Canellos": {
+                        "commits": 4,
+                        "extensions": [
+                            "xml",
+                            "java"
+                        ]
+                    },
+                    "randgalt": {
+                        "commits": 7,
+                        "extensions": [
+                            "xml",
+                            "confluence",
+                            "java"
+                        ]
+                    },
+                    "Jay Zarfoss": {
+                        "commits": 3,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 26,
+                "committers": {
+                    "randgalt": {
+                        "commits": 25,
+                        "extensions": [
+                            "java",
+                            "confluence",
+                            "xml"
+                        ]
+                    },
+                    "cheddar": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 24,
+                "committers": {
+                    "randgalt": {
+                        "commits": 24,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "xml",
+                            "java",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 24,
+                "committers": {
+                    "randgalt": {
+                        "commits": 24,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "confluence"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 74,
+                "committers": {
+                    "randgalt": {
+                        "commits": 22,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "java",
+                            "txt",
+                            "confluence"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 51,
+                        "extensions": [
+                            "rdoc",
+                            "gitignore",
+                            "",
+                            "xml",
+                            "properties",
+                            "ico",
+                            "java",
+                            "css",
+                            "txt",
+                            "gradle",
+                            "apt",
+                            "png",
+                            "confluence"
+                        ]
+                    },
+                    "Whitney Sorenson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 15,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 13,
+                        "extensions": [
+                            "txt",
+                            "java"
+                        ]
+                    },
+                    "Bob T Builder": {
+                        "commits": 2,
+                        "extensions": [
+                            "properties"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 49,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 43,
+                        "extensions": [
+                            "xml",
+                            "properties",
+                            "java",
+                            "html",
+                            "txt"
+                        ]
+                    },
+                    "Bob T Builder": {
+                        "commits": 4,
+                        "extensions": [
+                            "properties"
+                        ]
+                    },
+                    "builds": {
+                        "commits": 2,
+                        "extensions": [
+                            "properties"
+                        ]
+                    }
+                }
+            }
+        },
+        "2012": {
+            "December": {
+                "commits": 30,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 30,
+                        "extensions": [
+                            "txt",
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 59,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 48,
+                        "extensions": [
+                            "gitignore",
+                            "xml",
+                            "properties",
+                            "java",
+                            "txt",
+                            "gradle"
+                        ]
+                    },
+                    "builds": {
+                        "commits": 4,
+                        "extensions": [
+                            "properties"
+                        ]
+                    },
+                    "Doug Daniels": {
+                        "commits": 5,
+                        "extensions": [
+                            "gitignore",
+                            "java"
+                        ]
+                    },
+                    "Answashe": {
+                        "commits": 2,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 65,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 65,
+                        "extensions": [
+                            "rdoc",
+                            "properties",
+                            "java",
+                            "txt",
+                            "gradle"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 70,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 66,
+                        "extensions": [
+                            "rdoc",
+                            "",
+                            "xml",
+                            "properties",
+                            "java",
+                            "txt",
+                            "gradle"
+                        ]
+                    },
+                    "Justin Ryan": {
+                        "commits": 4,
+                        "extensions": [
+                            "gradle",
+                            "gitignore"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 31,
+                "committers": {
+                    "Justin Ryan": {
+                        "commits": 6,
+                        "extensions": [
+                            "",
+                            "properties",
+                            "jar",
+                            "gradle",
+                            "bat"
+                        ]
+                    },
+                    "Jordan Zimmerman": {
+                        "commits": 21,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "properties",
+                            "java",
+                            "gradle",
+                            "txt"
+                        ]
+                    },
+                    "Patrick Braga-Henebry": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Warren Turkal": {
+                        "commits": 1,
+                        "extensions": [
+                            "gradle"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 55,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 50,
+                        "extensions": [
+                            "rdoc",
+                            "properties",
+                            "java",
+                            "txt",
+                            "gradle"
+                        ]
+                    },
+                    "Spencer Thomas": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "samuelgmartinez@gmail.com": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Adrian Muraru": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Artem Pasyechnyk": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Brandon Beck": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "June": {
+                "commits": 80,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 74,
+                        "extensions": [
+                            "gradle",
+                            "txt",
+                            "java",
+                            "properties"
+                        ]
+                    },
+                    "Jay Zarfoss": {
+                        "commits": 3,
+                        "extensions": [
+                            "txt",
+                            "gradle",
+                            "java"
+                        ]
+                    },
+                    "Brandon Beck": {
+                        "commits": 3,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "May": {
+                "commits": 44,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 42,
+                        "extensions": [
+                            "txt",
+                            "gradle",
+                            "java"
+                        ]
+                    },
+                    "Brandon Beck": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Chris Birchall": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    }
+                }
+            },
+            "April": {
+                "commits": 75,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 59,
+                        "extensions": [
+                            "rdoc",
+                            "",
+                            "xml",
+                            "properties",
+                            "java",
+                            "txt",
+                            "gradle",
+                            "jar"
+                        ]
+                    },
+                    "Simon Jackson": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Justin Ryan": {
+                        "commits": 13,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "prefs",
+                            "xml",
+                            "properties",
+                            "java",
+                            "gradle",
+                            "jar",
+                            "class",
+                            "classpath",
+                            "project"
+                        ]
+                    },
+                    "Andrew Gaul": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Adam Stegman": {
+                        "commits": 1,
+                        "extensions": [
+                            "gradle"
+                        ]
+                    }
+                }
+            },
+            "March": {
+                "commits": 47,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 44,
+                        "extensions": [
+                            "rdoc",
+                            "gitignore",
+                            "",
+                            "xml",
+                            "properties",
+                            "java",
+                            "gradle",
+                            "txt",
+                            "jar",
+                            "bat"
+                        ]
+                    },
+                    "Justin Ryan": {
+                        "commits": 3,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "prefs",
+                            "xml",
+                            "properties",
+                            "java",
+                            "gradle",
+                            "jar",
+                            "class",
+                            "classpath",
+                            "project",
+                            "bat"
+                        ]
+                    }
+                }
+            },
+            "February": {
+                "commits": 32,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 26,
+                        "extensions": [
+                            "gitignore",
+                            "xml",
+                            "java",
+                            "html",
+                            "txt"
+                        ]
+                    },
+                    "Gary Malouf": {
+                        "commits": 4,
+                        "extensions": [
+                            "txt",
+                            "gitignore",
+                            "java",
+                            "xml"
+                        ]
+                    },
+                    "Justin Ryan": {
+                        "commits": 2,
+                        "extensions": [
+                            "",
+                            "gitignore",
+                            "properties",
+                            "jar",
+                            "gradle",
+                            "bat"
+                        ]
+                    }
+                }
+            },
+            "January": {
+                "commits": 58,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 56,
+                        "extensions": [
+                            "rdoc",
+                            "xml",
+                            "java",
+                            "html",
+                            "txt",
+                            "gradle"
+                        ]
+                    },
+                    "Chris Birchall": {
+                        "commits": 1,
+                        "extensions": [
+                            "java"
+                        ]
+                    },
+                    "Niraj Tolia": {
+                        "commits": 1,
+                        "extensions": [
+                            "xml"
+                        ]
+                    }
+                }
+            }
+        },
+        "2011": {
+            "December": {
+                "commits": 57,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 57,
+                        "extensions": [
+                            "",
+                            "xml",
+                            "java",
+                            "html",
+                            "txt",
+                            "gradle"
+                        ]
+                    }
+                }
+            },
+            "November": {
+                "commits": 74,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 73,
+                        "extensions": [
+                            "",
+                            "gif",
+                            "xml",
+                            "java",
+                            "html",
+                            "txt",
+                            "gradle",
+                            "css"
+                        ]
+                    },
+                    "Andrew Chen": {
+                        "commits": 1,
+                        "extensions": [
+                            "gradle"
+                        ]
+                    }
+                }
+            },
+            "October": {
+                "commits": 61,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 61,
+                        "extensions": [
+                            "",
+                            "gif",
+                            "xml",
+                            "java",
+                            "html",
+                            "gradle",
+                            "css"
+                        ]
+                    }
+                }
+            },
+            "September": {
+                "commits": 11,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 11,
+                        "extensions": [
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "August": {
+                "commits": 35,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 35,
+                        "extensions": [
+                            "rdoc",
+                            "txt",
+                            "java",
+                            "xml"
+                        ]
+                    }
+                }
+            },
+            "July": {
+                "commits": 41,
+                "committers": {
+                    "Jordan Zimmerman": {
+                        "commits": 41,
+                        "extensions": [
+                            "rdoc",
+                            "txt",
+                            "xml",
+                            "java"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
