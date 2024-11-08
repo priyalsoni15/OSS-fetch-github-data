@@ -3,7 +3,7 @@ from app.services.graphql_services import fetch_commits_service
 from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github
 import os
 
-from app.services.processing import process_sankey_data
+from app.services.processing import process_sankey_data_all
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -31,7 +31,7 @@ def get_sankey_data(project_name):
     # Define the path to your data directory
     DATA_DIR = os.path.join('out', 'apache', 'github')  # Adjust the path as needed
 
-    sankey_data = process_sankey_data(project_name, DATA_DIR)
+    sankey_data = process_sankey_data_all(project_name, DATA_DIR)
     if sankey_data is None:
         return jsonify({'error': 'Project not found'}), 404
     return jsonify(sankey_data), 200

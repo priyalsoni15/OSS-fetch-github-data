@@ -1,6 +1,7 @@
 import os
 import json
 import re
+from datetime import datetime
 
 def extract_number(input_string):
     res = re.findall(r'\d+', input_string)
@@ -23,16 +24,10 @@ def make_the_nested_list(df):
         result.append(mylist)
     return result
 
-def process_sankey_data(project_name, data_dir):
+def process_sankey_data_all(project_name, data_dir):
     """
-    Processes the data for a given project to generate nodes and links for the Sankey diagram.
-
-    Parameters:
-    - project_name (str): The name of the project.
-    - data_dir (str): The directory where the project JSON files are stored.
-
-    Returns:
-    - dict: A dictionary containing 'nodes' and 'links' for the Sankey diagram.
+    Processes the data for a given project to generate nodes and links for the Sankey diagram,
+    including date information for filtering on the frontend.
     """
     data_path = os.path.join(data_dir, f"{project_name}.json")
     if not os.path.exists(data_path):
@@ -45,7 +40,6 @@ def process_sankey_data(project_name, data_dir):
         print(f"Error decoding JSON for project {project_name}: {e}")
         return None
 
-    # Access the 'data' key in the JSON
     data = json_data.get('data', {})
     if not isinstance(data, dict):
         print(f"'data' key is missing or not a dictionary in project {project_name}")
@@ -56,6 +50,9 @@ def process_sankey_data(project_name, data_dir):
     node_map = {}
     current_node_id = 0
 
+    # Keep track of all dates
+    all_dates = set()
+
     for year, months in data.items():
         if not isinstance(months, dict):
             print(f"Invalid data format for months in year {year} of project {project_name}")
@@ -65,6 +62,10 @@ def process_sankey_data(project_name, data_dir):
             if not isinstance(details, dict):
                 print(f"Invalid data format for details in month {month} of project {project_name}")
                 continue
+
+            # Construct the date string
+            current_date_str = f"{year}-{month}"
+            all_dates.add(current_date_str)
 
             committers = details.get('committers', {})
             if not isinstance(committers, dict):
@@ -109,11 +110,15 @@ def process_sankey_data(project_name, data_dir):
                     # Calculate weight for the link
                     weight = commits / num_extensions
 
-                    # Create the link from committer to file extension
+                    # Create the link from committer to file extension with date
                     links.append({
                         "source": node_map[committer_name],
                         "target": node_map[ext_name],
-                        "value": weight
+                        "value": weight,
+                        "date": current_date_str  # Include date information
                     })
 
-    return {"nodes": nodes, "links": links}
+    # Sort dates
+    sorted_dates = sorted(list(all_dates), key=lambda x: datetime.strptime(x, "%Y-%B"))
+
+    return {"nodes": nodes, "links": links, "dates": sorted_dates}
