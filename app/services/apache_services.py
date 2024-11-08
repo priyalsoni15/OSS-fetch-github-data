@@ -107,6 +107,53 @@ def fetch_apache_repositories_from_github():
 
     return repos
 
+# --- New function to fetch Apache projects data ---
+def fetch_apache_projects_data():
+    logger.info("Fetching Apache projects data...")
+    url = 'https://projects.apache.org/json/foundation/projects.json'
+
+    try:
+        response = requests.get(url)
+        if response.status_code != 200:
+            logger.error(f"Failed to fetch data from Apache projects JSON. Status code: {response.status_code}")
+            return []
+
+        data = response.json()
+        projects = []
+
+        for project_key, project_info in data.items():
+            project = {
+                'name': project_info.get('name', 'N/A'),
+                'description': project_info.get('description', 'N/A'),
+                'homepage': project_info.get('homepage', 'N/A'),
+                'status': project_info.get('project_status', 'N/A'),
+                'start_date': project_info.get('start_date', 'N/A'),
+                'end_date': project_info.get('end_date', 'N/A'),
+                'category': project_info.get('category', []),
+                'mailing_list': project_info.get('mailing_list', []),
+                'sponsor': project_info.get('sponsor', 'N/A')
+            }
+            projects.append(project)
+
+        # Save projects data to JSON file
+        output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'projects')
+        os.makedirs(output_dir, exist_ok=True)
+        output_file = os.path.join(output_dir, 'apache_projects.json')
+        with open(output_file, "w") as json_file:
+            json.dump(projects, json_file, indent=4)
+
+        logger.info(f"Fetched and saved {len(projects)} Apache projects.")
+
+        return projects
+
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Request failed: {e}")
+        return []
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON decode error: {e}")
+        return []
+
+
 # --- The functions below are for fetching the Apache Mailing list data ---
 
 def fetch_mailing_list_data(repo_name):
