@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import mailbox
 import os
 import random
@@ -9,6 +9,7 @@ import json
 import time
 from itertools import cycle
 from app.config import Config
+from bs4 import BeautifulSoup
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -108,77 +109,110 @@ def fetch_apache_repositories_from_github():
     return repos
 
 # --- New function to fetch Apache projects data ---
-def fetch_apache_projects_data():
-    logger.info("Fetching Apache projects data...")
-    url = 'https://projects.apache.org/json/foundation/projects.json'
+def fetch_all_podlings():
+    url = 'https://incubator.apache.org/projects/'
+    headers = {'User-Agent': 'Mozilla/5.0'}
 
     try:
-        response = requests.get(url)
-        if response.status_code != 200:
-            logger.error(f"Failed to fetch data from Apache projects JSON. Status code: {response.status_code}")
-            return []
-
-        data = response.json()
-        projects = []
-
-        for project_key, project_info in data.items():
-            # Parse and format dates
-            start_date_raw = project_info.get('start_date', '')
-            end_date_raw = project_info.get('end_date', '')
-
-            # Convert dates to 'YYYY-MM-DD' format
-            start_date = parse_date(start_date_raw)
-            end_date = parse_date(end_date_raw)
-
-            project = {
-                'name': project_info.get('name', 'N/A'),
-                'description': project_info.get('description', 'N/A'),
-                'homepage': project_info.get('homepage', 'N/A'),
-                'status': project_info.get('project_status', 'N/A'),
-                'start_date': start_date or 'N/A',
-                'end_date': end_date or 'N/A',
-                'category': project_info.get('category', []),
-                'mailing_list': project_info.get('mailing_list', []),
-                'sponsor': project_info.get('sponsor', 'N/A')
-            }
-            projects.append(project)
-
-        # Save projects data to JSON file
-        output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'projects')
-        os.makedirs(output_dir, exist_ok=True)
-        output_file = os.path.join(output_dir, 'apache_projects.json')
-        with open(output_file, "w") as json_file:
-            json.dump(projects, json_file, indent=4)
-
-        logger.info(f"Fetched and saved {len(projects)} Apache projects.")
-
-        return projects
-
-    except requests.exceptions.RequestException as e:
-        logger.error(f"Request failed: {e}")
-        return []
-    except json.JSONDecodeError as e:
-        logger.error(f"JSON decode error: {e}")
-        return []
-
-def parse_date(date_str):
-    """Parses date strings from the Apache projects data and formats them as 'YYYY-MM-DD'."""
-    if not date_str:
-        return None
-    try:
-        # Try parsing the date in known formats
-        date_formats = ['%Y/%m/%d', '%Y-%m-%d', '%Y-%m', '%Y']
-        for fmt in date_formats:
-            try:
-                date_obj = datetime.strptime(date_str, fmt)
-                return date_obj.strftime('%Y-%m-%d')
-            except ValueError:
-                continue
-        logger.warning(f"Unknown date format: {date_str}")
-        return None
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
     except Exception as e:
-        logger.error(f"Error parsing date '{date_str}': {e}")
-        return None
+        logger.error(f"Error fetching the projects page: {e}")
+        return []
+
+    soup = BeautifulSoup(response.content, 'html.parser')
+
+    # Sections to parse
+    sections = [
+        {'id': 'current', 'status': 'current'},
+        {'id': 'graduated', 'status': 'graduated'},
+        {'id': 'retired', 'status': 'retired'}
+    ]
+
+    all_projects = []
+
+    for section in sections:
+        projects = parse_podling_section(soup, section['id'], section['status'])
+        all_projects.extend(projects)
+
+    return all_projects
+
+def parse_podling_section(soup, section_id, status):
+    section_header = soup.find('h3', id=section_id)
+    if not section_header:
+        logger.warning(f"Could not find section with id '{section_id}'.")
+        return []
+
+    # Find the table immediately following the header
+    table = section_header.find_next('table', class_='colortable')
+    if not table:
+        logger.warning(f"Could not find the projects table for section '{section_id}'.")
+        return []
+
+    projects = []
+
+    # Iterate over the table rows, skipping the header row
+    rows = table.find_all('tr')[1:]
+
+    for row in rows:
+        cols = row.find_all('td')
+        if len(cols) < 6:
+            continue  # Skip if not enough columns
+
+        # Extract data from columns
+        project_td = cols[0]
+        aliases_td = cols[1]
+        description_td = cols[2]
+        sponsor_td = cols[3]
+        mentors_td = cols[4]
+        start_date_td = cols[5]
+
+        # Project name and link
+        project_link = project_td.find('a')
+        if project_link:
+            project_name = project_link.text.strip()
+            project_url = 'https://incubator.apache.org' + project_link['href']
+        else:
+            project_name = project_td.text.strip()
+            project_url = ''
+
+        # Aliases
+        aliases = aliases_td.get_text(separator=', ').strip()
+
+        # Description
+        description = description_td.text.strip()
+
+        # Sponsor and Champion
+        # The sponsor and champion may be separated by <br/> tags
+        sponsor_html = sponsor_td.decode_contents()
+        sponsor_parts = sponsor_html.split('<br/>')
+        sponsor = BeautifulSoup(sponsor_parts[0], 'html.parser').get_text(strip=True)
+        champion = ''
+        if len(sponsor_parts) > 1:
+            champion_text = sponsor_parts[1]
+            champion = BeautifulSoup(champion_text, 'html.parser').get_text(strip=True).strip('()')
+
+        # Mentors
+        mentors = [mentor.strip() for mentor in mentors_td.get_text(separator=',').split(',') if mentor.strip()]
+
+        # Start Date
+        start_date = start_date_td.text.strip()
+
+        project_info = {
+            'project_name': project_name,
+            'project_url': project_url,
+            'aliases': aliases,
+            'description': description,
+            'sponsor': sponsor,
+            'champion': champion,
+            'mentors': mentors,
+            'start_date': start_date,
+            'status': status  # Add the status of the project
+        }
+
+        projects.append(project_info)
+
+    return projects
 
 
 # --- The functions below are for fetching the Apache Mailing list data ---

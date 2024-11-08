@@ -1,12 +1,16 @@
 from flask import Blueprint, jsonify, redirect, url_for
 from app.services.graphql_services import fetch_commits_service
-from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_apache_projects_data 
+from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_all_podlings
 import os
-import json
+import logging
 
 from app.services.processing import process_sankey_data_all
 
 main_routes = Blueprint('main_routes', __name__)
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # [Tested] Homepage
 @main_routes.route('/')
@@ -39,19 +43,10 @@ def get_sankey_data(project_name):
 
 # This will fetch all the projects from Apache website
 @main_routes.route('/api/projects', methods=['GET'])
-def get_apache_projects():
-    output_file = os.path.join(os.getcwd(), 'out', 'apache', 'projects', 'apache_projects.json')
-
-    # If the file exists, read from it
-    if os.path.exists(output_file):
-        with open(output_file, 'r') as f:
-            projects = json.load(f)
-    else:
-        # If the file doesn't exist, fetch the data
-        projects = fetch_apache_projects_data()
-        if not projects:
-            return jsonify({'error': 'Failed to fetch Apache projects data'}), 500
-
+def get_all_projects():
+    projects = fetch_all_podlings()
+    if not projects:
+        return jsonify({'error': 'Failed to fetch Apache projects data'}), 500
     return jsonify({'projects': projects}), 200
 
 # [Tested] This will fetch the mailing list data for Apache organization
