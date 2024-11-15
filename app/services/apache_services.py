@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 import mailbox
 import os
 import random
@@ -10,12 +10,13 @@ import time
 from itertools import cycle
 from app.config import Config
 from bs4 import BeautifulSoup
+import difflib
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
+# This fetches all the repositories from a particular organization i.e. Apache, or Eclipse from Github link
 def fetch_apache_repositories_from_github():
     logging.info("Fetching Apache repositories from GitHub...")
     tokens = Config.GITHUB_TOKENS or [Config.GITHUB_TOKEN]
@@ -80,7 +81,7 @@ def fetch_apache_repositories_from_github():
             variables['cursor'] = repositories['pageInfo']['endCursor']
 
             for repo in repositories['nodes']:
-                repos.append(repo['url'])
+                repos.append({'name': repo['name'], 'url': repo['url']})
 
             logging.info(f"Fetched {len(repos)} repositories from GitHub so far.")
 
@@ -102,13 +103,14 @@ def fetch_apache_repositories_from_github():
     # Save repos data to JSON file
     output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'parent')
     os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, 'apache_repos_github.json')
+    output_file = os.path.join(output_dir, 'apache_all_project_urls_github.json')
     with open(output_file, "w") as json_file:
         json.dump(repos, json_file, indent=4)
 
     return repos
 
 # --- New function to fetch Apache projects data ---
+# This fetches all the data from Apache website
 def fetch_all_podlings():
     url = 'https://incubator.apache.org/projects/'
     headers = {'User-Agent': 'Mozilla/5.0'}
@@ -137,6 +139,7 @@ def fetch_all_podlings():
 
     return all_projects
 
+# This parses each project's Apache page and gets the relevant data
 def parse_podling_section(soup, section_id, status):
     section_header = soup.find('h3', id=section_id)
     if not section_header:
@@ -172,9 +175,11 @@ def parse_podling_section(soup, section_id, status):
         if project_link:
             project_name = project_link.text.strip()
             project_url = 'https://incubator.apache.org' + project_link['href']
+            project_id = project_link['href'].split('/')[-1].replace('.html', '').strip()
         else:
             project_name = project_td.text.strip()
             project_url = ''
+            project_id = project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
 
         # Aliases
         aliases = aliases_td.get_text(separator=', ').strip()
@@ -200,6 +205,7 @@ def parse_podling_section(soup, section_id, status):
 
         project_info = {
             'project_name': project_name,
+            'project_id' : project_id,
             'project_url': project_url,
             'aliases': aliases,
             'description': description,
@@ -209,7 +215,7 @@ def parse_podling_section(soup, section_id, status):
             'start_date': start_date,
             'status': status  # Add the status of the project
         }
-
+        
         projects.append(project_info)
 
     return projects
@@ -313,49 +319,51 @@ def fetch_apache_mailing_list_data():
     logger.info(message)
     return message
 
-
-# Function to fetch all repositories from GitHub Apache organization
-def fetch_all_github_projects():
+# This matches Apache projects ID with Github project link names 
+def fetch_all_podlings_with_github_repos():
+    # Fetch all repositories under 'apache' organization
     repos = fetch_apache_repositories_from_github()
-    if isinstance(repos, list):
-        return [repo['name'] for repo in repos if isinstance(repo, dict) and 'name' in repo]
-    else:
-        logger.error("Unexpected data format received from fetch_apache_repositories_from_github.")
-        return []
+    repo_name_to_url = {repo['name'].lower(): repo['url'] for repo in repos}
+    repo_names = list(repo_name_to_url.keys())
 
-# Function to create mapping between podling names and GitHub repository names
-def create_project_mapping():
-    podlings = fetch_all_podlings()
-    github_projects = fetch_all_github_projects()
+    # Fetch all podlings
+    all_projects = fetch_all_podlings()
 
-    project_mapping = {}
+    for project in all_projects:
+        # Use project_id for matching
+        project_id = project['project_id'].lower()
+        matched_repo_name = None
 
-    for podling in podlings:
-        # Ensure 'name' key exists in podling
-        if 'project_name' not in podling and 'name' in podling:
-            podling['project_name'] = podling.pop('name')
-            logger.warning(f"Podling entry missing 'project_name', attempting to recover with 'name': {podling}")
-            continue
+        # Attempt direct match
+        if project_id in repo_name_to_url:
+            matched_repo_name = project_id
+        else:
+            # Try matching with variations
+            possible_names = [
+                project_id,
+                project_id.replace('-', ''),
+                project_id.replace('_', ''),
+                project_id.replace('-', '_'),
+                project_id.replace('_', '-')
+            ]
 
-        # Normalize podling name by removing spaces and converting to lowercase
-        normalized_podling_name = podling['project_name'].replace(' ', '').lower()
-        
-        for github_project in github_projects:
-            # Normalize GitHub project name by removing dashes and converting to lowercase
-            normalized_github_project = github_project.replace('-', '').lower()
-            
-            # Compare the normalized names to find matches
-            if normalized_podling_name == normalized_github_project:
-                project_mapping[podling['project_name']] = github_project
-                break
+            # Use difflib to find close matches
+            close_matches = difflib.get_close_matches(project_id, repo_names, n=1, cutoff=0.8)
+            if close_matches:
+                matched_repo_name = close_matches[0]
+            else:
+                # Try matching with possible variations
+                for name in possible_names:
+                    close_matches = difflib.get_close_matches(name, repo_names, n=1, cutoff=0.8)
+                    if close_matches:
+                        matched_repo_name = close_matches[0]
+                        break
 
-    # Ensure the directory exists before saving the mapping
-    mapping_dir = os.path.join(os.getcwd(), 'out', 'apache', 'parent')
-    os.makedirs(mapping_dir, exist_ok=True)
-    mapping_file_path = os.path.join(mapping_dir, 'project_mapping.json')
+        if matched_repo_name:
+            project['github_repo_name'] = matched_repo_name
+            project['github_url'] = repo_name_to_url[matched_repo_name]
+        else:
+            project['github_repo_name'] = None
+            project['github_url'] = None
 
-    # Save the mapping to a JSON file
-    with open(mapping_file_path, 'w') as mapping_file:
-        json.dump(project_mapping, mapping_file, indent=4)
-
-    logger.info(f"Project mapping saved to {mapping_file_path}")
+    return all_projects

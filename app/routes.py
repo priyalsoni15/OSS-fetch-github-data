@@ -1,7 +1,7 @@
 import json
 from flask import Blueprint, jsonify, redirect, url_for
 from app.services.graphql_services import fetch_commits_service
-from app.services.apache_services import create_project_mapping, fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_all_podlings
+from app.services.apache_services import fetch_all_podlings_with_github_repos, fetch_apache_mailing_list_data, fetch_apache_repositories_from_github
 from app.services.processing import fetch_commit_data_service, process_sankey_data_all
 import os
 import logging
@@ -18,11 +18,16 @@ logger = logging.getLogger(__name__)
 def landing_page():
     return "Welcome to the Apache Organization Repository Fetcher!"
 
-# [Tested] This would fetch all the repos from the Apache organization
+# [This should be depcrecated] [Tested] This would fetch all the repos from the Apache organization
 @main_routes.route('/fetch_repos', methods=['GET'])
 def fetch_repos():
     repos = fetch_apache_repositories_from_github()
     return jsonify(repos), 200
+
+@main_routes.route('/api/projects', methods=['GET'])
+def get_projects():
+    projects = fetch_all_podlings_with_github_repos()
+    return jsonify({'projects': projects}), 200
 
 # [Tested] This will fetch all the commits for a github repo
 @main_routes.route('/fetch_commits', methods=['GET'])
@@ -49,14 +54,6 @@ def get_sankey_data(project_name):
         json.dump(sankey_data, f, indent=4)
 
     return jsonify(sankey_data), 200
-
-# This will fetch all the projects from Apache website
-@main_routes.route('/api/projects', methods=['GET'])
-def get_all_projects():
-    projects = fetch_all_podlings()
-    if not projects:
-        return jsonify({'error': 'Failed to fetch Apache projects data'}), 500
-    return jsonify({'projects': projects}), 200
 
 # [Tested] This will fetch the mailing list data for Apache organization
 # [Additional functionality] Currently, the repo list is manual, once this is complete, I want to fetch the repos from the json or stored files.
