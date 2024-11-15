@@ -1,0 +1,707 @@
+[
+    {
+        "year": "2024",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2024",
+        "month": "February",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2023",
+        "month": "December",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "November",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "October",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "August",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "July",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2023",
+        "month": "June",
+        "total_commits": 7,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 7
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 7
+    },
+    {
+        "year": "2023",
+        "month": "May",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Superskyyy",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "March",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 5
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2022",
+        "month": "November",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            },
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            },
+            {
+                "name": "mrproliu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "September",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 2
+            },
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "August",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 3
+            },
+            {
+                "name": "mrproliu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "July",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "June",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Jarvis G",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "May",
+        "total_commits": 6,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            },
+            {
+                "name": "mrproliu",
+                "commits": 5
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2022",
+        "month": "April",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 2
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 4
+            },
+            {
+                "name": "mrproliu",
+                "commits": 3
+            },
+            {
+                "name": "Alexwang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2022",
+        "month": "March",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "January",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 4
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2021",
+        "month": "December",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Brandon Fergerson",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "November",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "October",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 7
+            },
+            {
+                "name": "mrproliu",
+                "commits": 2
+            },
+            {
+                "name": "zhang-wei",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2021",
+        "month": "September",
+        "total_commits": 6,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 2
+            },
+            {
+                "name": "JarvisG495",
+                "commits": 2
+            },
+            {
+                "name": "mrproliu",
+                "commits": 1
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "August",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "\u5434\u665f Wu Sheng",
+                "commits": 1
+            },
+            {
+                "name": "Team317",
+                "commits": 3
+            },
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 1
+            },
+            {
+                "name": "JarvisG495",
+                "commits": 1
+            },
+            {
+                "name": "mrproliu",
+                "commits": 2
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "July",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "mrproliu",
+                "commits": 2
+            },
+            {
+                "name": "Team317",
+                "commits": 2
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "June",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 2
+            },
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            },
+            {
+                "name": "Zhenxu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "April",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "March",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "February",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 3
+            },
+            {
+                "name": "Zhenxu Ke",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "January",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 3
+            },
+            {
+                "name": "Zhenxu Ke",
+                "commits": 1
+            },
+            {
+                "name": "Gao Hongtao",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "December",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Zhenxu Ke",
+                "commits": 2
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "November",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 5
+            },
+            {
+                "name": "Zhenxu Ke",
+                "commits": 1
+            },
+            {
+                "name": "Gao Hongtao",
+                "commits": 2
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2020",
+        "month": "October",
+        "total_commits": 7,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 7
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 7
+    },
+    {
+        "year": "2020",
+        "month": "September",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 3
+            },
+            {
+                "name": "huawei",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "August",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "huawei",
+                "commits": 2
+            },
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 6
+            },
+            {
+                "name": "\u5434\u665f Wu Sheng",
+                "commits": 1
+            },
+            {
+                "name": "Gao Hongtao",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2020",
+        "month": "July",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "Hoshea\u00a0Jiang",
+                "commits": 3
+            },
+            {
+                "name": "kezhenxu94",
+                "commits": 3
+            },
+            {
+                "name": "Gao Hongtao",
+                "commits": 2
+            },
+            {
+                "name": "\u5434\u665f Wu Sheng",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2020",
+        "month": "March",
+        "total_commits": 13,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 11
+            },
+            {
+                "name": "zhang-wei",
+                "commits": 1
+            },
+            {
+                "name": "\u5434\u665f Wu Sheng",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2020",
+        "month": "January",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2019",
+        "month": "December",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "kezhenxu94",
+                "commits": 7
+            },
+            {
+                "name": "clk1st",
+                "commits": 1
+            },
+            {
+                "name": "innerpeacez",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2019",
+        "month": "November",
+        "total_commits": 37,
+        "committers": [
+            {
+                "name": "\u4f55\u5ef6\u9f99",
+                "commits": 1
+            },
+            {
+                "name": "kezhenxu94",
+                "commits": 26
+            },
+            {
+                "name": "zhang-wei",
+                "commits": 2
+            },
+            {
+                "name": "\u5434\u665f Wu Sheng",
+                "commits": 7
+            },
+            {
+                "name": "heyanlong",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 8
+    }
+]

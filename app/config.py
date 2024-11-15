@@ -10,6 +10,8 @@ class Config:
     APACHE_REPOSITORIES = [
         "https://lists.apache.org/list.html?dev@arrow.apache.org",
     ]
+    
+    DATA_DIR = os.path.join(os.getcwd(), 'out', 'apache', 'github')
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod

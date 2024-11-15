@@ -1,10 +1,10 @@
-from flask import Blueprint, jsonify, redirect, url_for
+from flask import Blueprint, jsonify, redirect, url_for, current_app
 from app.services.graphql_services import fetch_commits_service
 from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_all_podlings
+from app.services.processing import fetch_commit_data_service, process_sankey_data_all, get_commit_statistics, sanitize_project_name
 import os
 import logging
-
-from app.services.processing import process_sankey_data_all
+import math
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -62,3 +62,53 @@ def handle_invalid_path(invalid_path):
     if invalid_path.startswith('api/'):
         return jsonify({'error': 'Invalid API endpoint'}), 404
     return redirect(url_for('main_routes.landing_page'))
+
+# [Discarded] [New] Endpoint to fetch commit statistics for a specific project (technical network data)
+@main_routes.route('/api/old/<project_name>', methods=['GET'])
+def get_commit_statistics_endpoint(project_name):
+    """
+    Endpoint to fetch commit statistics for a specific project.
+
+    URL Example: /api/tech_net/ProjectName
+    """
+    try:
+        # Sanitize the project name
+        project_name = sanitize_project_name(project_name)
+        
+        # Access DATA_DIR from the config
+        DATA_DIR = current_app.config['DATA_DIR']
+
+        # Call the service function to get commit statistics
+        commit_stats = get_commit_statistics(project_name, DATA_DIR)
+        
+        if "error" in commit_stats:
+            return jsonify(commit_stats), 404
+        
+        return jsonify(commit_stats), 200
+    
+    except Exception as e:
+        logging.error(f"An error occurred in the endpoint for project '{project_name}': {e}")
+        logging.exception("Exception details:")
+        return jsonify({"error": "Internal server error."}), 500
+    
+@main_routes.route('/api/tech_net/other/<project_name>', methods=['GET'])
+def fetch_commit_data(project_name):
+    try:
+        output = fetch_commit_data_service(project_name)
+        # Add commits per committer calculation and total committers
+        for month_data in output:
+            # Filter out bot committers
+            filtered_committers = [committer for committer in month_data["committers"] if not committer["name"].endswith("[bot]")]
+            total_committers = len(filtered_committers)
+            month_data["total_committers"] = total_committers
+            if total_committers > 0:
+                month_data["commits_per_committer"] = math.ceil(month_data["total_commits"] / total_committers)
+            else:
+                month_data["commits_per_committer"] = 0
+            month_data["committers"] = filtered_committers
+        return jsonify(output), 200
+    except FileNotFoundError:
+        return jsonify({"error": f"Commit data for project '{project_name}' not found."}), 404
+    except Exception as e:
+        logging.error(f"An error occurred while fetching commit data for project '{project_name}': {e}")
+        return jsonify({"error": "An error occurred while fetching commit data."}), 500

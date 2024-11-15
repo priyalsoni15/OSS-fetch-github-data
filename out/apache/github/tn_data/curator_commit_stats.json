@@ -1,0 +1,2884 @@
+[
+    {
+        "year": "2024",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Philipp Dolif",
+                "commits": 1
+            },
+            {
+                "name": "Kezhu Wang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2024",
+        "month": "September",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 2
+            },
+            {
+                "name": "Pablo Francisco P\u00e9rez Hidalgo",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2024",
+        "month": "June",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "shalk(xiao kun)",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 3
+            },
+            {
+                "name": "Hexiaoqiao",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2024",
+        "month": "May",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 1
+            },
+            {
+                "name": "Laurent Goujon",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2024",
+        "month": "February",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2024",
+        "month": "January",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2023",
+        "month": "December",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "shenjianeng",
+                "commits": 1
+            },
+            {
+                "name": "Hannah Chi",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "October",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Sergey Nuyanzin",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2023",
+        "month": "September",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2023",
+        "month": "August",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 3
+            },
+            {
+                "name": "Kezhu Wang",
+                "commits": 6
+            },
+            {
+                "name": "Slavik",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2023",
+        "month": "July",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2023",
+        "month": "June",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 2
+            },
+            {
+                "name": "tison",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2023",
+        "month": "May",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 2
+            },
+            {
+                "name": "tison",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2023",
+        "month": "April",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 5
+            },
+            {
+                "name": "tison",
+                "commits": 3
+            },
+            {
+                "name": "Adam's",
+                "commits": 1
+            },
+            {
+                "name": "Ryan Ruel",
+                "commits": 1
+            },
+            {
+                "name": "David Copley",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2023",
+        "month": "March",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "Denes Daniel",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 4
+            },
+            {
+                "name": "Kezhu Wang",
+                "commits": 3
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2023",
+        "month": "February",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Kezhu Wang",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "November",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Enrico Olivelli",
+                "commits": 1
+            },
+            {
+                "name": "Matthias Pohl",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "September",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "August",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 2
+            },
+            {
+                "name": "Sergey Nuyanzin",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "July",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "Jo\u00e3o Alves",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 6
+            },
+            {
+                "name": "Kezhu Wang",
+                "commits": 2
+            },
+            {
+                "name": "Roman Leventov",
+                "commits": 1
+            },
+            {
+                "name": "exceptionfactory",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2022",
+        "month": "June",
+        "total_commits": 6,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 5
+            },
+            {
+                "name": "Paul Boutes",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2022",
+        "month": "May",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 1
+            },
+            {
+                "name": "belugabehr",
+                "commits": 1
+            },
+            {
+                "name": "Jingguo Yao",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "April",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "sdk2",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2022",
+        "month": "March",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Horv\u00e1th D\u00f3ra",
+                "commits": 1
+            },
+            {
+                "name": "Enrico Olivelli",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2022",
+        "month": "February",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Nicol\u00f2 Boschi",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 1
+            },
+            {
+                "name": "Martin Grigorov",
+                "commits": 2
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "December",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Nicol\u00f2 Boschi",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "November",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Scott Kirkpatrick",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "October",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 1
+            },
+            {
+                "name": "Matthew E. Dawson",
+                "commits": 1
+            },
+            {
+                "name": "faucct",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "August",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Ryan Ruel",
+                "commits": 2
+            },
+            {
+                "name": "wx930910",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "July",
+        "total_commits": 7,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 3
+            },
+            {
+                "name": "liran2000",
+                "commits": 1
+            },
+            {
+                "name": "Qiang Zhao",
+                "commits": 1
+            },
+            {
+                "name": "Enrico Olivelli",
+                "commits": 1
+            },
+            {
+                "name": "Colin Kuo",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "May",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Francesco Nigro",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "March",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Paul Boutes",
+                "commits": 2
+            },
+            {
+                "name": "Ammar Khaku",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2021",
+        "month": "February",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Josh Slocum",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2021",
+        "month": "January",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "wangjie",
+                "commits": 1
+            },
+            {
+                "name": "Enrico Olivelli",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "November",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2020",
+        "month": "October",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Tam\u00e1s P\u00e9nzes",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2020",
+        "month": "September",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "hjyun",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2020",
+        "month": "August",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "tison",
+                "commits": 3
+            },
+            {
+                "name": "Enrico Olivelli",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "July",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Enrico Olivelli",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2020",
+        "month": "June",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "Enrico Olivelli",
+                "commits": 5
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2020",
+        "month": "May",
+        "total_commits": 18,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 4
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "randgalt",
+                "commits": 6
+            },
+            {
+                "name": "chevaris",
+                "commits": 3
+            },
+            {
+                "name": "tison",
+                "commits": 3
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2020",
+        "month": "April",
+        "total_commits": 18,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 16
+            },
+            {
+                "name": "bigmarvin",
+                "commits": 1
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 6
+    },
+    {
+        "year": "2020",
+        "month": "March",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "bigmarvin",
+                "commits": 1
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 4
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            },
+            {
+                "name": "tison",
+                "commits": 2
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "February",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 2
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            },
+            {
+                "name": "Oleksandr Porunov",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2020",
+        "month": "January",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Shay Shimony",
+                "commits": 1
+            },
+            {
+                "name": "Roelof Naude",
+                "commits": 1
+            },
+            {
+                "name": "\u5eb7\u667a\u51ac",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2019",
+        "month": "November",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Tatu Saloranta",
+                "commits": 1
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2019",
+        "month": "October",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2019",
+        "month": "September",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "Shay Shimony",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 6
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 3
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2019",
+        "month": "August",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "Stephan Hohe",
+                "commits": 1
+            },
+            {
+                "name": "Shay Shimony",
+                "commits": 3
+            },
+            {
+                "name": "Aldrin Seychell",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            },
+            {
+                "name": "abcdenis",
+                "commits": 1
+            },
+            {
+                "name": "asdf2014",
+                "commits": 1
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2019",
+        "month": "July",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "Enrico Olivelli",
+                "commits": 2
+            },
+            {
+                "name": "Shay Shimony",
+                "commits": 2
+            },
+            {
+                "name": "shayshim",
+                "commits": 1
+            },
+            {
+                "name": "Emre Tetik",
+                "commits": 3
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2019",
+        "month": "May",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Aldrin Seychell",
+                "commits": 1
+            },
+            {
+                "name": "Shay Shimony",
+                "commits": 1
+            },
+            {
+                "name": "JiriOndrusek",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2019",
+        "month": "April",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "shayshim",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2019",
+        "month": "March",
+        "total_commits": 12,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 3
+            },
+            {
+                "name": "Beluga Behr",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 8
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2019",
+        "month": "February",
+        "total_commits": 17,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 15
+            },
+            {
+                "name": "Roman Leventov",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 6
+    },
+    {
+        "year": "2019",
+        "month": "January",
+        "total_commits": 6,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 5
+            },
+            {
+                "name": "Roman Leventov",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2018",
+        "month": "December",
+        "total_commits": 55,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 42
+            },
+            {
+                "name": "Roman Leventov",
+                "commits": 1
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 6
+            },
+            {
+                "name": "hebelala",
+                "commits": 1
+            },
+            {
+                "name": "Hendrik Haddorp",
+                "commits": 2
+            },
+            {
+                "name": "josh gruenberg",
+                "commits": 3
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 10
+    },
+    {
+        "year": "2018",
+        "month": "November",
+        "total_commits": 7,
+        "committers": [
+            {
+                "name": "Roman Leventov",
+                "commits": 2
+            },
+            {
+                "name": "nickhill",
+                "commits": 5
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2018",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Max-Pudov",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2018",
+        "month": "September",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "Rama",
+                "commits": 6
+            },
+            {
+                "name": "randgalt",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2018",
+        "month": "August",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Rama",
+                "commits": 1
+            },
+            {
+                "name": "rsouhrain",
+                "commits": 1
+            },
+            {
+                "name": "Martin Betak",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2018",
+        "month": "July",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2018",
+        "month": "June",
+        "total_commits": 24,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 17
+            },
+            {
+                "name": "Enrico Olivelli",
+                "commits": 6
+            },
+            {
+                "name": "Christopher McTague",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2018",
+        "month": "May",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2018",
+        "month": "April",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 1
+            },
+            {
+                "name": "krajcsovszkig-ms",
+                "commits": 1
+            },
+            {
+                "name": "javando",
+                "commits": 6
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2018",
+        "month": "March",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Karl-Philipp Richter",
+                "commits": 1
+            },
+            {
+                "name": "Lee Dongjin",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2018",
+        "month": "February",
+        "total_commits": 10,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 7
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 2
+            },
+            {
+                "name": "nickhill",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2018",
+        "month": "January",
+        "total_commits": 7,
+        "committers": [
+            {
+                "name": "nickhill",
+                "commits": 3
+            },
+            {
+                "name": "randgalt",
+                "commits": 4
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2017",
+        "month": "December",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 10
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 6
+    },
+    {
+        "year": "2017",
+        "month": "November",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 2
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2017",
+        "month": "October",
+        "total_commits": 2,
+        "committers": [
+            {
+                "name": "Kenneth McFarland",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2017",
+        "month": "September",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2017",
+        "month": "August",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "hebelala",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2017",
+        "month": "July",
+        "total_commits": 105,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 99
+            },
+            {
+                "name": "Fangmin Lyu",
+                "commits": 2
+            },
+            {
+                "name": "szekizoli",
+                "commits": 1
+            },
+            {
+                "name": "Kenco",
+                "commits": 2
+            },
+            {
+                "name": "Niv Singer",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 21
+    },
+    {
+        "year": "2017",
+        "month": "June",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2017",
+        "month": "May",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 7
+            },
+            {
+                "name": "Colm O hEigeartaigh",
+                "commits": 1
+            },
+            {
+                "name": "Stig Rohde D\u00f8ssing",
+                "commits": 2
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2017",
+        "month": "April",
+        "total_commits": 21,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 14
+            },
+            {
+                "name": "Fangmin Lyu",
+                "commits": 6
+            },
+            {
+                "name": "Stig Rohde D\u00f8ssing",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 7
+    },
+    {
+        "year": "2017",
+        "month": "March",
+        "total_commits": 22,
+        "committers": [
+            {
+                "name": "Fangmin Lyu",
+                "commits": 2
+            },
+            {
+                "name": "Alex Kira",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 9
+            },
+            {
+                "name": "OZAWA Tsuyoshi",
+                "commits": 1
+            },
+            {
+                "name": "Tsuyoshi Ozawa",
+                "commits": 3
+            },
+            {
+                "name": "Kenco",
+                "commits": 1
+            },
+            {
+                "name": "szekizoli",
+                "commits": 1
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 4
+            }
+        ],
+        "total_committers": 8,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2017",
+        "month": "February",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 6
+            },
+            {
+                "name": "Tsuyoshi Ozawa",
+                "commits": 1
+            },
+            {
+                "name": "Zoltan Szekeres",
+                "commits": 2
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2017",
+        "month": "January",
+        "total_commits": 81,
+        "committers": [
+            {
+                "name": "Zoltan Szekeres",
+                "commits": 3
+            },
+            {
+                "name": "randgalt",
+                "commits": 75
+            },
+            {
+                "name": "Tsuyoshi Ozawa",
+                "commits": 1
+            },
+            {
+                "name": "ayanamist",
+                "commits": 1
+            },
+            {
+                "name": "Sylvain Wallez",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 17
+    },
+    {
+        "year": "2016",
+        "month": "December",
+        "total_commits": 18,
+        "committers": [
+            {
+                "name": "Sylvain Wallez",
+                "commits": 2
+            },
+            {
+                "name": "randgalt",
+                "commits": 11
+            },
+            {
+                "name": "Imesha",
+                "commits": 2
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Charles Ruhland",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2016",
+        "month": "November",
+        "total_commits": 15,
+        "committers": [
+            {
+                "name": "Imesha",
+                "commits": 2
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 3
+            },
+            {
+                "name": "randgalt",
+                "commits": 9
+            },
+            {
+                "name": "Fangmin Lyu",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2016",
+        "month": "October",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "eolivelli",
+                "commits": 1
+            },
+            {
+                "name": "allenlyu",
+                "commits": 2
+            },
+            {
+                "name": "Evan Pollan",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2016",
+        "month": "September",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2016",
+        "month": "August",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "gtully",
+                "commits": 1
+            },
+            {
+                "name": "Henrik Nordvik",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2016",
+        "month": "July",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Mark Payne",
+                "commits": 1
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2016",
+        "month": "June",
+        "total_commits": 43,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 39
+            },
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Julie Kim",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 15
+    },
+    {
+        "year": "2016",
+        "month": "May",
+        "total_commits": 79,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 58
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 3
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 15
+            },
+            {
+                "name": "Algirdas Rascius",
+                "commits": 1
+            },
+            {
+                "name": "Raymond Maug\u00e9",
+                "commits": 2
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 16
+    },
+    {
+        "year": "2016",
+        "month": "April",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 2
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 1
+            },
+            {
+                "name": "Jorge Montero",
+                "commits": 1
+            },
+            {
+                "name": "Ulrich Geilmann",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2016",
+        "month": "March",
+        "total_commits": 12,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 9
+            },
+            {
+                "name": "nirdothan",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 6
+    },
+    {
+        "year": "2016",
+        "month": "February",
+        "total_commits": 36,
+        "committers": [
+            {
+                "name": "Dimitar Dyankov",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 26
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 9
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 12
+    },
+    {
+        "year": "2016",
+        "month": "January",
+        "total_commits": 34,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 32
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 1
+            },
+            {
+                "name": "Joe Littlejohn",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 12
+    },
+    {
+        "year": "2015",
+        "month": "December",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2015",
+        "month": "November",
+        "total_commits": 5,
+        "committers": [
+            {
+                "name": "Mike Drob",
+                "commits": 1
+            },
+            {
+                "name": "Grant Henke",
+                "commits": 3
+            },
+            {
+                "name": "Joe Littlejohn",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2015",
+        "month": "October",
+        "total_commits": 40,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 7
+            },
+            {
+                "name": "randgalt",
+                "commits": 31
+            },
+            {
+                "name": "Glen Wallace",
+                "commits": 1
+            },
+            {
+                "name": "Alexey Serba",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 10
+    },
+    {
+        "year": "2015",
+        "month": "September",
+        "total_commits": 64,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 60
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 3
+            },
+            {
+                "name": "Njal Karevoll",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 22
+    },
+    {
+        "year": "2015",
+        "month": "August",
+        "total_commits": 90,
+        "committers": [
+            {
+                "name": "Cam McKenzie",
+                "commits": 7
+            },
+            {
+                "name": "randgalt",
+                "commits": 58
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 8
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 4
+            },
+            {
+                "name": "Ioannis Canellos",
+                "commits": 8
+            },
+            {
+                "name": "Alex Brasetvik",
+                "commits": 3
+            }
+        ],
+        "total_committers": 7,
+        "commits_per_committer": 13
+    },
+    {
+        "year": "2015",
+        "month": "July",
+        "total_commits": 14,
+        "committers": [
+            {
+                "name": "Scott Blum",
+                "commits": 2
+            },
+            {
+                "name": "Leandro Nunes",
+                "commits": 2
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 1
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "randgalt",
+                "commits": 6
+            },
+            {
+                "name": "Tsuyoshi Ozawa",
+                "commits": 1
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 3
+    },
+    {
+        "year": "2015",
+        "month": "June",
+        "total_commits": 14,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 11
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 1
+            },
+            {
+                "name": "Zhihong Zhang",
+                "commits": 1
+            },
+            {
+                "name": "Tom Dyas",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2015",
+        "month": "May",
+        "total_commits": 49,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 39
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 10
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 25
+    },
+    {
+        "year": "2015",
+        "month": "April",
+        "total_commits": 32,
+        "committers": [
+            {
+                "name": "Alexander Makarenko",
+                "commits": 1
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 5
+            },
+            {
+                "name": "randgalt",
+                "commits": 25
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2015",
+        "month": "March",
+        "total_commits": 3,
+        "committers": [
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            },
+            {
+                "name": "David Kesler",
+                "commits": 1
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2015",
+        "month": "February",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "David Kesler",
+                "commits": 4
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2015",
+        "month": "January",
+        "total_commits": 42,
+        "committers": [
+            {
+                "name": "Mark Petrovic",
+                "commits": 1
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 4
+            },
+            {
+                "name": "randgalt",
+                "commits": 33
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 3
+            },
+            {
+                "name": "Jesse Wilson",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 9
+    },
+    {
+        "year": "2014",
+        "month": "December",
+        "total_commits": 8,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 4
+            },
+            {
+                "name": "Karthik Kambatla",
+                "commits": 1
+            },
+            {
+                "name": "gopi",
+                "commits": 1
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2014",
+        "month": "November",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "Ricardo Ferreira",
+                "commits": 2
+            },
+            {
+                "name": "Ioannis Canellos",
+                "commits": 2
+            },
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Brien Wheeler",
+                "commits": 1
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2014",
+        "month": "October",
+        "total_commits": 21,
+        "committers": [
+            {
+                "name": "Scott Blum",
+                "commits": 13
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "sdapeng(Sun Dapeng)",
+                "commits": 1
+            },
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Brien Wheeler",
+                "commits": 1
+            },
+            {
+                "name": "Leon Stein",
+                "commits": 1
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 4
+    },
+    {
+        "year": "2014",
+        "month": "September",
+        "total_commits": 4,
+        "committers": [
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 1
+            },
+            {
+                "name": "Scott Blum",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 2
+    },
+    {
+        "year": "2014",
+        "month": "August",
+        "total_commits": 45,
+        "committers": [
+            {
+                "name": "Scott Blum",
+                "commits": 10
+            },
+            {
+                "name": "randgalt",
+                "commits": 11
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 13
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 7
+            },
+            {
+                "name": "Karthik Kumar",
+                "commits": 2
+            },
+            {
+                "name": "Karel Vervaeke",
+                "commits": 2
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2014",
+        "month": "July",
+        "total_commits": 45,
+        "committers": [
+            {
+                "name": "Scott Blum",
+                "commits": 4
+            },
+            {
+                "name": "Mike Drob",
+                "commits": 6
+            },
+            {
+                "name": "randgalt",
+                "commits": 23
+            },
+            {
+                "name": "Cam McKenzie",
+                "commits": 8
+            },
+            {
+                "name": "Cameron McKenzie",
+                "commits": 2
+            },
+            {
+                "name": "Patrick Peralta",
+                "commits": 2
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2014",
+        "month": "June",
+        "total_commits": 51,
+        "committers": [
+            {
+                "name": "Cameron McKenzie",
+                "commits": 13
+            },
+            {
+                "name": "randgalt",
+                "commits": 38
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 26
+    },
+    {
+        "year": "2014",
+        "month": "May",
+        "total_commits": 88,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 81
+            },
+            {
+                "name": "Dominic Wong",
+                "commits": 3
+            },
+            {
+                "name": "eceejcr",
+                "commits": 4
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 30
+    },
+    {
+        "year": "2014",
+        "month": "April",
+        "total_commits": 16,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 15
+            },
+            {
+                "name": "Ted Pearson",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2014",
+        "month": "March",
+        "total_commits": 15,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 13
+            },
+            {
+                "name": "Joe Littlejohn",
+                "commits": 1
+            },
+            {
+                "name": "David Trott",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2014",
+        "month": "February",
+        "total_commits": 17,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 17
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 17
+    },
+    {
+        "year": "2014",
+        "month": "January",
+        "total_commits": 6,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 6
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 6
+    },
+    {
+        "year": "2013",
+        "month": "December",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2013",
+        "month": "November",
+        "total_commits": 32,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 32
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 32
+    },
+    {
+        "year": "2013",
+        "month": "October",
+        "total_commits": 9,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 3
+            },
+            {
+                "name": "Ioannis Canellos",
+                "commits": 6
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2013",
+        "month": "September",
+        "total_commits": 27,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 21
+            },
+            {
+                "name": "jordan.zimmerman",
+                "commits": 6
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 14
+    },
+    {
+        "year": "2013",
+        "month": "August",
+        "total_commits": 1,
+        "committers": [
+            {
+                "name": "Ioannis Canellos",
+                "commits": 1
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 1
+    },
+    {
+        "year": "2013",
+        "month": "July",
+        "total_commits": 14,
+        "committers": [
+            {
+                "name": "Ioannis Canellos",
+                "commits": 4
+            },
+            {
+                "name": "randgalt",
+                "commits": 7
+            },
+            {
+                "name": "Jay Zarfoss",
+                "commits": 3
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 5
+    },
+    {
+        "year": "2013",
+        "month": "June",
+        "total_commits": 26,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 25
+            },
+            {
+                "name": "cheddar",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 13
+    },
+    {
+        "year": "2013",
+        "month": "May",
+        "total_commits": 24,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 24
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 24
+    },
+    {
+        "year": "2013",
+        "month": "April",
+        "total_commits": 24,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 24
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 24
+    },
+    {
+        "year": "2013",
+        "month": "March",
+        "total_commits": 74,
+        "committers": [
+            {
+                "name": "randgalt",
+                "commits": 22
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 51
+            },
+            {
+                "name": "Whitney Sorenson",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 25
+    },
+    {
+        "year": "2013",
+        "month": "February",
+        "total_commits": 15,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 13
+            },
+            {
+                "name": "Bob T Builder",
+                "commits": 2
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2013",
+        "month": "January",
+        "total_commits": 49,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 43
+            },
+            {
+                "name": "Bob T Builder",
+                "commits": 4
+            },
+            {
+                "name": "builds",
+                "commits": 2
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 17
+    },
+    {
+        "year": "2012",
+        "month": "December",
+        "total_commits": 30,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 30
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 30
+    },
+    {
+        "year": "2012",
+        "month": "November",
+        "total_commits": 59,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 48
+            },
+            {
+                "name": "builds",
+                "commits": 4
+            },
+            {
+                "name": "Doug Daniels",
+                "commits": 5
+            },
+            {
+                "name": "Answashe",
+                "commits": 2
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 15
+    },
+    {
+        "year": "2012",
+        "month": "October",
+        "total_commits": 65,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 65
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 65
+    },
+    {
+        "year": "2012",
+        "month": "September",
+        "total_commits": 70,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 66
+            },
+            {
+                "name": "Justin Ryan",
+                "commits": 4
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 35
+    },
+    {
+        "year": "2012",
+        "month": "August",
+        "total_commits": 31,
+        "committers": [
+            {
+                "name": "Justin Ryan",
+                "commits": 6
+            },
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 21
+            },
+            {
+                "name": "Patrick Braga-Henebry",
+                "commits": 3
+            },
+            {
+                "name": "Warren Turkal",
+                "commits": 1
+            }
+        ],
+        "total_committers": 4,
+        "commits_per_committer": 8
+    },
+    {
+        "year": "2012",
+        "month": "July",
+        "total_commits": 55,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 50
+            },
+            {
+                "name": "Spencer Thomas",
+                "commits": 1
+            },
+            {
+                "name": "samuelgmartinez@gmail.com",
+                "commits": 1
+            },
+            {
+                "name": "Adrian Muraru",
+                "commits": 1
+            },
+            {
+                "name": "Artem Pasyechnyk",
+                "commits": 1
+            },
+            {
+                "name": "Brandon Beck",
+                "commits": 1
+            }
+        ],
+        "total_committers": 6,
+        "commits_per_committer": 10
+    },
+    {
+        "year": "2012",
+        "month": "June",
+        "total_commits": 80,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 74
+            },
+            {
+                "name": "Jay Zarfoss",
+                "commits": 3
+            },
+            {
+                "name": "Brandon Beck",
+                "commits": 3
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 27
+    },
+    {
+        "year": "2012",
+        "month": "May",
+        "total_commits": 44,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 42
+            },
+            {
+                "name": "Brandon Beck",
+                "commits": 1
+            },
+            {
+                "name": "Chris Birchall",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 15
+    },
+    {
+        "year": "2012",
+        "month": "April",
+        "total_commits": 75,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 59
+            },
+            {
+                "name": "Simon Jackson",
+                "commits": 1
+            },
+            {
+                "name": "Justin Ryan",
+                "commits": 13
+            },
+            {
+                "name": "Andrew Gaul",
+                "commits": 1
+            },
+            {
+                "name": "Adam Stegman",
+                "commits": 1
+            }
+        ],
+        "total_committers": 5,
+        "commits_per_committer": 15
+    },
+    {
+        "year": "2012",
+        "month": "March",
+        "total_commits": 47,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 44
+            },
+            {
+                "name": "Justin Ryan",
+                "commits": 3
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 24
+    },
+    {
+        "year": "2012",
+        "month": "February",
+        "total_commits": 32,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 26
+            },
+            {
+                "name": "Gary Malouf",
+                "commits": 4
+            },
+            {
+                "name": "Justin Ryan",
+                "commits": 2
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 11
+    },
+    {
+        "year": "2012",
+        "month": "January",
+        "total_commits": 58,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 56
+            },
+            {
+                "name": "Chris Birchall",
+                "commits": 1
+            },
+            {
+                "name": "Niraj Tolia",
+                "commits": 1
+            }
+        ],
+        "total_committers": 3,
+        "commits_per_committer": 20
+    },
+    {
+        "year": "2011",
+        "month": "December",
+        "total_commits": 57,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 57
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 57
+    },
+    {
+        "year": "2011",
+        "month": "November",
+        "total_commits": 74,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 73
+            },
+            {
+                "name": "Andrew Chen",
+                "commits": 1
+            }
+        ],
+        "total_committers": 2,
+        "commits_per_committer": 37
+    },
+    {
+        "year": "2011",
+        "month": "October",
+        "total_commits": 61,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 61
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 61
+    },
+    {
+        "year": "2011",
+        "month": "September",
+        "total_commits": 11,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 11
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 11
+    },
+    {
+        "year": "2011",
+        "month": "August",
+        "total_commits": 35,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 35
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 35
+    },
+    {
+        "year": "2011",
+        "month": "July",
+        "total_commits": 41,
+        "committers": [
+            {
+                "name": "Jordan Zimmerman",
+                "commits": 41
+            }
+        ],
+        "total_committers": 1,
+        "commits_per_committer": 41
+    }
+]
