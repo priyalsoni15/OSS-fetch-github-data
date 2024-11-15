@@ -312,3 +312,50 @@ def fetch_apache_mailing_list_data():
         message = "No mailing list data fetched."
     logger.info(message)
     return message
+
+
+# Function to fetch all repositories from GitHub Apache organization
+def fetch_all_github_projects():
+    repos = fetch_apache_repositories_from_github()
+    if isinstance(repos, list):
+        return [repo['name'] for repo in repos if isinstance(repo, dict) and 'name' in repo]
+    else:
+        logger.error("Unexpected data format received from fetch_apache_repositories_from_github.")
+        return []
+
+# Function to create mapping between podling names and GitHub repository names
+def create_project_mapping():
+    podlings = fetch_all_podlings()
+    github_projects = fetch_all_github_projects()
+
+    project_mapping = {}
+
+    for podling in podlings:
+        # Ensure 'name' key exists in podling
+        if 'project_name' not in podling and 'name' in podling:
+            podling['project_name'] = podling.pop('name')
+            logger.warning(f"Podling entry missing 'project_name', attempting to recover with 'name': {podling}")
+            continue
+
+        # Normalize podling name by removing spaces and converting to lowercase
+        normalized_podling_name = podling['project_name'].replace(' ', '').lower()
+        
+        for github_project in github_projects:
+            # Normalize GitHub project name by removing dashes and converting to lowercase
+            normalized_github_project = github_project.replace('-', '').lower()
+            
+            # Compare the normalized names to find matches
+            if normalized_podling_name == normalized_github_project:
+                project_mapping[podling['project_name']] = github_project
+                break
+
+    # Ensure the directory exists before saving the mapping
+    mapping_dir = os.path.join(os.getcwd(), 'out', 'apache', 'parent')
+    os.makedirs(mapping_dir, exist_ok=True)
+    mapping_file_path = os.path.join(mapping_dir, 'project_mapping.json')
+
+    # Save the mapping to a JSON file
+    with open(mapping_file_path, 'w') as mapping_file:
+        json.dump(project_mapping, mapping_file, indent=4)
+
+    logger.info(f"Project mapping saved to {mapping_file_path}")

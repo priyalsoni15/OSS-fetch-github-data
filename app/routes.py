@@ -1,7 +1,8 @@
-from flask import Blueprint, jsonify, redirect, url_for, current_app
+import json
+from flask import Blueprint, jsonify, redirect, url_for
 from app.services.graphql_services import fetch_commits_service
-from app.services.apache_services import fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_all_podlings
-from app.services.processing import fetch_commit_data_service, process_sankey_data_all, get_commit_statistics, sanitize_project_name
+from app.services.apache_services import create_project_mapping, fetch_apache_mailing_list_data, fetch_apache_repositories_from_github, fetch_all_podlings
+from app.services.processing import fetch_commit_data_service, process_sankey_data_all
 import os
 import logging
 import math
@@ -39,6 +40,14 @@ def get_sankey_data(project_name):
     sankey_data = process_sankey_data_all(project_name, DATA_DIR)
     if sankey_data is None:
         return jsonify({'error': 'Project not found'}), 404
+
+    # Save the sankey_data to a JSON file
+    output_dir = os.path.join('out', 'apache', 'github','sankey_output')  # Directory to save the output files
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"{project_name}_sankey.json")
+    with open(output_path, 'w') as f:
+        json.dump(sankey_data, f, indent=4)
+
     return jsonify(sankey_data), 200
 
 # This will fetch all the projects from Apache website
@@ -63,34 +72,24 @@ def handle_invalid_path(invalid_path):
         return jsonify({'error': 'Invalid API endpoint'}), 404
     return redirect(url_for('main_routes.landing_page'))
 
-# [Discarded] [New] Endpoint to fetch commit statistics for a specific project (technical network data)
-@main_routes.route('/api/old/<project_name>', methods=['GET'])
-def get_commit_statistics_endpoint(project_name):
-    """
-    Endpoint to fetch commit statistics for a specific project.
+# This is to get the project mapping for Apache websites and Github projects for easier front-end mapping
+@main_routes.route('/get_project_mapping', methods=['GET'])
+def get_project_mapping():
+    mapping_file_path = os.path.join(os.getcwd(), 'out','apache', 'parent','project_mapping.json')
 
-    URL Example: /api/tech_net/ProjectName
-    """
+    if not os.path.exists(mapping_file_path):
+        create_project_mapping()  # Create the mapping if it doesn't exist
+
     try:
-        # Sanitize the project name
-        project_name = sanitize_project_name(project_name)
-        
-        # Access DATA_DIR from the config
-        DATA_DIR = current_app.config['DATA_DIR']
-
-        # Call the service function to get commit statistics
-        commit_stats = get_commit_statistics(project_name, DATA_DIR)
-        
-        if "error" in commit_stats:
-            return jsonify(commit_stats), 404
-        
-        return jsonify(commit_stats), 200
-    
+        with open(mapping_file_path, 'r') as mapping_file:
+            project_mapping = json.load(mapping_file)
     except Exception as e:
-        logging.error(f"An error occurred in the endpoint for project '{project_name}': {e}")
-        logging.exception("Exception details:")
-        return jsonify({"error": "Internal server error."}), 500
-    
+        logger.error(f"An error occurred while reading the project mapping file: {e}")
+        return jsonify({"error": "An error occurred while reading the project mapping file."}), 500
+
+    return jsonify(project_mapping), 200
+
+# [Tested] This is to fetch the data such as commits, committers and commits per committers for a project month-wise
 @main_routes.route('/api/tech_net/other/<project_name>', methods=['GET'])
 def fetch_commit_data(project_name):
     try:
