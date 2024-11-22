@@ -3,12 +3,60 @@ import aiohttp
 import requests
 import logging
 import time
-import json
 import random
-import os
 from datetime import datetime
 from itertools import cycle
-from app.config import Config
+from pymongo import MongoClient
+import os
+import urllib.parse
+
+class Config:
+    ORG_NAME = os.environ.get('ORG_NAME')
+    REPOSITORIES = [
+        "https://github.com/apache/curator.git",
+    ]
+    
+    APACHE_REPOSITORIES = [
+        "https://lists.apache.org/list.html?dev@arrow.apache.org",
+    ]
+    
+    DATA_DIR = os.path.join(os.getcwd(), 'out', 'apache', 'github')
+    
+    # Encode username and password
+    username = urllib.parse.quote_plus('oss-nav')
+    password = urllib.parse.quote_plus('navuser@98')
+    
+    MONGODB_URI = f'mongodb://{username}:{password}@localhost:27017/decal-db'
+    MONGODB_DB_NAME = 'decal-db'
+
+    # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
+    @staticmethod
+    def collect_github_tokens():
+        tokens = []
+        index = 1
+        while True:
+            token = os.environ.get(f'GITHUB_TOKEN_{index}')
+            if token:
+                tokens.append(token)
+                index += 1
+            else:
+                break
+        return tokens
+
+# After the class definition, assign GITHUB_TOKENS
+Config.GITHUB_TOKENS = Config.collect_github_tokens()
+#print("Loaded GitHub Tokens:", Config.GITHUB_TOKENS)
+
+# Create output directories if they don't exist
+os.makedirs('out/apache', exist_ok=True)
+os.makedirs('out/apache/partial', exist_ok=True)
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+
+# Initialize MongoDB client
+mongo_client = MongoClient(Config.MONGODB_URI)
+db = mongo_client[Config.MONGODB_DB_NAME]
 
 def fetch_commits_for_repo(repo):
     try:
@@ -68,11 +116,7 @@ def fetch_commits_for_repo(repo):
                 )
                 api_calls += 1
 
-                logging.debug(f"Response Status Code: {response.status_code}")
-                logging.debug(f"Response Headers: {response.headers}")
-                logging.debug(f"Response Text: {response.text}")
-
-                if response.status_code == 401:
+                if response.status_code == 401 or response.status_code == 403:
                     # Rotate to the next token
                     token_index = (token_index + 1) % len(tokens)
                     headers["Authorization"] = f"Bearer {tokens[token_index]}"
@@ -128,13 +172,8 @@ def fetch_commits_for_repo(repo):
                     # Collect commit SHA for REST API call
                     commit_shas.append((commit_sha, committer_name, year, month))
 
-                # Save partial data
+                # Save partial data to MongoDB
                 save_partial_data(data, api_calls, start_time, repo.name)
-
-                # Optional: Limit the number of commits processed per repo
-                # Uncomment the following lines to limit to, e.g., 50 commits
-                # if len(commit_shas) >= 50:
-                #     has_next_page = False
 
                 # Check rate limit after GraphQL API call
                 rate_limit_remaining = int(response.headers.get('X-RateLimit-Remaining', 1))
@@ -148,7 +187,6 @@ def fetch_commits_for_repo(repo):
 
             except Exception as e:
                 logging.error(f"Request failed: {e}. Retrying...")
-                logging.exception("Exception details:")
                 time.sleep(random.uniform(1, 3))
                 continue
 
@@ -165,6 +203,14 @@ def fetch_commits_for_repo(repo):
 
         # Convert sets to lists for JSON serialization
         data = convert_sets_to_lists(data)
+
+        # Save final data to MongoDB
+        try:
+            db.commit_data.delete_many({'repo_name': repo.name})
+            db.commit_data.insert_one({'repo_name': repo.name, 'data': data})
+            logging.info(f"Commit data for {repo.name} saved to MongoDB collection 'commit_data'.")
+        except Exception as e:
+            logging.error(f"Error saving commit data to MongoDB: {e}")
 
         return data, total_time, api_calls
 
@@ -183,9 +229,7 @@ async def fetch_commit_details_async(commit_shas, data, tokens, repo, api_calls)
         for sha_info in commit_shas:
             task = fetch_commit_detail(session, sha_info, data, token_cycle, semaphore, repo)
             tasks.append(task)
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        # Count API calls from results
-        api_calls_counter += len(tasks)
+        await asyncio.gather(*tasks, return_exceptions=True)
 
 def get_next_token(token_cycle):
     return next(token_cycle)
@@ -198,7 +242,6 @@ async def fetch_commit_detail(session, sha_info, data, token_cycle, semaphore, r
 
         while True:
             try:
-                logging.debug(f"Fetching commit details for {commit_sha}")
                 async with session.get(commit_url, headers=headers) as response:
                     if response.status == 401 or response.status == 403:
                         # Rotate to the next token
@@ -238,11 +281,17 @@ def save_partial_data(data, api_calls, start_time, repo_name):
         "api_calls_made": api_calls,
         "data": data_serializable
     }
-    # Save to JSON file
-    partial_dir = os.path.join('out', 'apache', 'partial')
-    os.makedirs(partial_dir, exist_ok=True)
-    with open(os.path.join(partial_dir, f"github_data_partial_{repo_name}.json"), "w") as json_file:
-        json.dump(partial_data, json_file, indent=4)
+
+    # Save partial data to MongoDB
+    try:
+        db.partial_commit_data.update_one(
+            {'repo_name': repo_name},
+            {'$set': {'data': data_serializable, 'fetch_time_seconds': partial_data['fetch_time_seconds'], 'api_calls_made': partial_data['api_calls_made']}},
+            upsert=True
+        )
+        logging.info(f"Partial commit data for {repo_name} saved to MongoDB collection 'partial_commit_data'.")
+    except Exception as e:
+        logging.error(f"Error saving partial commit data to MongoDB: {e}")
 
 def convert_sets_to_lists(obj):
     if isinstance(obj, dict):
@@ -260,119 +309,4 @@ def fetch_commits_service():
         repo_owner, repo_name = repo_uri.split('/')[-2], repo_uri.split('/')[-1].replace('.git', '')
         repo = type('Repo', (object,), {'owner': repo_owner, 'name': repo_name})()
         data, total_time, api_calls = fetch_commits_for_repo(repo)
-        output = {
-            "fetch_time_seconds": total_time,
-            "api_calls_made": api_calls,
-            "data": data
-        }
-        # Save final data to JSON file
-        output_dir = os.path.join('out', 'apache', 'github')
-        os.makedirs(output_dir, exist_ok=True)
-        with open(os.path.join(output_dir, f"{repo.name}.json"), "w") as json_file:
-            json.dump(output, json_file, indent=4)
     return "Data fetched for specified repositories."
-
-# Fetch all repos for a particular foundation, for instance Apache, Eclipse or Linux Foundation
-def fetch_repos_for_org():
-    tokens = Config.GITHUB_TOKENS
-    if not tokens:
-        logging.error("No GitHub tokens found. Please set GITHUB_TOKEN_1, GITHUB_TOKEN_2, etc., in your environment variables.")
-        return []
-    token_cycle = cycle(tokens)
-    headers = {"Authorization": f"Bearer {next(token_cycle)}"}
-    query = """
-    query($org: String!, $cursor: String) {
-      organization(login: $org) {
-        repositories(first: 100, after: $cursor) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
-          nodes {
-            name
-            url
-          }
-        }
-      }
-    }
-    """
-    variables = {"org": Config.ORG_NAME, "cursor": None}
-    has_next_page = True
-    repos = []
-    start_time = time.time()
-    api_calls = 0
-
-    while has_next_page:
-        try:
-            response = requests.post(
-                'https://api.github.com/graphql',
-                json={"query": query, "variables": variables},
-                headers=headers
-            )
-            api_calls += 1
-
-            if response.status_code == 401:
-                # Rotate to the next token
-                headers["Authorization"] = f"Bearer {next(token_cycle)}"
-                logging.warning("Rotated to the next token due to unauthorized error.")
-                continue
-
-            if response.status_code != 200:
-                logging.error(f"Error fetching repositories: {response.status_code} {response.text}")
-                break
-
-            result = response.json()
-
-            if 'errors' in result:
-                logging.error(f"GraphQL errors: {result['errors']}")
-                break
-
-            organization = result.get('data', {}).get('organization')
-            if not organization:
-                break
-
-            repositories = organization['repositories']
-            has_next_page = repositories['pageInfo']['hasNextPage']
-            variables['cursor'] = repositories['pageInfo']['endCursor']
-
-            for repo in repositories['nodes']:
-                repos.append({"name": repo['name'], "url": repo['url']})
-
-            # Save partial data
-            save_partial_repo_data(repos, api_calls, start_time)
-
-            # Check rate limit after GraphQL API call
-            rate_limit_remaining = int(response.headers.get('X-RateLimit-Remaining', 1))
-            rate_limit_reset = int(response.headers.get('X-RateLimit-Reset', time.time() + 60))
-
-            if rate_limit_remaining == 0:
-                sleep_time = max(rate_limit_reset - int(time.time()), 0)
-                logging.info(f"Rate limit reached. Sleeping for {sleep_time} seconds.")
-                time.sleep(sleep_time)
-                api_calls = 0  # Reset API call count after waiting
-
-        except Exception as e:
-            logging.error(f"Request failed: {e}. Retrying...")
-            logging.exception("Exception details:")
-            time.sleep(random.uniform(1, 3))
-            continue
-
-    # Save repos data to JSON file
-    output_dir = os.path.join('out', 'apache')
-    os.makedirs(output_dir, exist_ok=True)
-    with open(os.path.join(output_dir, f"{Config.ORG_NAME}_repos.json"), "w") as json_file:
-        json.dump(repos, json_file, indent=4)
-
-    return repos
-
-def save_partial_repo_data(repos, api_calls, start_time):
-    partial_data = {
-        "fetch_time_seconds": time.time() - start_time,
-        "api_calls_made": api_calls,
-        "repos": repos
-    }
-    # Save to JSON file
-    partial_dir = os.path.join('out', 'apache', 'partial')
-    os.makedirs(partial_dir, exist_ok=True)
-    with open(os.path.join(partial_dir, f"{Config.ORG_NAME}_repos_partial.json"), "w") as json_file:
-        json.dump(partial_data, json_file, indent=4)

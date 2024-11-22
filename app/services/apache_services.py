@@ -5,18 +5,22 @@ import random
 import tempfile
 import requests
 import logging
-import json
 import time
 from itertools import cycle
 from app.config import Config
 from bs4 import BeautifulSoup
 import difflib
+from pymongo import MongoClient
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# This fetches all the repositories from a particular organization i.e. Apache, or Eclipse from Github link
+# Initialize MongoDB client
+mongo_client = MongoClient(Config.MONGODB_URI)
+db = mongo_client[Config.MONGODB_DB_NAME]
+
+# Fetch all repositories from the Apache GitHub organization and store them in MongoDB
 def fetch_apache_repositories_from_github():
     logging.info("Fetching Apache repositories from GitHub...")
     tokens = Config.GITHUB_TOKENS or [Config.GITHUB_TOKEN]
@@ -100,16 +104,20 @@ def fetch_apache_repositories_from_github():
             time.sleep(random.uniform(1, 3))
             continue
 
-    # Save repos data to JSON file
-    output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'parent')
-    os.makedirs(output_dir, exist_ok=True)
-    output_file = os.path.join(output_dir, 'apache_all_project_urls_github.json')
-    with open(output_file, "w") as json_file:
-        json.dump(repos, json_file, indent=4)
+    # Save repos data to MongoDB
+    if repos:
+        try:
+            db.github_repositories.drop()
+            db.github_repositories.insert_many(repos)
+            logging.info("Repositories data saved to MongoDB collection 'github_repositories'.")
+        except Exception as e:
+            logging.error(f"Error saving repositories to MongoDB: {e}")
+            return []
 
+    # Return the repositories without '_id' fields
     return repos
 
-# --- New function to fetch Apache projects data ---
+
 # This fetches all the data from Apache website
 def fetch_all_podlings():
     url = 'https://incubator.apache.org/projects/'
@@ -136,6 +144,16 @@ def fetch_all_podlings():
     for section in sections:
         projects = parse_podling_section(soup, section['id'], section['status'])
         all_projects.extend(projects)
+
+    # Save all_projects data to MongoDB
+    if all_projects:
+        try:
+            db.apache_projects.drop()
+            db.apache_projects.insert_many(all_projects)
+            logging.info("Apache projects data saved to MongoDB collection 'apache_projects'.")
+        except Exception as e:
+            logger.error(f"Error saving Apache projects to MongoDB: {e}")
+            return []
 
     return all_projects
 
@@ -205,7 +223,7 @@ def parse_podling_section(soup, section_id, status):
 
         project_info = {
             'project_name': project_name,
-            'project_id' : project_id,
+            'project_id': project_id,
             'project_url': project_url,
             'aliases': aliases,
             'description': description,
@@ -215,25 +233,21 @@ def parse_podling_section(soup, section_id, status):
             'start_date': start_date,
             'status': status  # Add the status of the project
         }
-        
+
         projects.append(project_info)
 
     return projects
 
-
-# --- The functions below are for fetching the Apache Mailing list data ---
-
+# Fetch mailing list data for a repository and save to MongoDB
 def fetch_mailing_list_data(repo_name):
     logger.info(f"Fetching mailing list data for repository: {repo_name}")
-    mailing_data = {}
+    mailing_data = []
     list_name = f"{repo_name}-dev"
     base_url = f"https://mail-archives.apache.org/mod_mbox/{list_name}/"
 
-    # Define the date range you want to fetch (e.g., from January 2016 to current month)
+    # Define the date range you want to fetch
     start_date = datetime(2016, 1, 1)
     end_date = datetime.now()
-
-    mailing_data[repo_name] = {'emails': []}
 
     current_date = start_date
     while current_date <= end_date:
@@ -260,7 +274,8 @@ def fetch_mailing_list_data(repo_name):
                     message_id = message.get('message-id', '')
                     in_reply_to = message.get('in-reply-to', '')
 
-                    mailing_data[repo_name]['emails'].append({
+                    mailing_data.append({
+                        'repo_name': repo_name,
                         'subject': subject,
                         'sender': sender,
                         'date': date,
@@ -281,45 +296,31 @@ def fetch_mailing_list_data(repo_name):
         current_date += timedelta(days=31)
         current_date = current_date.replace(day=1)
 
-    if mailing_data[repo_name]['emails']:
-        # Save the data for this repository
-        output_dir = os.path.join(os.getcwd(), 'out', 'apache', 'mailing_list', repo_name)
-        os.makedirs(output_dir, exist_ok=True)
-        output_file = os.path.join(output_dir, 'mailing_list_data.json')
+    if mailing_data:
         try:
-            with open(output_file, "w") as json_file:
-                json.dump(mailing_data[repo_name], json_file, indent=4)
-            logger.info(f"Mailing list data saved to {output_file}")
+            # Insert mailing data into MongoDB
+            db.mailing_list_data.insert_many(mailing_data)
+            logger.info(f"Mailing list data saved to MongoDB collection 'mailing_list_data'.")
         except Exception as e:
-            logger.error(f"Error saving mailing list data to file: {e}")
-            return {}
+            logger.error(f"Error saving mailing list data to MongoDB: {e}")
+            return []
     else:
         logger.warning(f"No emails were extracted for repository: {repo_name}")
-        return {}
+        return []
 
     return mailing_data
 
 def fetch_apache_mailing_list_data():
-    mailing_data = {}
-    # Process the 'arrow' repository (you can add more repositories to this list)
-    merged_repos = ["arrow"]
-    success_repos = []
+    # Process the repositories (you can add more repositories to this list)
+    merged_repos = ["arrow"]  # Add more repository names as needed
     for repo_name in merged_repos:
         # Fetch mailing list data for this repository
-        repo_mailing_data = fetch_mailing_list_data(repo_name)
-        if repo_mailing_data.get(repo_name):
-            mailing_data.update(repo_mailing_data)
-            success_repos.append(repo_name)
-        else:
-            logger.warning(f"No mailing list data found for repository: {repo_name}")
-    if success_repos:
-        message = f"Mailing list data fetched and saved for repositories: {', '.join(success_repos)}"
-    else:
-        message = "No mailing list data fetched."
+        fetch_mailing_list_data(repo_name)
+    message = "Mailing list data fetched and saved to MongoDB."
     logger.info(message)
     return message
 
-# This matches Apache projects ID with Github project link names 
+# This matches Apache projects ID with Github project link names
 def fetch_all_podlings_with_github_repos():
     # Fetch all repositories under 'apache' organization
     repos = fetch_apache_repositories_from_github()
@@ -366,4 +367,18 @@ def fetch_all_podlings_with_github_repos():
             project['github_repo_name'] = None
             project['github_url'] = None
 
+    # Save the combined data to MongoDB
+    if all_projects:
+        try:
+            db.projects_with_github_repos.drop()
+            db.projects_with_github_repos.insert_many(all_projects)
+            logging.info("Combined projects data saved to MongoDB collection 'projects_with_github_repos'.")
+        except Exception as e:
+            logger.error(f"Error saving combined projects data to MongoDB: {e}")
+            return []
+
     return all_projects
+
+
+# New apache services code here
+

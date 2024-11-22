@@ -1,0 +1,8 @@
+from graphql_services import fetch_commits_service
+from apache_services import fetch_apache_repositories_from_github
+#from app.services.apache_services import fetch_apache_repositories_from_github
+#from app.services.processing import fetch_commit_data_service, process_sankey_data_all
+
+#fetch_commits_service()
+
+fetch_apache_repositories_from_github()

@@ -1,110 +1,424 @@
-import json
-from flask import Blueprint, jsonify, redirect, url_for
-from app.services.graphql_services import fetch_commits_service
-from app.services.apache_services import fetch_all_podlings_with_github_repos, fetch_apache_mailing_list_data, fetch_apache_repositories_from_github
-from app.services.processing import fetch_commit_data_service, process_sankey_data_all
-import os
-import logging
+# src/routes.py
+
 import math
+from flask import Blueprint, jsonify, redirect, url_for
+from flask_cors import cross_origin
+from app.config import Config
+from pymongo import MongoClient
+from app.services.graphql_services import fetch_commits_service
+from app.services.apache_services import fetch_all_podlings, fetch_apache_repositories_from_github
+from app.services.processing import fetch_commit_data_service, process_sankey_data_all
+from app.services.github_services import fetch_repos_service
+import logging
 
 main_routes = Blueprint('main_routes', __name__)
+
+# Initialize MongoDB client
+mongo_client = MongoClient(Config.MONGODB_URI)
+db = mongo_client[Config.MONGODB_DB_NAME]
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# [Tested] Homepage
+# This is to prevent any error occurring because of NaN value - this is converted to null
+def sanitize_document(doc):
+    """
+    Recursively sanitize the document by replacing NaN with None.
+    """
+    for key, value in doc.items():
+        if isinstance(value, float) and math.isnan(value):
+            doc[key] = None
+        elif isinstance(value, dict):
+            sanitize_document(value)
+        elif isinstance(value, list):
+            for idx, item in enumerate(value):
+                if isinstance(item, dict):
+                    sanitize_document(item)
+                elif isinstance(item, float) and math.isnan(item):
+                    value[idx] = None
+    return doc
+
+# Homepage
 @main_routes.route('/')
+@cross_origin(origin='*') 
 def landing_page():
     return "Welcome to the Apache Organization Repository Fetcher!"
 
-# [This should be depcrecated] [Tested] This would fetch all the repos from the Apache organization
-@main_routes.route('/fetch_repos', methods=['GET'])
-def fetch_repos():
-    repos = fetch_apache_repositories_from_github()
-    return jsonify(repos), 200
-
-@main_routes.route('/api/projects', methods=['GET'])
-def get_projects():
-    projects = fetch_all_podlings_with_github_repos()
-    return jsonify({'projects': projects}), 200
-
-# [Tested] This will fetch all the commits for a github repo
-@main_routes.route('/fetch_commits', methods=['GET'])
-def fetch_commits():
-    message = fetch_commits_service()
-    return jsonify({'message': message}), 200
-
-# [Tested] Create technical network for Apache projects [1 project each]
-# Remember the limitation here is that the .json file should be present to be processed further
-@main_routes.route('/api/tech_net/<project_name>', methods=['GET'])
-def get_sankey_data(project_name):
-    # Define the path to your data directory
-    DATA_DIR = os.path.join('out', 'apache', 'github')  # Adjust the path as needed
-
-    sankey_data = process_sankey_data_all(project_name, DATA_DIR)
-    if sankey_data is None:
-        return jsonify({'error': 'Project not found'}), 404
-
-    # Save the sankey_data to a JSON file
-    output_dir = os.path.join('out', 'apache', 'github','sankey_output')  # Directory to save the output files
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{project_name}_sankey.json")
-    with open(output_path, 'w') as f:
-        json.dump(sankey_data, f, indent=4)
-
-    return jsonify(sankey_data), 200
-
-# [Tested] This will fetch the mailing list data for Apache organization
-# [Additional functionality] Currently, the repo list is manual, once this is complete, I want to fetch the repos from the json or stored files.
-@main_routes.route('/fetch_mailing_list', methods=['GET'])
-def fetch_mailing_list_apache():
-    message = fetch_apache_mailing_list_data()
-    return jsonify({'message': message}), 200
-
-# [Tested] For any other API routes than the one mentioned, redirect it to the landing page/home-page
+# Redirect invalid API endpoints
 @main_routes.route('/<path:invalid_path>')
 def handle_invalid_path(invalid_path):
     if invalid_path.startswith('api/'):
         return jsonify({'error': 'Invalid API endpoint'}), 404
     return redirect(url_for('main_routes.landing_page'))
 
-# This is to get the project mapping for Apache websites and Github projects for easier front-end mapping
-@main_routes.route('/get_project_mapping', methods=['GET'])
-def get_project_mapping():
-    mapping_file_path = os.path.join(os.getcwd(), 'out','apache', 'parent','project_mapping.json')
+# Fetch all the repos from the Apache organization
+@main_routes.route('/fetch_repos', methods=['GET'])
+def fetch_repos():
+    fetch_apache_repositories_from_github()
+    repos = list(db.github_repositories.find({}, {'_id': 0}))
+    repos = [sanitize_document(repo) for repo in repos]
+    return jsonify(repos), 200
 
-    if not os.path.exists(mapping_file_path):
-        create_project_mapping()  # Create the mapping if it doesn't exist
-
+# Fetch all the projects (combined from Apache and Github)
+@main_routes.route('/api/projects', methods=['GET'])
+@cross_origin(origin='*') 
+def get_all_projects():
     try:
-        with open(mapping_file_path, 'r') as mapping_file:
-            project_mapping = json.load(mapping_file)
+        projects = list(db.github_repositories.find({}, {'_id': 0}))
+        projects = [sanitize_document(project) for project in projects]
+        return jsonify({'projects': projects}), 200
     except Exception as e:
-        logger.error(f"An error occurred while reading the project mapping file: {e}")
-        return jsonify({"error": "An error occurred while reading the project mapping file."}), 500
+        logger.error(f"Error fetching projects from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch projects.'}), 500
 
-    return jsonify(project_mapping), 200
-
-# [Tested] This is to fetch the data such as commits, committers and commits per committers for a project month-wise
-@main_routes.route('/api/tech_net/other/<project_name>', methods=['GET'])
-def fetch_commit_data(project_name):
+# Fetch all github repositories - include fetching stars, forks and watch for each repo
+@main_routes.route('/api/github_stars', methods=['GET'])
+def get_github_stars():
     try:
-        output = fetch_commit_data_service(project_name)
-        # Add commits per committer calculation and total committers
-        for month_data in output:
-            # Filter out bot committers
-            filtered_committers = [committer for committer in month_data["committers"] if not committer["name"].endswith("[bot]")]
-            total_committers = len(filtered_committers)
-            month_data["total_committers"] = total_committers
-            if total_committers > 0:
-                month_data["commits_per_committer"] = math.ceil(month_data["total_commits"] / total_committers)
+        repos = list(db.github_repositories.find({}, {'_id': 0}))
+        repos = [sanitize_document(repo) for repo in repos]
+        return jsonify({'repositories': repos}), 200
+    except Exception as e:
+        logger.error(f"Error fetching repositories from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch repositories.'}), 500
+
+# Fetch all the repos from GitHub
+@main_routes.route('/api/github_repositories', methods=['GET'])
+def get_github_repositories():
+    try:
+        repos = list(db.github_repositories.find({}, {'_id': 0}))
+        repos = [sanitize_document(repo) for repo in repos]
+        return jsonify({'repositories': repos}), 200
+    except Exception as e:
+        logger.error(f"Error fetching repositories from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch repositories.'}), 500
+
+# [Tested] [Currently used by Vue.js] Fetch project descriptions from Apache scraping
+@main_routes.route('/api/project_description', methods=['GET'])
+@cross_origin(origin='*') 
+def get_project_description():
+    try:
+        description = list(db.apache_projects.find({}, {'_id': 0}))
+        description = [sanitize_document(doc) for doc in description]
+        return jsonify({'description': description}), 200
+    except Exception as e:
+        logger.error(f"Error fetching project descriptions from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch project descriptions.'}), 500
+
+# Fetch all project_info
+@main_routes.route('/api/project_info', methods=['GET'])
+@cross_origin(origin='*') 
+def get_all_project_info():
+    """
+    Fetch all project information.
+    """
+    try:
+        projects = list(db.project_info.find({}, {'_id': 0}))
+        projects = [sanitize_document(project) for project in projects]
+        return jsonify({'projects': projects}), 200
+    except Exception as e:
+        logger.error(f"Error fetching project_info from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch project information.'}), 500
+
+
+# Fetch all month ranges for a project
+@main_routes.route('/api/monthly_ranges', methods=['GET'])
+@cross_origin(origin='*') 
+def get_all_monthly_ranges():
+    """
+    Fetch all monthly ranges for all projects.
+    """
+    try:
+        projects = list(db.monthly_ranges.find({}, {'_id': 0}))
+        projects = [sanitize_document(project) for project in projects]
+        return jsonify({'project_ranges': projects}), 200
+    except Exception as e:
+        logger.error(f"Error fetching project_ranges from MongoDB: {e}")
+
+
+# ------------------ New API Endpoint: Tech Net Data ------------------
+
+@main_routes.route('/api/tech_net/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_tech_net(project_id, month):
+    """
+    Fetch technical network data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.tech_net.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        data = project['months'][month_str]
+        # Sanitize data if necessary (assuming data is list of lists with [string, string, number])
+        sanitized_data = []
+        for entry in data:
+            if isinstance(entry, list) and len(entry) == 3:
+                name, tech, value = entry
+                sanitized_entry = [
+                    name if isinstance(name, str) else '',
+                    tech if isinstance(tech, str) else '',
+                    value if isinstance(value, (int, float)) else 0
+                ]
+                sanitized_data.append(sanitized_entry)
             else:
-                month_data["commits_per_committer"] = 0
-            month_data["committers"] = filtered_committers
-        return jsonify(output), 200
-    except FileNotFoundError:
-        return jsonify({"error": f"Commit data for project '{project_name}' not found."}), 404
+                # Handle unexpected data formats
+                sanitized_data.append(['', '', 0])
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'data': sanitized_data
+        }), 200
     except Exception as e:
-        logging.error(f"An error occurred while fetching commit data for project '{project_name}': {e}")
-        return jsonify({"error": "An error occurred while fetching commit data."}), 500
+        logger.error(f"Error fetching tech_net data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# This is to fetch the social network data for a specific project and month
+@main_routes.route('/api/social_net/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_social_net(project_id, month):
+    """
+    Fetch social network data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.social_net.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        data = project['months'][month_str]
+        # Assuming data structure is similar to tech_net
+        sanitized_data = []
+        for entry in data:
+            if isinstance(entry, list) and len(entry) == 3:
+                name, relation, value = entry
+                sanitized_entry = [
+                    name if isinstance(name, str) else '',
+                    relation if isinstance(relation, str) else '',
+                    value if isinstance(value, (int, float)) else 0
+                ]
+                sanitized_data.append(sanitized_entry)
+            else:
+                sanitized_data.append(['', '', 0])
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'data': sanitized_data
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching social_net data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# This is to fetch commit links data for a particular project for a particular month
+@main_routes.route('/api/commit_links/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_commit_links(project_id, month):
+    """
+    Fetch commit links data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.commit_links.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        commits = project['months'][month_str]
+        # Assuming commits is a list of dictionaries or lists; sanitize accordingly
+        sanitized_commits = []
+        for commit in commits:
+            if isinstance(commit, dict):
+                sanitized_commit = sanitize_document(commit)
+                sanitized_commits.append(sanitized_commit)
+            elif isinstance(commit, list):
+                # Example: [commit_id, author, message]
+                sanitized_commit = [
+                    commit[0] if len(commit) > 0 and isinstance(commit[0], str) else '',
+                    commit[1] if len(commit) > 1 and isinstance(commit[1], str) else '',
+                    commit[2] if len(commit) > 2 and isinstance(commit[2], str) else ''
+                ]
+                sanitized_commits.append(sanitized_commit)
+            else:
+                sanitized_commits.append({})
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'commits': sanitized_commits
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching commit_links data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# This is to fetch email links data for a particular project for a particular month
+@main_routes.route('/api/email_links/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_email_links(project_id, month):
+    """
+    Fetch email links data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.email_links.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        commits = project['months'][month_str]
+        # Assuming commits is a list of dictionaries or lists; sanitize accordingly
+        sanitized_commits = []
+        for commit in commits:
+            if isinstance(commit, dict):
+                sanitized_commit = sanitize_document(commit)
+                sanitized_commits.append(sanitized_commit)
+            elif isinstance(commit, list):
+                # Example: [email, relation, count]
+                sanitized_commit = [
+                    commit[0] if len(commit) > 0 and isinstance(commit[0], str) else '',
+                    commit[1] if len(commit) > 1 and isinstance(commit[1], str) else '',
+                    commit[2] if len(commit) > 2 and isinstance(commit[2], (int, float)) else 0
+                ]
+                sanitized_commits.append(sanitized_commit)
+            else:
+                sanitized_commits.append({})
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'commits': sanitized_commits
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching email_links data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# Fetch project_info for a specific project_id
+@main_routes.route('/api/project_info/<project_id>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_project_info_api(project_id):
+    """
+    Fetch combined project information for a specific project.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.project_info.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        # Remove MongoDB's _id field and sanitize
+        project = sanitize_document(project)
+        project.pop('_id', None)
+        return jsonify(project), 200
+    except Exception as e:
+        logger.error(f"Error fetching project_info for project '{project_id}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# This is to fetch the commits measure data for a project and the corresponding month
+@main_routes.route('/api/commit_measure/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_commit_measure(project_id, month):
+    """
+    Fetch commit measure data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.commit_measure.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        data = project['months'][month_str]
+        # Assuming data is a list of measures; sanitize if necessary
+        sanitized_data = []
+        for measure in data:
+            if isinstance(measure, dict):
+                sanitized_measure = sanitize_document(measure)
+                sanitized_data.append(sanitized_measure)
+            elif isinstance(measure, list):
+                # Example: [metric, value]
+                sanitized_measure = [
+                    measure[0] if len(measure) > 0 and isinstance(measure[0], str) else '',
+                    measure[1] if len(measure) > 1 and isinstance(measure[1], (int, float)) else 0
+                ]
+                sanitized_data.append(sanitized_measure)
+            else:
+                sanitized_data.append({})
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'data': sanitized_data
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching commit_measure data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# This is to fetch the emails measure data for a month and project   
+@main_routes.route('/api/email_measure/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_email_measure(project_id, month):
+    """
+    Fetch email measure data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.email_measure.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        data = project['months'][month_str]
+        # Assuming data is a list of email measures; sanitize if necessary
+        sanitized_data = []
+        for measure in data:
+            if isinstance(measure, dict):
+                sanitized_measure = sanitize_document(measure)
+                sanitized_data.append(sanitized_measure)
+            elif isinstance(measure, list):
+                # Example: [email, metric, value]
+                sanitized_measure = [
+                    measure[0] if len(measure) > 0 and isinstance(measure[0], str) else '',
+                    measure[1] if len(measure) > 1 and isinstance(measure[1], str) else '',
+                    measure[2] if len(measure) > 2 and isinstance(measure[2], (int, float)) else 0
+                ]
+                sanitized_data.append(sanitized_measure)
+            else:
+                sanitized_data.append({})
+        
+        return jsonify({
+            'project_id': project['project_id'],
+            'project_name': project['project_name'],
+            'month': month,
+            'data': sanitized_data
+        }), 200
+    except Exception as e:
+        logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500

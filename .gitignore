@@ -403,3 +403,6 @@ venv/
 instance/
 
 .env
+
+data/new/
+.DS_store

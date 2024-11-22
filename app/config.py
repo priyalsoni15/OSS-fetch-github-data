@@ -1,5 +1,6 @@
 import os
 import logging
+import urllib.parse
 
 class Config:
     ORG_NAME = os.environ.get('ORG_NAME')
@@ -12,6 +13,13 @@ class Config:
     ]
     
     DATA_DIR = os.path.join(os.getcwd(), 'out', 'apache', 'github')
+    
+    # Encode username and password
+    username = urllib.parse.quote_plus('oss-nav')
+    password = urllib.parse.quote_plus('navuser@98')
+    
+    MONGODB_URI = f'mongodb://{username}:{password}@localhost:27017/decal-db'
+    MONGODB_DB_NAME = 'decal-db'
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod
