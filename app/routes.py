@@ -183,42 +183,60 @@ def get_tech_net(project_id, month):
 
 # This is to fetch the social network data for a specific project and month
 @main_routes.route('/api/social_net/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
+@cross_origin(origin='*')
 def get_social_net(project_id, month):
     """
     Fetch social network data for a specific project and month.
     """
     try:
+        # Normalize project ID
         normalized_project_id = project_id.strip().lower()
+
+        # Fetch project from the database
         project = db.social_net.find_one({'project_id': normalized_project_id})
         if not project:
             return jsonify({'error': f"Project '{project_id}' not found."}), 404
-        
+
+        # Convert the month parameter to string for key lookup
         month_str = str(month)
+
+        # Check if the month exists in the project's "months" field
         if 'months' not in project or month_str not in project['months']:
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
-        
+
+        # Fetch data for the specified month
         data = project['months'][month_str]
-        # Assuming data structure is similar to tech_net
+
+        # Sanitize the data
         sanitized_data = []
         for entry in data:
             if isinstance(entry, list) and len(entry) == 3:
                 name, relation, value = entry
+
+                # Convert the value field to an integer or float
+                try:
+                    value = int(value) if isinstance(value, str) and value.isdigit() else float(value)
+                except ValueError:
+                    logger.warning(f"Invalid value in entry: {entry}")
+                    continue  # Skip this entry if value conversion fails
+
                 sanitized_entry = [
                     name if isinstance(name, str) else '',
                     relation if isinstance(relation, str) else '',
-                    value if isinstance(value, (int, float)) else 0
+                    value  # Use the converted numeric value
                 ]
                 sanitized_data.append(sanitized_entry)
             else:
-                sanitized_data.append(['', '', 0])
-        
+                logger.warning(f"Skipping invalid entry structure: {entry}")
+
+        # Return the processed data
         return jsonify({
             'project_id': project['project_id'],
-            'project_name': project['project_name'],
+            'project_name': project.get('project_name', 'Unknown Project'),
             'month': month,
             'data': sanitized_data
         }), 200
+
     except Exception as e:
         logger.error(f"Error fetching social_net data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
