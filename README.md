@@ -54,29 +54,86 @@ Access the following endpoint in your web browser or use a tool like curl:
 http://127.0.0.1:5000/
 ```
 
-/api/projects - This endpoint fetches all the github repos stored under the organization 'apache'
 
-/api/github_stars - This endpoint fetches stars, forks and watch for each github repo
+## API Endpoints Documentation
 
-/api/project_description - This endpoint fetches the project info, mentors, project status, etc from the Apache website for all projects
+This document provides an overview of the available API endpoints and their functionality.
 
-/api/project_info - This fetches all the combined project information from the endpoints above
+### Fetching GitHub Repository Data
 
-/api/tech_net/<project_id>/<int:month> - This fetches the technical network for a particular project, month-wise
+```bash
+GET /api/projects
+```
+- **Description**: Fetches all GitHub repositories stored under the organization `apache`.
 
-/api/social_net/<project_id>/<int:month> - This fetches the social network for a particular project, month-wise
+```bash
+GET /api/github_stars
+```
+- **Description**: Fetches stars, forks, and watch information for each GitHub repository.
 
-/api/commit_links/<project_id>/<int:month> - This fetches the commit information for a particular project, month-wise
+### Fetching Project Information
 
-/api/email_links/<project_id>/<int:month> - This fetches the email information for a particular project, month-wise
+```bash
+GET /api/project_description
+```
+- **Description**: Fetches project information such as mentors, project status, etc., from the Apache website for all projects.
 
-/api/commit_measure/<project_id>/<int:month> - This fetches the commit measure information for a particular project, month-wise
+```bash
+GET /api/project_info
+```
+- **Description**: Fetches all combined project information from the endpoints above.
 
-/api/email_measure/<project_id>/<int:month> - This fetches the email measure information for a particular project, month-wise
+### Technical and Social Networks (Month-wise)
 
-/api/monthly_ranges - This fetches the monthly range for all projects available for Apache
+```bash
+GET /api/tech_net/<project_id>/int:month
+```
+- **Description**: Fetches the technical network for a specific project, filtered by month.
 
-### Database worker
+```bash
+GET /api/social_net/<project_id>/int:month
+```
+- **Description**: Fetches the social network for a specific project, filtered by month.
+
+### Commit and Email Information (Month-wise)
+
+```bash
+GET /api/commit_links/<project_id>/int:month
+```
+- **Description**: Fetches commit information for a specific project, filtered by month.
+
+```bash
+GET /api/email_links/<project_id>/int:month
+```
+- **Description**: Fetches email information for a specific project, filtered by month.
+
+### Commit and Email Measures (Month-wise)
+
+```bash
+GET /api/commit_measure/<project_id>/int:month
+```
+- **Description**: Fetches commit measure information for a specific project, filtered by month.
+
+```bash
+GET /api/email_measure/<project_id>/int:month
+```
+- **Description**: Fetches email measure information for a specific project, filtered by month.
+
+### Fetching Monthly Ranges
+
+```bash
+GET /api/monthly_ranges
+```
+- **Description**: Fetches the monthly range for all available Apache projects.
+
+
+### Notes
+- Replace `<project_id>` with the unique identifier for the project.
+- Replace `int:month` with the specific month you want to query.
+
+---
+
+## [Feature] Database worker
 
 Run the scripts for uploading data into MongoDB using this command (Please note that this takes in static .json/.csv files from the data folder, available on the server and creates collections accordingly)
 
