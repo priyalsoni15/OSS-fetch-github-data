@@ -9,8 +9,8 @@ is a Flask application that fetches and processes github repos and mailing list 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/apache-mailing-list-fetcher.git
-cd apache-mailing-list-fetcher
+git clone https://github.com/yourusername/apache-mailing-list-fetcher.git](https://github.com/priyalsoni15/OSS-fetch-github-data.git
+cd OSS-fetch-github-data
 ```
 
 ### Create a Virtual Environment
@@ -47,14 +47,42 @@ flask run
 ```
 By default, the application will run on http://localhost:5000/.
 
-### Fetching Mailing List Data
-To initiate the process of fetching and processing the mailing list data, access the following endpoint in your web browser or use a tool like curl:
+### Defined end-points
+Access the following endpoint in your web browser or use a tool like curl:
 
 ``` bash
-http://localhost:5000/fetch_mailing_list
+http://127.0.0.1:5000/
 ```
 
-This will start downloading the mailing list archives, parse them, and save the extracted data to the out/apache/mailing_list/ directory in JSON format.
+/api/projects - This endpoint fetches all the github repos stored under the organization 'apache'
+
+/api/github_stars - This endpoint fetches stars, forks and watch for each github repo
+
+/api/project_description - This endpoint fetches the project info, mentors, project status, etc from the Apache website for all projects
+
+/api/project_info - This fetches all the combined project information from the endpoints above
+
+/api/tech_net/<project_id>/<int:month> - This fetches the technical network for a particular project, month-wise
+
+/api/social_net/<project_id>/<int:month> - This fetches the social network for a particular project, month-wise
+
+/api/commit_links/<project_id>/<int:month> - This fetches the commit information for a particular project, month-wise
+
+/api/email_links/<project_id>/<int:month> - This fetches the email information for a particular project, month-wise
+
+/api/commit_measure/<project_id>/<int:month> - This fetches the commit measure information for a particular project, month-wise
+
+/api/email_measure/<project_id>/<int:month> - This fetches the email measure information for a particular project, month-wise
+
+/api/monthly_ranges - This fetches the monthly range for all projects available for Apache
+
+### Database worker
+
+Run the scripts for uploading data into MongoDB using this command (Please note that this takes in static .json/.csv files from the data folder, available on the server and creates collections accordingly)
+
+``` bash
+python3 ./workers/apache_mongo_worker.py
+```
 
 ### Required
 
@@ -68,7 +96,7 @@ pip package manager
 Contributions are welcome! Please feel free to open a Pull Request describing your changes. For major changes, please open an issue first to discuss what you'd like to change.
 
 ### Contact
-In case of any questions, feel free to reach out to priyal15.soni@gmail.com.
+In case of any questions, feel free to reach out to priyal15.soni@gmail.com or pdsoni@ucdavis.edu
 
 ### License
 This project is licensed under the Apache License 2.0.
