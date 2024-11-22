@@ -352,7 +352,8 @@ def get_project_info_api(project_id):
         logger.error(f"Error fetching project_info for project '{project_id}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-# This is to fetch the commits measure data for a project and the corresponding month
+
+# Fetch commit_measures for projects month-wise
 @main_routes.route('/api/commit_measure/<project_id>/<int:month>', methods=['GET'])
 @cross_origin(origin='*') 
 def get_commit_measure(project_id, month):
@@ -370,31 +371,17 @@ def get_commit_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-        # Assuming data is a list of measures; sanitize if necessary
-        sanitized_data = []
-        for measure in data:
-            if isinstance(measure, dict):
-                sanitized_measure = sanitize_document(measure)
-                sanitized_data.append(sanitized_measure)
-            elif isinstance(measure, list):
-                # Example: [metric, value]
-                sanitized_measure = [
-                    measure[0] if len(measure) > 0 and isinstance(measure[0], str) else '',
-                    measure[1] if len(measure) > 1 and isinstance(measure[1], (int, float)) else 0
-                ]
-                sanitized_data.append(sanitized_measure)
-            else:
-                sanitized_data.append({})
-        
+        # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'project_name': project['project_name'],
             'month': month,
-            'data': sanitized_data
+            'data': data  # Ensure 'data' is a dictionary/object
         }), 200
     except Exception as e:
         logger.error(f"Error fetching commit_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
+
 
 # This is to fetch the emails measure data for a month and project   
 @main_routes.route('/api/email_measure/<project_id>/<int:month>', methods=['GET'])
