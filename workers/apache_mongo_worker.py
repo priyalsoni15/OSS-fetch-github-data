@@ -29,7 +29,7 @@ class Config:
     password = urllib.parse.quote_plus('FL3YyVGCr79xlPT0')
     MONGODB_DB_NAME = 'decal-db'
     MONGODB_URI = f'mongodb+srv://{username}:{password}@cluster0.dun7u.mongodb.net/{MONGODB_DB_NAME}?retryWrites=true&w=majority'
-    
+
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod
@@ -1168,7 +1168,7 @@ def main():
     # print(process_project_info())
     # print(load_email_links_data())
     # print(load_commit_links_data())
-    # print(load_grad_forecast())
+    print(load_grad_forecast())
     # print(load_commit_measure())
     # print(load_email_measure())
     

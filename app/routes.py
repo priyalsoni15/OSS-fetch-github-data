@@ -440,3 +440,22 @@ def get_email_measure(project_id, month):
     except Exception as e:
         logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
+
+# Fetch grad_forecast for a specific project_id
+@main_routes.route('/api/grad_forecast/<project_id>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_grad_forecast_api(project_id):
+    """
+    Fetch forecast data for a specific project.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower()
+        project = db.grad_forecast.find_one({'project_id': normalized_project_id}, {'forecast': 1, '_id': 0})
+        if not project or 'forecast' not in project:
+            return jsonify({'error': f"Forecast data for project '{project_id}' not found."}), 404
+        
+        # Return only the forecast data
+        return jsonify(project['forecast']), 200
+    except Exception as e:
+        logger.error(f"Error fetching forecast data for project '{project_id}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
