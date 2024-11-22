@@ -25,11 +25,11 @@ class Config:
     DATA_DIR_STATIC = os.path.join(os.getcwd(), 'data')
     
     # Encode username and password
-    username = urllib.parse.quote_plus('oss-nav')
-    password = urllib.parse.quote_plus('navuser@98')
-    
-    MONGODB_URI = f'mongodb://{username}:{password}@localhost:27017/decal-db'
+    username = urllib.parse.quote_plus('priyalsoniwritings')
+    password = urllib.parse.quote_plus('FL3YyVGCr79xlPT0')
     MONGODB_DB_NAME = 'decal-db'
+    MONGODB_URI = f'mongodb+srv://{username}:{password}@cluster0.dun7u.mongodb.net/{MONGODB_DB_NAME}?retryWrites=true&w=majority'
+    
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod
@@ -1158,15 +1158,20 @@ def process_monthly_ranges():
                 logger.error(f"Failed to process file {filename}: {e}")
                 continue
 
-# def main():
-#     process_project_info()
-#     process_commit_links()
-#     process_commits_measure()
-#     process_email_links()
-#     process_email_measure()
-#     process_grad_forecast()
-#     logger.info("All data has been processed and loaded into MongoDB.")
+def main():
+    # print(fetch_apache_repositories_from_github())
+    # print(fetch_all_podlings())
+    # print(load_tech_net())
+    # print(load_social_net())
+    # print(process_monthly_ranges())
+    # print(load_project_info())
+    # print(process_project_info())
+    # print(load_email_links_data())
+    # print(load_commit_links_data())
+    # print(load_grad_forecast())
+    # print(load_commit_measure())
+    # print(load_email_measure())
+    
+    logger.info("All data has been processed and loaded into MongoDB.")
 
-
-# print(process_monthly_ranges())
-# print(fetch_apache_repositories_from_github())
+main()
