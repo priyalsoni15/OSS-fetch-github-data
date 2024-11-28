@@ -405,4 +405,5 @@ instance/
 .env
 
 data/new/
+data/
 .DS_store
