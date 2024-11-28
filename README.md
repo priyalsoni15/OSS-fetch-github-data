@@ -1,4 +1,6 @@
-# Open source sustainability tracker for ASF
+# Open source sustainability tracker for Apache foundation
+
+_Support for Eclipse coming soon - Stay tuned_
 
 
 Open source sustainability tracker for ASF
