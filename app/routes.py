@@ -401,29 +401,13 @@ def get_email_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-        # Assuming data is a list of email measures; sanitize if necessary
-        sanitized_data = []
-        for measure in data:
-            if isinstance(measure, dict):
-                sanitized_measure = sanitize_document(measure)
-                sanitized_data.append(sanitized_measure)
-            elif isinstance(measure, list):
-                # Example: [email, metric, value]
-                sanitized_measure = [
-                    measure[0] if len(measure) > 0 and isinstance(measure[0], str) else '',
-                    measure[1] if len(measure) > 1 and isinstance(measure[1], str) else '',
-                    measure[2] if len(measure) > 2 and isinstance(measure[2], (int, float)) else 0
-                ]
-                sanitized_data.append(sanitized_measure)
-            else:
-                sanitized_data.append({})
-        
+       # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'project_name': project['project_name'],
             'month': month,
-            'data': sanitized_data
-        }), 200
+            'data': data  # Ensure 'data' is a dictionary/object
+        }), 200 
     except Exception as e:
         logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
