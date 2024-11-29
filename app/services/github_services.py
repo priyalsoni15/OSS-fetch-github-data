@@ -10,7 +10,7 @@ db = mongo_client[Config.MONGODB_DB_NAME]
 
 def fetch_repos_service():
     try:
-        api_url = f"https://api.github.com/orgs/{Config.ORG_NAME}/repos"
+        api_url = "https://api.github.com/orgs/apache/repos"
         tokens = Config.GITHUB_TOKENS or [Config.GITHUB_TOKEN]
         if not tokens or tokens == [None]:
             logging.error("No GitHub tokens found.")

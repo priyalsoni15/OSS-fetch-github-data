@@ -46,7 +46,7 @@ def fetch_apache_repositories_from_github():
       }
     }
     """
-    variables = {"org": Config.ORG_NAME, "cursor": None}
+    variables = {"org": "apache", "cursor": None}
     has_next_page = True
     repos = []
     api_calls = 0

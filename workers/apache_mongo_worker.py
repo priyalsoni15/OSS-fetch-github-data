@@ -12,7 +12,6 @@ from pymongo import MongoClient
 import urllib.parse
 
 class Config:
-    ORG_NAME = os.environ.get('ORG_NAME')
     REPOSITORIES = [
         "https://github.com/apache/curator.git",
     ]
@@ -25,10 +24,10 @@ class Config:
     DATA_DIR_STATIC = os.path.join(os.getcwd(), 'data')
     
     # Encode username and password
-    username = urllib.parse.quote_plus('priyalsoniwritings')
-    password = urllib.parse.quote_plus('FL3YyVGCr79xlPT0')
+    username = urllib.parse.quote_plus('oss-nav')
+    password = urllib.parse.quote_plus('navuser@98')
     MONGODB_DB_NAME = 'decal-db'
-    MONGODB_URI = f'mongodb+srv://{username}:{password}@cluster0.dun7u.mongodb.net/{MONGODB_DB_NAME}?retryWrites=true&w=majority'
+    MONGODB_URI = f'mongodb://{username}:{password}@localhost:27017/{MONGODB_DB_NAME}?retryWrites=true&w=majority'
 
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
@@ -216,7 +215,7 @@ def fetch_apache_repositories_from_github():
       }
     }
     """
-    variables = {"org": Config.ORG_NAME, "cursor": None}
+    variables = {"org": "apache", "cursor": None}
     has_next_page = True
     repos = []
     api_calls = 0

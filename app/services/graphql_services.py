@@ -11,7 +11,6 @@ import os
 import urllib.parse
 
 class Config:
-    ORG_NAME = os.environ.get('ORG_NAME')
     REPOSITORIES = [
         "https://github.com/apache/curator.git",
     ]
