@@ -431,39 +431,28 @@ def get_grad_forecast_api(project_id):
         logger.error(f"Error fetching forecast data for project '{project_id}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-# [Tested temporarily - k+3] Fetch predictions data month-wise for a specific projectID
 @main_routes.route('/api/predictions/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_predictions_api(project_id, month):
     """
     GET /api/predictions/<project_id>/<int:month>
     Returns adjusted forecasts for the next three months based on the selected month's value.
+    Ensures that close values remain between 0 and 1 with a reduced adjustment factor.
     """
     try:
-        # Normalize the project_id by stripping whitespace and converting to lowercase
         normalized_project_id = project_id.strip().lower()
-        
-        # Perform a case-insensitive search using a regular expression
-        project = db.grad_forecast.find_one(
-            {'project_id': normalized_project_id},
-            {'forecast': 1, '_id': 0}
-        )
-        
-        # Check if the project was found and contains the 'forecast' field
+        project = db.grad_forecast.find_one({'project_id': normalized_project_id}, {'forecast': 1, 'project_name': 1, '_id': 0})
         if not project or 'forecast' not in project:
-            return jsonify({'error': f"Fails here - Project '{project_id}' not found."}), 404
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
 
         forecast = project.get('forecast', {})
         month_str = str(month)
-        
-        # Check if the specified month exists in the forecast
         if month_str not in forecast:
             return jsonify({'error': f"Forecast data for month '{month}' not found for project '{project_id}'."}), 404
 
         current_close = forecast[month_str]['close']
 
-        # Determine the adjustment factor based on the current_close value
-        adjustment_factor = 1.05 if current_close > 0.5 else 0.95  # Increase by 5% if > 0.5, else decrease by 5%
+        # Determine adjustment factor (reduced from 5% to 3%)
+        adjustment_factor = 1.03 if current_close > 0.5 else 0.97  # Increase by 3% if > 0.5, else decrease by 3%
 
         # Adjust the next three months
         adjusted_forecast = {}
@@ -472,13 +461,16 @@ def get_predictions_api(project_id, month):
             next_month_str = str(next_month)
             if next_month_str in forecast:
                 original_close = forecast[next_month_str]['close']
-                adjusted_close = round(original_close * adjustment_factor, 4)
+                adjusted_close = original_close * adjustment_factor
+                # Ensure the adjusted_close is between 0 and 1
+                adjusted_close = min(max(adjusted_close, 0), 1)
+                adjusted_close = round(adjusted_close, 4)
                 adjusted_forecast[next_month_str] = {
                     "date": next_month,
                     "close": adjusted_close
                 }
             else:
-                # Optionally, handle missing months (e.g., add default values or log a warning)
+                # Handle missing months if necessary
                 logger.warning(f"Forecast data for month '{next_month}' is missing for project '{project_id}'.")
                 continue
 
