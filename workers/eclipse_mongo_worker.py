@@ -371,7 +371,7 @@ def load_eclipse_grad_forecast():
         if filename.endswith('_f_data.csv'):
             logger.info(f"Processing file: {filename}")
             # Extract project_id from filename (e.g., 'abdera_f_data.csv' -> 'abdera')
-            project_id = filename.split('_f_data.csv')[0].replace(' ', '').lower()
+            project_id = filename.split('_f_data.csv')[0].replace(' ', '').replace('-','').lower()
             logger.debug(f"Extracted project_id: '{project_id}'")
 
             # Retrieve project information
@@ -392,26 +392,26 @@ def load_eclipse_grad_forecast():
 
             # Assign data to the corresponding month
             for row in raw_data:
-                date = row.get('date')
+                month = row.get('month')
                 close = row.get('close')
-                if not date or not close:
+                if not month or not close:
                     logger.warning(f"Missing 'date' or 'close' in file '{filename}', row: {row}. Skipping row.")
                     continue
-                if not date.isdigit():
-                    logger.warning(f"Invalid 'date' value '{date}' in file '{filename}'. Skipping row.")
+                if not month.isdigit():
+                    logger.warning(f"Invalid 'date' value '{month}' in file '{filename}'. Skipping row.")
                     continue
                 try:
-                    date_int = int(date)
+                    month_int = int(month)
                     close_float = float(close)
                 except ValueError:
                     logger.warning(f"Invalid data types in file '{filename}', row: {row}. Skipping row.")
                     continue
 
-                grad_forecast_data[project_id]['forecast'][str(date_int)] = {
-                    'date': date_int,
+                grad_forecast_data[project_id]['forecast'][str(month_int)] = {
+                    'month': month_int,
                     'close': close_float
                 }
-                logger.debug(f"Added forecast for project '{project_id}', month '{date_int}': {close_float}")
+                logger.debug(f"Added forecast for project '{project_id}', month '{month_int}': {close_float}")
 
             logger.info(f"Loaded forecast data for project '{project_id}' from '{filename}'.")
 
@@ -853,10 +853,10 @@ def load_commit_links_data():
 def main():
     # For a fresh insertion to MongoDB, follow this order below
     
-    print(process_eclipse_project_info())
+    # print(process_eclipse_project_info())
     # print(load_eclipse_tech_net())
     # print(load_eclipse_social_net())
-    # print(load_eclipse_grad_forecast())
+    print(load_eclipse_grad_forecast())
     # print(load_eclipse_email_measure())
     # print(load_eclipse_commit_measure())
     # print(load_eclipse_issues_measure())
