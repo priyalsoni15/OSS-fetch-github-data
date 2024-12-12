@@ -1,14 +1,7 @@
-# WIP: Do not run
 import csv
-from datetime import datetime
 import json
 import os
-import random
-import requests
 import logging
-import time
-from itertools import cycle
-from bs4 import BeautifulSoup
 from pymongo import MongoClient
 import urllib.parse
 
@@ -103,121 +96,128 @@ def get_project_info(project_id):
         logger.warning(f"Project '{normalized_project_id}' not found in 'eclispe_projects' collection.")
         return None
 
-# [Note - Use this function for a fresh start] Process Eclipse project info
+# [Fetch the Eclipse project details]
 def process_eclipse_project_info():
     project_info_dir = os.path.join('data', 'new')
     about_data_dir = os.path.join(project_info_dir, 'new_about_data')
     month_interval_dir = os.path.join(project_info_dir, 'new_month_intervals')
+    project_names_file = os.path.join(project_info_dir, 'project_names.json')
 
     projects = {}
 
-    # Process 'about_data'
+    # Load project name mappings from project_names.json
+    # Structure example:
+    # {
+    #   "Modeling": {
+    #       "EMFStore": ["emfstore-website", "org.eclipse.emf.emfstore.core"],
+    #       "Epsilon": ["epsilon-website", "epsilon"],
+    #       ...
+    #   },
+    #   "AnotherCategory": {...}
+    # }
+    #
+    # We will flatten this into a simple dict:
+    # {
+    #    "EMFStore": ["emfstore-website", "org.eclipse.emf.emfstore.core"],
+    #    "Epsilon": ["epsilon-website", "epsilon"],
+    #    ...
+    # }
+    with open(project_names_file, 'r') as f:
+        project_names_data = json.load(f)
+
+    project_name_mapping = {}
+    for category, proj_map in project_names_data.items():
+        for project_name, dependencies in proj_map.items():
+            project_name_mapping[project_name] = dependencies
+
+    # Process about_data
+    # Each about_data file is expected to match a primary project name
     for filename in os.listdir(about_data_dir):
         if filename.endswith('.json'):
             project_name = filename.replace('.json', '')
             project_id = project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
             with open(os.path.join(about_data_dir, filename), 'r') as f:
                 about_data = json.load(f)
-                about_data['project_name'] = project_name
+
+                # Add the project with known fields
                 projects[project_name] = {
                     "project_id": project_id,
-                    "project_name": about_data.get("project_name"),
+                    "project_name": project_name,
                     "project_url": about_data.get("project_url"),
                     "status": about_data.get("status"),
                     "tech": about_data.get("tech"),
-                    "releases": about_data.get("releases", [])
+                    "releases": about_data.get("releases", []),
+                    # We'll add display after all intervals are processed
                 }
 
-    # Process 'month_interval'
+                # If this project name appears in the mapping, add the dependencies
+                if project_name in project_name_mapping:
+                    projects[project_name]["dependencies"] = project_name_mapping[project_name]
+                else:
+                    projects[project_name]["dependencies"] = []
+
+    # Process month intervals
+    # Each month_interval file name might either be the project_name itself
+    # or one of the dependencies of a known project.
     for filename in os.listdir(month_interval_dir):
         if filename.endswith('.json'):
-            project_name = filename.replace('.json', '')
-            project_id = project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
+            month_interval_project_name = filename.replace('.json', '')
+
+            # Resolve the project name:
+            # Check if it's a main project name first
+            if month_interval_project_name in project_name_mapping:
+                resolved_project_name = month_interval_project_name
+            else:
+                # Otherwise, search for which main project has this as a dependency
+                resolved_project_name = None
+                for main_name, dependencies in project_name_mapping.items():
+                    if month_interval_project_name in dependencies:
+                        resolved_project_name = main_name
+                        break
+
+            # If still not found, just use the raw month_interval_project_name
+            # (This means no mapping was found, it could be a standalone project)
+            if not resolved_project_name:
+                resolved_project_name = month_interval_project_name
+
+            project_id = resolved_project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
+
             with open(os.path.join(month_interval_dir, filename), 'r') as f:
                 month_interval_data = json.load(f)
-                if project_name in projects:
-                    projects[project_name]['month_intervals'] = month_interval_data
+
+                if resolved_project_name in projects:
+                    # We found an existing project (from about_data)
+                    projects[resolved_project_name]['month_intervals'] = month_interval_data
+                    projects[resolved_project_name]['display'] = True
                 else:
-                    projects[project_name] = {
-                        'project_id': project_id,
-                        'project_name': project_name,
-                        'month_intervals': month_interval_data
+                    # No about_data found for this project, create a minimal entry
+                    # Set display = true since we have intervals
+                    dependencies = project_name_mapping.get(resolved_project_name, [])
+                    projects[resolved_project_name] = {
+                        "project_id": project_id,
+                        "project_name": resolved_project_name,
+                        "month_intervals": month_interval_data,
+                        "dependencies": dependencies,
+                        "display": True,
+                        # Minimal fields, as about_data does not exist for this project
                     }
 
-    # Save to MongoDB
-    if projects:
+    # For any project without month_intervals, set display = false
+    for p_name, p_data in projects.items():
+        if 'month_intervals' not in p_data:
+            p_data['display'] = False
+
+    # Insert into MongoDB
+    # Just insert the project docs, do not insert the mapping dictionary since we didn't store it in `projects`.
+    # (We've only stored final projects in `projects`.)
+    documents_to_insert = list(projects.values())
+
+    if documents_to_insert:
         try:
-            db.eclipse_project_info.drop()
-            db.eclipse_project_info.insert_many(projects.values())
+            db.eclipse_project_info.insert_many(documents_to_insert)
             logger.info("Eclipse project info data saved to MongoDB collection 'eclipse_project_info'.")
         except Exception as e:
             logger.error(f"Error saving Eclipse project info to MongoDB: {e}")
-
-# [Note - Use this only for an incremental approach] Load project info into MongoDB
-def load_eclipse_project_info():
-    collection = db.eclipse_project_info
-    base_path_about = os.path.join('data', 'eclipse', 'project_info', 'about_data')
-    base_path_intervals = os.path.join('data', 'eclipse', 'project_info', 'month_interval')
-
-    # Ensure both base paths exist
-    if not os.path.exists(base_path_about):
-        logger.error(f"Project info 'about_data' directory not found: {base_path_about}")
-        return
-    if not os.path.exists(base_path_intervals):
-        logger.error(f"Project info 'month_interval' directory not found: {base_path_intervals}")
-        return
-
-    # List of project_ids based on files in about_data
-    project_ids = [f[:-5].strip().lower() for f in os.listdir(base_path_about) if f.endswith('.json')]
-
-    project_info_data = {}
-
-    for project_id in project_ids:
-        logger.info(f"Processing project_info for: {project_id}")
-
-        # Paths to the JSON files
-        about_file = os.path.join(base_path_about, f"{project_id}.json")
-        intervals_file = os.path.join(base_path_intervals, f"{project_id}.json")
-
-        # Load about data
-        about_data = load_json_file(about_file)
-        if about_data is None:
-            logger.error(f"Skipping project_info for '{project_id}' due to failed load of about data.")
-            continue
-
-        # Load month intervals data
-        intervals_data = load_json_file(intervals_file)
-        if intervals_data is None:
-            logger.error(f"Skipping project_info for '{project_id}' due to failed load of month intervals data.")
-            continue
-
-        # Combine data
-        combined_data = {
-            'project_id': project_id,
-            'project_name': about_data.get('project_name'),
-            'project_url': about_data.get('project_url'),
-            'status': about_data.get('status'),
-            'tech': about_data.get('tech'),
-            'releases': about_data.get('releases', []),
-            'month_intervals': intervals_data
-        }
-
-        project_info_data[project_id] = combined_data
-        logger.info(f"Combined project_info for '{project_id}'.")
-
-    # Insert or update documents in MongoDB
-    for project_id, data in project_info_data.items():
-        try:
-            collection.update_one(
-                {'project_id': data['project_id']},
-                {'$set': data},
-                upsert=True
-            )
-            logger.info(f"Inserted/Updated project_info data for project '{data['project_name']}'.")
-        except Exception as e:
-            logger.error(f"Failed to insert/update project_info data for project '{data['project_name']}': {e}")
-
-    logger.info("Completed loading Eclipse project_info data into MongoDB.")
 
 
 # Process and load Eclipse technical network data
@@ -853,7 +853,7 @@ def load_commit_links_data():
 def main():
     # For a fresh insertion to MongoDB, follow this order below
     
-    # print(process_eclipse_project_info())
+    print(process_eclipse_project_info())
     # print(load_eclipse_tech_net())
     # print(load_eclipse_social_net())
     # print(load_eclipse_grad_forecast())

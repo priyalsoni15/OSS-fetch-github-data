@@ -60,7 +60,7 @@ def fetch_repos():
     repos = [sanitize_document(repo) for repo in repos]
     return jsonify(repos), 200
 
-# Fetch all the projects (combined from Apache and Github)
+# Fetch all the Apache projects (combined from Apache and Github)
 @main_routes.route('/api/projects', methods=['GET'])
 @cross_origin(origin='*') 
 def get_all_projects():
@@ -72,7 +72,7 @@ def get_all_projects():
         logger.error(f"Error fetching projects from MongoDB: {e}")
         return jsonify({'error': 'Failed to fetch projects.'}), 500
 
-# Fetch all github repositories - include fetching stars, forks and watch for each repo
+# Fetch all Apache github repositories - include fetching stars, forks and watch for each repo
 @main_routes.route('/api/github_stars', methods=['GET'])
 def get_github_stars():
     try:
@@ -106,7 +106,7 @@ def get_project_description():
         logger.error(f"Error fetching project descriptions from MongoDB: {e}")
         return jsonify({'error': 'Failed to fetch project descriptions.'}), 500
 
-# Fetch all project_info
+# [APACHE] Fetch all Apache projects project_info
 @main_routes.route('/api/project_info', methods=['GET'])
 @cross_origin(origin='*') 
 def get_all_project_info():
@@ -121,8 +121,22 @@ def get_all_project_info():
         logger.error(f"Error fetching project_info from MongoDB: {e}")
         return jsonify({'error': 'Failed to fetch project information.'}), 500
 
+# [ECLIPSE] Fetch all Eclipse projects project_info
+@main_routes.route('/eclipse/project_info', methods=['GET'])
+@cross_origin(origin='*') 
+def get_all_eclipse_project_info():
+    """
+    Fetch all project information.
+    """
+    try:
+        projects = list(db.eclipse_project_info.find({}, {'_id': 0}))
+        projects = [sanitize_document(project) for project in projects]
+        return jsonify({'projects': projects}), 200
+    except Exception as e:
+        logger.error(f"Error fetching project_info from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch project information.'}), 500
 
-# Fetch all month ranges for a project
+# [APACHE] Fetch all Apache month ranges for a project
 @main_routes.route('/api/monthly_ranges', methods=['GET'])
 @cross_origin(origin='*') 
 def get_all_monthly_ranges():
