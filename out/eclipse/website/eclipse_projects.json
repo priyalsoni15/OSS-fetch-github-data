@@ -1,0 +1,3917 @@
+[
+    {
+        "name": "Dash",
+        "url": "https://projects.eclipse.org/projects/technology.dash",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AsciiDoc",
+        "url": "https://projects.eclipse.org/projects/asciidoc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LSP4MP - Language Server for MicroProfile",
+        "url": "https://projects.eclipse.org/projects/technology.lsp4mp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Transformer",
+        "url": "https://projects.eclipse.org/projects/technology.transformer",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Jifa",
+        "url": "https://projects.eclipse.org/projects/technology.jifa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Amalgam",
+        "url": "https://projects.eclipse.org/projects/modeling.amalgam",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.emf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Sirius",
+        "url": "https://projects.eclipse.org/projects/modeling.sirius",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Diafanis",
+        "url": "https://projects.eclipse.org/projects/iot.diafanis",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Trace Compass",
+        "url": "https://projects.eclipse.org/projects/tools.tracecompass",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ditto",
+        "url": "https://projects.eclipse.org/projects/iot.ditto",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LMOS",
+        "url": "https://projects.eclipse.org/projects/technology.lmos",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Handly",
+        "url": "https://projects.eclipse.org/projects/technology.handly",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Fennec",
+        "url": "https://projects.eclipse.org/projects/modeling.fennec",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GlassFish",
+        "url": "https://projects.eclipse.org/projects/ee4j.glassfish",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Buildship: Plug-ins for Gradle",
+        "url": "https://projects.eclipse.org/projects/tools.buildship",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GMF Runtime",
+        "url": "https://projects.eclipse.org/projects/modeling.gmf-runtime",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Babel",
+        "url": "https://projects.eclipse.org/projects/technology.babel",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "BaSyx",
+        "url": "https://projects.eclipse.org/projects/dt.basyx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Automated Driving Open Research (ADORe)",
+        "url": "https://projects.eclipse.org/projects/automotive.adore",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Graphene",
+        "url": "https://projects.eclipse.org/projects/technology.graphene",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Nebula - Supplemental Widgets for SWT",
+        "url": "https://projects.eclipse.org/projects/technology.nebula",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Xtext",
+        "url": "https://projects.eclipse.org/projects/modeling.tmf.xtext",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Safe Open Vehicle Core",
+        "url": "https://projects.eclipse.org/projects/automotive.score",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SDV Blueprints",
+        "url": "https://projects.eclipse.org/projects/automotive.sdv-blueprints",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ATL",
+        "url": "https://projects.eclipse.org/projects/modeling.mmt.atl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenHW Group CORE-V Cores",
+        "url": "https://projects.eclipse.org/projects/openhw.corev",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Californium (Cf) CoAP Framework",
+        "url": "https://projects.eclipse.org/projects/iot.californium",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LSP4E",
+        "url": "https://projects.eclipse.org/projects/technology.lsp4e",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "aCute - C# and .NET Core development tools in IDE",
+        "url": "https://projects.eclipse.org/projects/tools.acute",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Furo",
+        "url": "https://projects.eclipse.org/projects/technology.furo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tractus-X",
+        "url": "https://projects.eclipse.org/projects/automotive.tractusx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Target Management: Terminal and Remote System Explorer (RSE)",
+        "url": "https://projects.eclipse.org/projects/tools.tm",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Collections",
+        "url": "https://projects.eclipse.org/projects/technology.collections",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Repairnator",
+        "url": "https://projects.eclipse.org/projects/technology.repairnator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Milo",
+        "url": "https://projects.eclipse.org/projects/iot.milo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mnestix AAS Browser",
+        "url": "https://projects.eclipse.org/projects/dt.mnestix",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Extended Editing Framework (EEF)",
+        "url": "https://projects.eclipse.org/projects/modeling.eef",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Remote Application Platform Incubator",
+        "url": "https://projects.eclipse.org/projects/rt.rap.incubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "BPMN2 Modeler Project",
+        "url": "https://projects.eclipse.org/projects/technology.bpmn2-modeler",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "StatET: Tooling for the R language",
+        "url": "https://projects.eclipse.org/projects/science.statet",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dataspace Decentralized Claims Protocol",
+        "url": "https://projects.eclipse.org/projects/technology.dataspace-dcp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MicroProfile",
+        "url": "https://projects.eclipse.org/projects/technology.microprofile",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dataspace Components",
+        "url": "https://projects.eclipse.org/projects/technology.edc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dataspace Protocol",
+        "url": "https://projects.eclipse.org/projects/technology.dataspace-protocol-base",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ankaios Dashboard",
+        "url": "https://projects.eclipse.org/projects/automotive.ankaios.ankaios-dashboard",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Theia",
+        "url": "https://projects.eclipse.org/projects/ecd.theia",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Common Security Infrastructure",
+        "url": "https://projects.eclipse.org/projects/technology.csi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Titan",
+        "url": "https://projects.eclipse.org/projects/tools.titan",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OSGi Technology Project",
+        "url": "https://projects.eclipse.org/projects/technology.osgi-technology",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SKyBT",
+        "url": "https://projects.eclipse.org/projects/automotive.skybt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "QVTd (QVT Declarative)",
+        "url": "https://projects.eclipse.org/projects/modeling.mmt.qvtd",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MoDisco",
+        "url": "https://projects.eclipse.org/projects/modeling.modisco",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SWTChart",
+        "url": "https://projects.eclipse.org/projects/science.swtchart",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Corinthian",
+        "url": "https://projects.eclipse.org/projects/technology.corinthian",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "4diac",
+        "url": "https://projects.eclipse.org/projects/iot.4diac",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SCM",
+        "url": "https://projects.eclipse.org/projects/automotive.scm",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Aidge",
+        "url": "https://projects.eclipse.org/projects/technology.aidge",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Open Collaboration Tools",
+        "url": "https://projects.eclipse.org/projects/ecd.oct",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Semantic Modeling Framework (ESMF)",
+        "url": "https://projects.eclipse.org/projects/dt.esmf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ThreadX",
+        "url": "https://projects.eclipse.org/projects/iot.threadx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Memory Analyzer",
+        "url": "https://projects.eclipse.org/projects/tools.mat",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Gemini",
+        "url": "https://projects.eclipse.org/projects/rt.gemini",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Service Lifecycle Management",
+        "url": "https://projects.eclipse.org/projects/dt.slm",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Automotive API Framework",
+        "url": "https://projects.eclipse.org/projects/automotive.autoapiframework",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Epsilon",
+        "url": "https://projects.eclipse.org/projects/modeling.epsilon",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "TM4E - TextMate support in the IDE",
+        "url": "https://projects.eclipse.org/projects/technology.tm4e",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LemMinX",
+        "url": "https://projects.eclipse.org/projects/technology.lemminx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SommR",
+        "url": "https://projects.eclipse.org/projects/automotive.sommr",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RCP Testing Tool",
+        "url": "https://projects.eclipse.org/projects/technology.rcptt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Vorto",
+        "url": "https://projects.eclipse.org/projects/iot.vorto",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kiso-testing",
+        "url": "https://projects.eclipse.org/projects/iot.kiso-testing",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Paho",
+        "url": "https://projects.eclipse.org/projects/iot.paho",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OMR",
+        "url": "https://projects.eclipse.org/projects/technology.omr",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Conformity Assessment Policy and Credential Profile",
+        "url": "https://projects.eclipse.org/projects/technology.dataspace-cap",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Graphical Editing Framework (GEF)",
+        "url": "https://projects.eclipse.org/projects/tools.gef",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "openPASS",
+        "url": "https://projects.eclipse.org/projects/automotive.openpass",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "XFSC (Cross Federation Services Components)",
+        "url": "https://projects.eclipse.org/projects/technology.xfsc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Free BIRD Tools",
+        "url": "https://projects.eclipse.org/projects/technology.efbt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Keti",
+        "url": "https://projects.eclipse.org/projects/iot.keti",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mosquitto",
+        "url": "https://projects.eclipse.org/projects/iot.mosquitto",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Signalling Engineering Toolbox",
+        "url": "https://projects.eclipse.org/projects/technology.set",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "uProtocol",
+        "url": "https://projects.eclipse.org/projects/automotive.uprotocol",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ShellWax",
+        "url": "https://projects.eclipse.org/projects/tools.shellwax",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kitalpha",
+        "url": "https://projects.eclipse.org/projects/polarsys.kitalpha",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tradista",
+        "url": "https://projects.eclipse.org/projects/technology.tradista",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GEMOC Studio",
+        "url": "https://projects.eclipse.org/projects/modeling.gemoc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Adoptium",
+        "url": "https://projects.eclipse.org/projects/adoptium",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tools Project",
+        "url": "https://projects.eclipse.org/projects/tools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Linux Tools",
+        "url": "https://projects.eclipse.org/projects/tools.linuxtools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "hawkBit",
+        "url": "https://projects.eclipse.org/projects/iot.hawkbit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "PolarSys",
+        "url": "https://projects.eclipse.org/projects/polarsys",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CHESS",
+        "url": "https://projects.eclipse.org/projects/polarsys.chess",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Temurin",
+        "url": "https://projects.eclipse.org/projects/adoptium.temurin",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "January",
+        "url": "https://projects.eclipse.org/projects/science.january",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Lyo",
+        "url": "https://projects.eclipse.org/projects/technology.lyo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "sensiNact",
+        "url": "https://projects.eclipse.org/projects/technology.sensinact",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CANought",
+        "url": "https://projects.eclipse.org/projects/iot.kanto.canought",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "N4JS",
+        "url": "https://projects.eclipse.org/projects/technology.n4js",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Apoapsis",
+        "url": "https://projects.eclipse.org/projects/technology.apoapsis",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Model-to-Model Transformation (MMT)",
+        "url": "https://projects.eclipse.org/projects/modeling.mmt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Model Development Tools (MDT)",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kura",
+        "url": "https://projects.eclipse.org/projects/iot.kura",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OCL (Object Constraint Language)",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.ocl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "IoT-Testware",
+        "url": "https://projects.eclipse.org/projects/technology.iottestware",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mission Control",
+        "url": "https://projects.eclipse.org/projects/adoptium.mc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Temurin Compliance",
+        "url": "https://projects.eclipse.org/projects/adoptium.temurin-compliance",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Autowrx",
+        "url": "https://projects.eclipse.org/projects/automotive.autowrx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Migration Toolkit for Java",
+        "url": "https://projects.eclipse.org/projects/adoptium.emt4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Adoptium Incubator",
+        "url": "https://projects.eclipse.org/projects/adoptium.incubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AQAvit",
+        "url": "https://projects.eclipse.org/projects/adoptium.aqavit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "QVT Operational",
+        "url": "https://projects.eclipse.org/projects/modeling.mmt.qvt-oml",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Che",
+        "url": "https://projects.eclipse.org/projects/ecd.che",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MOSAIC",
+        "url": "https://projects.eclipse.org/projects/automotive.mosaic",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenJ9",
+        "url": "https://projects.eclipse.org/projects/technology.openj9",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Edapt",
+        "url": "https://projects.eclipse.org/projects/modeling.edapt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Nebula NatTable",
+        "url": "https://projects.eclipse.org/projects/technology.nebula.nattable",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Agile UML",
+        "url": "https://projects.eclipse.org/projects/modeling.agileuml",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Capella",
+        "url": "https://projects.eclipse.org/projects/polarsys.capella",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Cargo Tracker",
+        "url": "https://projects.eclipse.org/projects/ee4j.cargotracker",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Che4z",
+        "url": "https://projects.eclipse.org/projects/ecd.che.che4z",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dartboard",
+        "url": "https://projects.eclipse.org/projects/tools.dartboard",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Cloud",
+        "url": "https://projects.eclipse.org/projects/ecd.emfcloud",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Examples for EE",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaee-examples",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GLSP",
+        "url": "https://projects.eclipse.org/projects/ecd.glsp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Hawk",
+        "url": "https://projects.eclipse.org/projects/modeling.hawk",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "iceoryx",
+        "url": "https://projects.eclipse.org/projects/technology.iceoryx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "IoT Packages",
+        "url": "https://projects.eclipse.org/projects/iot.packages",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Keyple",
+        "url": "https://projects.eclipse.org/projects/iot.keyple",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Krazo",
+        "url": "https://projects.eclipse.org/projects/ee4j.krazo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MRAA",
+        "url": "https://projects.eclipse.org/projects/iot.mraa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Packager",
+        "url": "https://projects.eclipse.org/projects/technology.packager",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Passage",
+        "url": "https://projects.eclipse.org/projects/technology.passage",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Sprotty",
+        "url": "https://projects.eclipse.org/projects/ecd.sprotty",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Steady",
+        "url": "https://projects.eclipse.org/projects/technology.steady",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "UPM",
+        "url": "https://projects.eclipse.org/projects/iot.upm",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Wild Web Developer",
+        "url": "https://projects.eclipse.org/projects/tools.wildwebdeveloper",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Batch",
+        "url": "https://projects.eclipse.org/projects/ee4j.batch",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Persistence",
+        "url": "https://projects.eclipse.org/projects/ee4j.jpa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Validation",
+        "url": "https://projects.eclipse.org/projects/ee4j.validation",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Agail",
+        "url": "https://projects.eclipse.org/projects/iot.agail",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Capra",
+        "url": "https://projects.eclipse.org/projects/modeling.capra",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EclEmma",
+        "url": "https://projects.eclipse.org/projects/technology.eclemma",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ioFog",
+        "url": "https://projects.eclipse.org/projects/iot.iofog",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JDT LS",
+        "url": "https://projects.eclipse.org/projects/eclipse.jdt.ls",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JNoSQL",
+        "url": "https://projects.eclipse.org/projects/technology.jnosql",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kapua",
+        "url": "https://projects.eclipse.org/projects/iot.kapua",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LSP4J",
+        "url": "https://projects.eclipse.org/projects/technology.lsp4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Scanning",
+        "url": "https://projects.eclipse.org/projects/science.scanning",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Science",
+        "url": "https://projects.eclipse.org/projects/science",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SUMO",
+        "url": "https://projects.eclipse.org/projects/automotive.sumo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SW360",
+        "url": "https://projects.eclipse.org/projects/technology.sw360",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "TEA (Tasking Engine Advanced)",
+        "url": "https://projects.eclipse.org/projects/technology.tea",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "TeXlipse",
+        "url": "https://projects.eclipse.org/projects/science.texlipse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "User Storage Service SDK",
+        "url": "https://projects.eclipse.org/projects/technology.usssdk",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "XACC",
+        "url": "https://projects.eclipse.org/projects/science.xacc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Xpect",
+        "url": "https://projects.eclipse.org/projects/modeling.xpect",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Xsemantics",
+        "url": "https://projects.eclipse.org/projects/modeling.xsemantics",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Yasson",
+        "url": "https://projects.eclipse.org/projects/ee4j.yasson",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Zenoh",
+        "url": "https://projects.eclipse.org/projects/iot.zenoh",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EE4J",
+        "url": "https://projects.eclipse.org/projects/ee4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Sisu",
+        "url": "https://projects.eclipse.org/projects/technology.sisu",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Scout",
+        "url": "https://projects.eclipse.org/projects/technology.scout",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Model Driven Health Tools",
+        "url": "https://projects.eclipse.org/projects/modeling.mdht",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Diff/Merge",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.diffmerge",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JTS Topology Suite",
+        "url": "https://projects.eclipse.org/projects/locationtech.jts",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RDF4J",
+        "url": "https://projects.eclipse.org/projects/technology.rdf4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kuksa",
+        "url": "https://projects.eclipse.org/projects/automotive.kuksa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Connected Services Platform",
+        "url": "https://projects.eclipse.org/projects/automotive.ecsp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Paho Incubator",
+        "url": "https://projects.eclipse.org/projects/iot.paho.incubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Open System Engineering Environment",
+        "url": "https://projects.eclipse.org/projects/technology.osee",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Leda",
+        "url": "https://projects.eclipse.org/projects/automotive.leda",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Open VSX",
+        "url": "https://projects.eclipse.org/projects/ecd.openvsx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WattAdvisor",
+        "url": "https://projects.eclipse.org/projects/technology.wattadvisor",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dataspace TCK",
+        "url": "https://projects.eclipse.org/projects/technology.dataspacetck",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "VIATRA",
+        "url": "https://projects.eclipse.org/projects/modeling.viatra",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oniro for OpenHarmony",
+        "url": "https://projects.eclipse.org/projects/oniro.oniro4openharmony",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mita",
+        "url": "https://projects.eclipse.org/projects/iot.mita",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AAS Web Client",
+        "url": "https://projects.eclipse.org/projects/dt.aaswc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Sparkplug",
+        "url": "https://projects.eclipse.org/projects/iot.sparkplug",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Data Rights Policies Profile (DRP)",
+        "url": "https://projects.eclipse.org/projects/technology.dataspace-drp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Pullpiri",
+        "url": "https://projects.eclipse.org/projects/automotive.pullpiri",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SWTImageJ",
+        "url": "https://projects.eclipse.org/projects/technology.swtimagej",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EE TCK",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaee-tck",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenBSW",
+        "url": "https://projects.eclipse.org/projects/automotive.openbsw",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "eTrice",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.etrice",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ankaios",
+        "url": "https://projects.eclipse.org/projects/automotive.ankaios",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Expression Language",
+        "url": "https://projects.eclipse.org/projects/ee4j.el",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Henshin",
+        "url": "https://projects.eclipse.org/projects/modeling.emft.henshin",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "BIRT (Business Intelligence and Reporting Tools)",
+        "url": "https://projects.eclipse.org/projects/technology.birt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Common Build Infrastructure",
+        "url": "https://projects.eclipse.org/projects/technology.cbi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Photran Fortran Development Tools",
+        "url": "https://projects.eclipse.org/projects/tools.ptp.photran",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SCAVA",
+        "url": "https://projects.eclipse.org/projects/technology.scava",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "fog05",
+        "url": "https://projects.eclipse.org/projects/iot.fog05",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Parsley",
+        "url": "https://projects.eclipse.org/projects/modeling.emf-parsley",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SysON",
+        "url": "https://projects.eclipse.org/projects/modeling.syson",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "APP4MC",
+        "url": "https://projects.eclipse.org/projects/automotive.app4mc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Business Process Model and Notation (BPMN2)",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.bpmn2",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mylyn",
+        "url": "https://projects.eclipse.org/projects/tools.mylyn",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tycho",
+        "url": "https://projects.eclipse.org/projects/technology.tycho",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ESCET (Supervisory Control Engineering Toolkit)",
+        "url": "https://projects.eclipse.org/projects/technology.escet",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Jetty - Servlet Engine and Http Server",
+        "url": "https://projects.eclipse.org/projects/rt.jetty",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Web Tools Platform Project",
+        "url": "https://projects.eclipse.org/projects/webtools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Data Tools Platform",
+        "url": "https://projects.eclipse.org/projects/tools.datatools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WindowBuilder",
+        "url": "https://projects.eclipse.org/projects/tools.windowbuilder",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "openDuT",
+        "url": "https://projects.eclipse.org/projects/automotive.opendut",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Vert.x",
+        "url": "https://projects.eclipse.org/projects/rt.vertx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Servlet",
+        "url": "https://projects.eclipse.org/projects/ee4j.servlet",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tools for Faces",
+        "url": "https://projects.eclipse.org/projects/webtools.jsf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Modeling Framework - Container Project",
+        "url": "https://projects.eclipse.org/projects/modeling.emf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AsciiDoc Language",
+        "url": "https://projects.eclipse.org/projects/asciidoc.asciidoc-lang",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Advanced Visualization Project",
+        "url": "https://projects.eclipse.org/projects/science.eavp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oniro Core Platform",
+        "url": "https://projects.eclipse.org/projects/oniro.oniro-core",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Modeling Workflow Engine",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.mwe",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "NG661 Designer",
+        "url": "https://projects.eclipse.org/projects/polarsys.ng661designer",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OM2M",
+        "url": "https://projects.eclipse.org/projects/iot.om2m",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oniro Blueprints",
+        "url": "https://projects.eclipse.org/projects/oniro.oniro-blueprints",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OneOFour",
+        "url": "https://projects.eclipse.org/projects/iot.oneofour",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "openK Core Modules",
+        "url": "https://projects.eclipse.org/projects/technology.openk-coremodules",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "openK User Modules",
+        "url": "https://projects.eclipse.org/projects/technology.openk-usermodules",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Plato",
+        "url": "https://projects.eclipse.org/projects/technology.plato",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "POOSL",
+        "url": "https://projects.eclipse.org/projects/modeling.poosl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Rich Beans",
+        "url": "https://projects.eclipse.org/projects/science.richbeans",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SmartMDSD",
+        "url": "https://projects.eclipse.org/projects/modeling.smartmdsd",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Streamsheets",
+        "url": "https://projects.eclipse.org/projects/iot.streamsheets",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Time4Sys",
+        "url": "https://projects.eclipse.org/projects/polarsys.time4sys",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "tinydtls",
+        "url": "https://projects.eclipse.org/projects/iot.tinydtls",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "TRACE4CPS",
+        "url": "https://projects.eclipse.org/projects/technology.trace4cps",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Virgo",
+        "url": "https://projects.eclipse.org/projects/rt.virgo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "VOLTTRON",
+        "url": "https://projects.eclipse.org/projects/iot.volttron",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Teneo Model - Relational Database Integration",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.teneo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Layout Kernel",
+        "url": "https://projects.eclipse.org/projects/modeling.elk",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LibIMS",
+        "url": "https://projects.eclipse.org/projects/polarsys.libims",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "B612",
+        "url": "https://projects.eclipse.org/projects/polarsys.b612",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Papyrus",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.papyrus",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Gendoc",
+        "url": "https://projects.eclipse.org/projects/modeling.gendoc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EdiTDor",
+        "url": "https://projects.eclipse.org/projects/iot.editdor",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CommaSuite",
+        "url": "https://projects.eclipse.org/projects/technology.comma",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CogniCrypt",
+        "url": "https://projects.eclipse.org/projects/technology.cognicrypt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ChemClipse",
+        "url": "https://projects.eclipse.org/projects/science.chemclipse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Austen",
+        "url": "https://projects.eclipse.org/projects/asciidoc.austen",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Arrowhead",
+        "url": "https://projects.eclipse.org/projects/iot.arrowhead",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Amlen",
+        "url": "https://projects.eclipse.org/projects/iot.amlen",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Acceleo",
+        "url": "https://projects.eclipse.org/projects/modeling.acceleo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AAS Model for Java",
+        "url": "https://projects.eclipse.org/projects/dt.aas4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Remote Application Platform",
+        "url": "https://projects.eclipse.org/projects/rt.rap",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Maven Integration - m2eclipse",
+        "url": "https://projects.eclipse.org/projects/technology.m2e",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "e(fx)clipse",
+        "url": "https://projects.eclipse.org/projects/technology.efxclipse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenSmartCLIDE",
+        "url": "https://projects.eclipse.org/projects/ecd.opensmartclide",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Public Access Submission System (PASS)",
+        "url": "https://projects.eclipse.org/projects/technology.pass",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Sphinx",
+        "url": "https://projects.eclipse.org/projects/automotive.sphinx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SWTBot",
+        "url": "https://projects.eclipse.org/projects/technology.swtbot",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "UOMo",
+        "url": "https://projects.eclipse.org/projects/technology.uomo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Web Tools Common",
+        "url": "https://projects.eclipse.org/projects/webtools.common",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WTP Java EE Tools",
+        "url": "https://projects.eclipse.org/projects/webtools.jeetools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JavaScript Development Tools",
+        "url": "https://projects.eclipse.org/projects/webtools.jsdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JKube",
+        "url": "https://projects.eclipse.org/projects/ecd.jkube",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "DAWNSci",
+        "url": "https://projects.eclipse.org/projects/science.dawnsci",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dirigible",
+        "url": "https://projects.eclipse.org/projects/ecd.dirigible",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "eCAL (enhanced Communication Abstraction Layer)",
+        "url": "https://projects.eclipse.org/projects/automotive.ecal",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EGerrit",
+        "url": "https://projects.eclipse.org/projects/technology.egerrit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Client Platform",
+        "url": "https://projects.eclipse.org/projects/modeling.ecp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "emfatic",
+        "url": "https://projects.eclipse.org/projects/modeling.emft.emfatic",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CDT Cloud",
+        "url": "https://projects.eclipse.org/projects/ecd.cdt-cloud",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WTP Source Editing",
+        "url": "https://projects.eclipse.org/projects/webtools.sourceediting",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tocandira",
+        "url": "https://projects.eclipse.org/projects/iot.tocandira",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Heimlig",
+        "url": "https://projects.eclipse.org/projects/automotive.heimlig",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dynamic Languages Toolkit",
+        "url": "https://projects.eclipse.org/projects/technology.dltk",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Xpand",
+        "url": "https://projects.eclipse.org/projects/modeling.m2t.xpand",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Generation Factories (EGF)",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.egf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EGL Development Tools",
+        "url": "https://projects.eclipse.org/projects/tools.edt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Requirements Modeling Framework",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.rmf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "XWT",
+        "url": "https://projects.eclipse.org/projects/technology.xwt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Marketplace Client",
+        "url": "https://projects.eclipse.org/projects/technology.packaging.mpc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Lua Development Tools",
+        "url": "https://projects.eclipse.org/projects/tools.ldt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Papyrus for Real Time (Papyrus-RT)",
+        "url": "https://projects.eclipse.org/projects/modeling.papyrus-rt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tools for Cloud Foundry",
+        "url": "https://projects.eclipse.org/projects/ecd.cft",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Symphony",
+        "url": "https://projects.eclipse.org/projects/iot.symphony",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Graphiti",
+        "url": "https://projects.eclipse.org/projects/modeling.graphiti",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JustJ",
+        "url": "https://projects.eclipse.org/projects/technology.justj",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Angus",
+        "url": "https://projects.eclipse.org/projects/ee4j.angus",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "NoSQL",
+        "url": "https://projects.eclipse.org/projects/ee4j.nosql",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RESTful Web Services",
+        "url": "https://projects.eclipse.org/projects/ee4j.rest",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RPC",
+        "url": "https://projects.eclipse.org/projects/ee4j.rpc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Security",
+        "url": "https://projects.eclipse.org/projects/ee4j.security",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Server Pages",
+        "url": "https://projects.eclipse.org/projects/ee4j.jsp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Stable APIs",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaee-stable",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Standard Tag Library",
+        "url": "https://projects.eclipse.org/projects/ee4j.jstl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Transactions",
+        "url": "https://projects.eclipse.org/projects/ee4j.jta",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WebSocket",
+        "url": "https://projects.eclipse.org/projects/ee4j.websocket",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "XML Binding",
+        "url": "https://projects.eclipse.org/projects/ee4j.jaxb",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "XML Web Services",
+        "url": "https://projects.eclipse.org/projects/ee4j.jaxws",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MVC",
+        "url": "https://projects.eclipse.org/projects/ee4j.mvc",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Messaging",
+        "url": "https://projects.eclipse.org/projects/ee4j.messaging",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mail",
+        "url": "https://projects.eclipse.org/projects/ee4j.mail",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JSON Processing",
+        "url": "https://projects.eclipse.org/projects/ee4j.jsonp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JSON Binding",
+        "url": "https://projects.eclipse.org/projects/ee4j.jsonb",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Interceptors",
+        "url": "https://projects.eclipse.org/projects/ee4j.interceptors",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Faces",
+        "url": "https://projects.eclipse.org/projects/ee4j.faces",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Enterprise Beans",
+        "url": "https://projects.eclipse.org/projects/ee4j.ejb",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EE Platform",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaee-platform",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Data",
+        "url": "https://projects.eclipse.org/projects/ee4j.data",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Contexts and Dependency Injection",
+        "url": "https://projects.eclipse.org/projects/ee4j.cdi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Connectors",
+        "url": "https://projects.eclipse.org/projects/ee4j.jca",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Config",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaconfig",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Concurrency",
+        "url": "https://projects.eclipse.org/projects/ee4j.cu",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Authorization",
+        "url": "https://projects.eclipse.org/projects/ee4j.authorization",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Authentication",
+        "url": "https://projects.eclipse.org/projects/ee4j.authentication",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Annotations",
+        "url": "https://projects.eclipse.org/projects/ee4j.ca",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Activation",
+        "url": "https://projects.eclipse.org/projects/ee4j.jaf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EclipseLink",
+        "url": "https://projects.eclipse.org/projects/ee4j.eclipselink",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "WaSP",
+        "url": "https://projects.eclipse.org/projects/ee4j.wasp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tyrus",
+        "url": "https://projects.eclipse.org/projects/ee4j.tyrus",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Starter for EE",
+        "url": "https://projects.eclipse.org/projects/ee4j.starter",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Soteria",
+        "url": "https://projects.eclipse.org/projects/ee4j.soteria",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Parsson",
+        "url": "https://projects.eclipse.org/projects/ee4j.parsson",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ORB",
+        "url": "https://projects.eclipse.org/projects/ee4j.orb",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenMQ",
+        "url": "https://projects.eclipse.org/projects/ee4j.openmq",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Mojarra",
+        "url": "https://projects.eclipse.org/projects/ee4j.mojarra",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Metro",
+        "url": "https://projects.eclipse.org/projects/ee4j.metro",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Jersey",
+        "url": "https://projects.eclipse.org/projects/ee4j.jersey",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Implementation of JAXB",
+        "url": "https://projects.eclipse.org/projects/ee4j.jaxb-impl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Grizzly",
+        "url": "https://projects.eclipse.org/projects/ee4j.grizzly",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ExpressLy",
+        "url": "https://projects.eclipse.org/projects/ee4j.expressly",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Exousia",
+        "url": "https://projects.eclipse.org/projects/ee4j.exousia",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Gran Sasso",
+        "url": "https://projects.eclipse.org/projects/ee4j.gransasso",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Epicyro",
+        "url": "https://projects.eclipse.org/projects/ee4j.epicyro",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Documentation for EE",
+        "url": "https://projects.eclipse.org/projects/ee4j.jakartaee-documentation",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Open DI",
+        "url": "https://projects.eclipse.org/projects/ee4j.odi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Winery",
+        "url": "https://projects.eclipse.org/projects/automotive.winery",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Packaging Project",
+        "url": "https://projects.eclipse.org/projects/technology.packaging",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Daanse - Data and Analysis Services",
+        "url": "https://projects.eclipse.org/projects/technology.daanse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Kanto",
+        "url": "https://projects.eclipse.org/projects/iot.kanto",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Server Tools",
+        "url": "https://projects.eclipse.org/projects/webtools.servertools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Wakaama",
+        "url": "https://projects.eclipse.org/projects/iot.wakaama",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Deeplearning4j",
+        "url": "https://projects.eclipse.org/projects/technology.deeplearning4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "BlueChi",
+        "url": "https://projects.eclipse.org/projects/automotive.bluechi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Textual Modeling Framework",
+        "url": "https://projects.eclipse.org/projects/modeling.tmf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JGit: Java implementation of Git",
+        "url": "https://projects.eclipse.org/projects/technology.jgit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Vhant",
+        "url": "https://projects.eclipse.org/projects/technology.vhant",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CDT (C/C++ Development Tooling)",
+        "url": "https://projects.eclipse.org/projects/tools.cdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GeoMesa",
+        "url": "https://projects.eclipse.org/projects/locationtech.geomesa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Services",
+        "url": "https://projects.eclipse.org/projects/modeling.emfservices",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Zenoh-Flow",
+        "url": "https://projects.eclipse.org/projects/iot.zenoh.zenoh-flow",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Cloud Development",
+        "url": "https://projects.eclipse.org/projects/ecd",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Orbit Project",
+        "url": "https://projects.eclipse.org/projects/tools.orbit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenCert",
+        "url": "https://projects.eclipse.org/projects/polarsys.opencert",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Automotive",
+        "url": "https://projects.eclipse.org/projects/automotive",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Web Services Tools",
+        "url": "https://projects.eclipse.org/projects/webtools.webservices",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "The Integrated Computational Environment",
+        "url": "https://projects.eclipse.org/projects/science.ice",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Target Communication Framework",
+        "url": "https://projects.eclipse.org/projects/tools.tcf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OS-Gov",
+        "url": "https://projects.eclipse.org/projects/technology.os-gov",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Hono",
+        "url": "https://projects.eclipse.org/projects/iot.hono",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Keypop",
+        "url": "https://projects.eclipse.org/projects/iot.keypop",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Langium",
+        "url": "https://projects.eclipse.org/projects/ecd.langium",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Novamoon",
+        "url": "https://projects.eclipse.org/projects/ecd.novamoon",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AASX Package Explorer and Server",
+        "url": "https://projects.eclipse.org/projects/dt.aaspe",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Modeling Project",
+        "url": "https://projects.eclipse.org/projects/modeling",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Hara",
+        "url": "https://projects.eclipse.org/projects/iot.hawkbit.hara",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MDM|BL",
+        "url": "https://projects.eclipse.org/projects/automotive.mdmbl",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Safety Framework",
+        "url": "https://projects.eclipse.org/projects/polarsys.esf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Trace Compass Incubator",
+        "url": "https://projects.eclipse.org/projects/tools.tracecompass.incubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Xpanse",
+        "url": "https://projects.eclipse.org/projects/technology.xpanse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LSAT",
+        "url": "https://projects.eclipse.org/projects/technology.lsat",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Cyclone DDS",
+        "url": "https://projects.eclipse.org/projects/iot.cyclonedds",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Qrisp",
+        "url": "https://projects.eclipse.org/projects/technology.qrisp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "FA\u00b3ST",
+        "url": "https://projects.eclipse.org/projects/dt.fa3st",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Dali Java Persistence Tools",
+        "url": "https://projects.eclipse.org/projects/webtools.dali",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Equinox",
+        "url": "https://projects.eclipse.org/projects/eclipse.equinox",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "AspectJ",
+        "url": "https://projects.eclipse.org/projects/tools.aspectj",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Formal Modeling Project",
+        "url": "https://projects.eclipse.org/projects/modeling.efm",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Webtools Releng",
+        "url": "https://projects.eclipse.org/projects/webtools.releng",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "CDO Model Repository",
+        "url": "https://projects.eclipse.org/projects/modeling.emf.cdo",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SimRel",
+        "url": "https://projects.eclipse.org/projects/technology.simrel",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Subversive SVN Team Provider",
+        "url": "https://projects.eclipse.org/projects/technology.subversive",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "PDE",
+        "url": "https://projects.eclipse.org/projects/eclipse.pde",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Serializer",
+        "url": "https://projects.eclipse.org/projects/technology.serializer",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Store",
+        "url": "https://projects.eclipse.org/projects/technology.store",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oomph",
+        "url": "https://projects.eclipse.org/projects/tools.oomph",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EGit: Git Integration for Eclipse",
+        "url": "https://projects.eclipse.org/projects/technology.egit",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Communications Framework",
+        "url": "https://projects.eclipse.org/projects/rt.ecf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Muto",
+        "url": "https://projects.eclipse.org/projects/automotive.muto",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Refactor",
+        "url": "https://projects.eclipse.org/projects/modeling.emft.refactor",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Thingweb",
+        "url": "https://projects.eclipse.org/projects/iot.thingweb",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMF Compare",
+        "url": "https://projects.eclipse.org/projects/modeling.emfcompare",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "MDT UML2",
+        "url": "https://projects.eclipse.org/projects/modeling.mdt.uml2",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Accessibility Tools Framework",
+        "url": "https://projects.eclipse.org/projects/technology.actf",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ecore Tools",
+        "url": "https://projects.eclipse.org/projects/modeling.ecoretools",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Embedded CDT (C/C++ Development Tools)",
+        "url": "https://projects.eclipse.org/projects/iot.embed-cdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenXilEnv",
+        "url": "https://projects.eclipse.org/projects/automotive.openxilenv",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Object Teams",
+        "url": "https://projects.eclipse.org/projects/tools.objectteams",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Platform",
+        "url": "https://projects.eclipse.org/projects/eclipse.platform",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Advanced Scripting Environment (EASE)",
+        "url": "https://projects.eclipse.org/projects/technology.ease",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Project",
+        "url": "https://projects.eclipse.org/projects/eclipse",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Velocitas",
+        "url": "https://projects.eclipse.org/projects/automotive.velocitas",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Chariott",
+        "url": "https://projects.eclipse.org/projects/automotive.chariott",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Leshan",
+        "url": "https://projects.eclipse.org/projects/iot.leshan",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "JDT (Java development tools)",
+        "url": "https://projects.eclipse.org/projects/eclipse.jdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ibeji",
+        "url": "https://projects.eclipse.org/projects/automotive.ibeji",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "EMFStore",
+        "url": "https://projects.eclipse.org/projects/modeling.emfstore",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Leda Incubator",
+        "url": "https://projects.eclipse.org/projects/automotive.leda.ledaincubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SDV Developer Console",
+        "url": "https://projects.eclipse.org/projects/automotive.dco",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "PHP Development Tools",
+        "url": "https://projects.eclipse.org/projects/tools.pdt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Open Standard Business Platform",
+        "url": "https://projects.eclipse.org/projects/technology.osbp",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Corrosion: the IDE for Rust",
+        "url": "https://projects.eclipse.org/projects/tools.corrosion",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "p3com",
+        "url": "https://projects.eclipse.org/projects/automotive.p3com",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oniro Compliance Toolchain",
+        "url": "https://projects.eclipse.org/projects/oniro.oniro-compliancetoolchain",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Cloe",
+        "url": "https://projects.eclipse.org/projects/automotive.cloe",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenMCx",
+        "url": "https://projects.eclipse.org/projects/automotive.openmcx",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ImageN",
+        "url": "https://projects.eclipse.org/projects/technology.imagen",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GeoWave",
+        "url": "https://projects.eclipse.org/projects/locationtech.geowave",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Proj4J",
+        "url": "https://projects.eclipse.org/projects/locationtech.proj4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RasterFrames",
+        "url": "https://projects.eclipse.org/projects/locationtech.rasterframes",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "SFCurve",
+        "url": "https://projects.eclipse.org/projects/locationtech.sfcurve",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Spatial4j",
+        "url": "https://projects.eclipse.org/projects/locationtech.spatial4j",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GeoGig",
+        "url": "https://projects.eclipse.org/projects/locationtech.geogig",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "GeoTrellis",
+        "url": "https://projects.eclipse.org/projects/locationtech.geotrellis",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OSGi Specification Project",
+        "url": "https://projects.eclipse.org/projects/technology.osgi",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Model Framework Technology (EMFT)",
+        "url": "https://projects.eclipse.org/projects/modeling.emft",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "jbom",
+        "url": "https://projects.eclipse.org/projects/technology.jbom",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Digital Twin",
+        "url": "https://projects.eclipse.org/projects/dt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ArchE",
+        "url": "https://projects.eclipse.org/projects/automotive.arche",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Ambient Light Services",
+        "url": "https://projects.eclipse.org/projects/automotive.ambientlight",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "ADAAA (Adaptive Cruise Control Demo Application for Adaptive AUTOSAR)",
+        "url": "https://projects.eclipse.org/projects/automotive.adaaa",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Tahu",
+        "url": "https://projects.eclipse.org/projects/iot.tahu",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "uDig: User-friendly Desktop Internet GIS",
+        "url": "https://projects.eclipse.org/projects/locationtech.udig",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Model To Text (M2T)",
+        "url": "https://projects.eclipse.org/projects/modeling.m2t",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LSP4Jakarta, the Language Server for EE",
+        "url": "https://projects.eclipse.org/projects/technology.lsp4jakarta",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Technology",
+        "url": "https://projects.eclipse.org/projects/technology",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Oniro",
+        "url": "https://projects.eclipse.org/projects/oniro",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "LocationTech",
+        "url": "https://projects.eclipse.org/projects/locationtech",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "OpenHW Group",
+        "url": "https://projects.eclipse.org/projects/openhw",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "RT",
+        "url": "https://projects.eclipse.org/projects/rt",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "IoT",
+        "url": "https://projects.eclipse.org/projects/iot",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    },
+    {
+        "name": "Nebula Incubator",
+        "url": "https://projects.eclipse.org/projects/technology.nebula.incubator",
+        "technology": "N/A",
+        "state": "N/A",
+        "github_repositories": "N/A",
+        "releases_or_reviews": [],
+        "mailing_list_name": "mailing-list"
+    }
+]
