@@ -5,10 +5,6 @@ from flask import Blueprint, jsonify, redirect, url_for
 from flask_cors import cross_origin
 from app.config import Config
 from pymongo import MongoClient
-from app.services.graphql_services import fetch_commits_service
-from app.services.apache_services import fetch_all_podlings, fetch_apache_repositories_from_github
-from app.services.processing import fetch_commit_data_service, process_sankey_data_all
-from app.services.github_services import fetch_repos_service
 import logging
 
 main_routes = Blueprint('main_routes', __name__)
