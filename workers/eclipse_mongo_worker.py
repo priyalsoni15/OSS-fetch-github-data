@@ -93,7 +93,7 @@ def get_project_info(project_id):
     # Normalize project_id by stripping spaces and converting to lowercase
     normalized_project_id = project_id.strip().lower()
     
-    project = db.eclipse_projects.find_one({'project_id': normalized_project_id})
+    project = db.eclipse_project_info.find_one({'project_id': normalized_project_id})
     if project:
         return {
             'project_id': project.get('project_id'),
@@ -103,159 +103,243 @@ def get_project_info(project_id):
         logger.warning(f"Project '{normalized_project_id}' not found in 'eclispe_projects' collection.")
         return None
 
+# [Note - Use this function for a fresh start] Process Eclipse project info
+def process_eclipse_project_info():
+    project_info_dir = os.path.join('data', 'new')
+    about_data_dir = os.path.join(project_info_dir, 'new_about_data')
+    month_interval_dir = os.path.join(project_info_dir, 'new_month_intervals')
 
-# Load eclipse technical network month by month
+    projects = {}
+
+    # Process 'about_data'
+    for filename in os.listdir(about_data_dir):
+        if filename.endswith('.json'):
+            project_name = filename.replace('.json', '')
+            project_id = project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
+            with open(os.path.join(about_data_dir, filename), 'r') as f:
+                about_data = json.load(f)
+                about_data['project_name'] = project_name
+                projects[project_name] = {
+                    "project_id": project_id,
+                    "project_name": about_data.get("project_name"),
+                    "project_url": about_data.get("project_url"),
+                    "status": about_data.get("status"),
+                    "tech": about_data.get("tech"),
+                    "releases": about_data.get("releases", [])
+                }
+
+    # Process 'month_interval'
+    for filename in os.listdir(month_interval_dir):
+        if filename.endswith('.json'):
+            project_name = filename.replace('.json', '')
+            project_id = project_name.lower().replace(' ', '').replace('-', '').replace('_', '')
+            with open(os.path.join(month_interval_dir, filename), 'r') as f:
+                month_interval_data = json.load(f)
+                if project_name in projects:
+                    projects[project_name]['month_intervals'] = month_interval_data
+                else:
+                    projects[project_name] = {
+                        'project_id': project_id,
+                        'project_name': project_name,
+                        'month_intervals': month_interval_data
+                    }
+
+    # Save to MongoDB
+    if projects:
+        try:
+            db.eclipse_project_info.drop()
+            db.eclipse_project_info.insert_many(projects.values())
+            logger.info("Eclipse project info data saved to MongoDB collection 'eclipse_project_info'.")
+        except Exception as e:
+            logger.error(f"Error saving Eclipse project info to MongoDB: {e}")
+
+# [Note - Use this only for an incremental approach] Load project info into MongoDB
+def load_eclipse_project_info():
+    collection = db.eclipse_project_info
+    base_path_about = os.path.join('data', 'eclipse', 'project_info', 'about_data')
+    base_path_intervals = os.path.join('data', 'eclipse', 'project_info', 'month_interval')
+
+    # Ensure both base paths exist
+    if not os.path.exists(base_path_about):
+        logger.error(f"Project info 'about_data' directory not found: {base_path_about}")
+        return
+    if not os.path.exists(base_path_intervals):
+        logger.error(f"Project info 'month_interval' directory not found: {base_path_intervals}")
+        return
+
+    # List of project_ids based on files in about_data
+    project_ids = [f[:-5].strip().lower() for f in os.listdir(base_path_about) if f.endswith('.json')]
+
+    project_info_data = {}
+
+    for project_id in project_ids:
+        logger.info(f"Processing project_info for: {project_id}")
+
+        # Paths to the JSON files
+        about_file = os.path.join(base_path_about, f"{project_id}.json")
+        intervals_file = os.path.join(base_path_intervals, f"{project_id}.json")
+
+        # Load about data
+        about_data = load_json_file(about_file)
+        if about_data is None:
+            logger.error(f"Skipping project_info for '{project_id}' due to failed load of about data.")
+            continue
+
+        # Load month intervals data
+        intervals_data = load_json_file(intervals_file)
+        if intervals_data is None:
+            logger.error(f"Skipping project_info for '{project_id}' due to failed load of month intervals data.")
+            continue
+
+        # Combine data
+        combined_data = {
+            'project_id': project_id,
+            'project_name': about_data.get('project_name'),
+            'project_url': about_data.get('project_url'),
+            'status': about_data.get('status'),
+            'tech': about_data.get('tech'),
+            'releases': about_data.get('releases', []),
+            'month_intervals': intervals_data
+        }
+
+        project_info_data[project_id] = combined_data
+        logger.info(f"Combined project_info for '{project_id}'.")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in project_info_data.items():
+        try:
+            collection.update_one(
+                {'project_id': data['project_id']},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated project_info data for project '{data['project_name']}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update project_info data for project '{data['project_name']}': {e}")
+
+    logger.info("Completed loading Eclipse project_info data into MongoDB.")
+
+
+# Process and load Eclipse technical network data
 def load_eclipse_tech_net():
     collection = db.eclipse_tech_net
-    base_path = os.path.join(Config.DATA_DIR_STATIC, 'new', 'tech_net', 'new_commit')
-    
+    base_path = os.path.join('data', 'new', 'tech_net','new_commit')
+
     # Ensure the base_path exists
     if not os.path.exists(base_path):
         logger.error(f"Tech network data directory not found: {base_path}")
         return
 
-    # Dictionary to hold all data before insertion
     tech_net_data = {}
 
-    # Iterate over all project directories in the base_path
-    for project_dir in os.listdir(base_path):
-        project_path = os.path.join(base_path, project_dir)
-        if not os.path.isdir(project_path):
-            logger.debug(f"Skipping non-directory item: {project_dir}")
+    # Iterate over project folders in the base_path
+    for project_folder in os.listdir(base_path):
+        project_folder_path = os.path.join(base_path, project_folder)
+        if not os.path.isdir(project_folder_path):
             continue
-        logger.info(f"Processing project directory: {project_dir}")
-        
-        # Iterate over all JSON files in the project directory
-        for filename in os.listdir(project_path):
-            if not filename.endswith('.json'):
-                logger.debug(f"Skipping non-JSON file: {filename}")
-                continue
 
-            logger.info(f"Processing file: {filename} in project '{project_dir}'")
-            
-            # Extract project_id and month number from filename (e.g., '4diac-examples_1.json' -> '4diac-examples', '1')
-            parts = filename.rsplit('_', 1)
-            if len(parts) != 2:
-                logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
-                continue
-            project_id_part = parts[0].strip().lower()  # Normalize to lowercase and strip spaces
-            month_part = parts[1].replace('.json', '').strip()
-            if not month_part.isdigit():
-                logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
-                continue
-            month_number = month_part
+        project_id = project_folder.lower().replace(' ', '').replace('-', '').replace('_', '')
+        logger.info(f"Processing project folder: {project_folder}")
 
-            logger.debug(f"Extracted project_id: '{project_id_part}', month_number: '{month_number}'")
+        # Iterate over JSON files inside the project folder
+        for filename in os.listdir(project_folder_path):
+            if filename.endswith('.json'):
+                logger.info(f"Processing file: {filename}")
+                parts = filename.split('_')
+                if len(parts) != 2:
+                    logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
+                    continue
+                month_part = parts[1].replace('.json', '').strip()
+                if not month_part.isdigit():
+                    logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
+                    continue
 
-            # Retrieve project information
-            project_info = get_project_info(project_id_part)
-            if not project_info:
-                logger.warning(f"Skipping file '{filename}' due to missing project information.")
-                continue
-            project_id = project_info['project_id']
-            project_name = project_info['project_name']
-            logger.debug(f"Found project_info: project_id='{project_id}', project_name='{project_name}'")
+                month_number = month_part
+                filepath = os.path.join(project_folder_path, filename)
+                raw_data = load_json_file(filepath)
+                if raw_data is None:
+                    logger.error(f"Skipping file '{filename}' due to failed JSON load.")
+                    continue
 
-            filepath = os.path.join(project_path, filename)
-            raw_data = load_json_file(filepath)
-            if raw_data is None:
-                logger.error(f"Skipping file '{filename}' due to failed JSON load.")
-                continue
+                if project_id not in tech_net_data:
+                    tech_net_data[project_id] = {
+                        'project_id': project_id,
+                        'project_name': project_folder,
+                        'months': {}
+                    }
 
-            # Initialize project entry if not already present
-            if project_id not in tech_net_data:
-                tech_net_data[project_id] = {
-                    'project_id': project_id,
-                    'project_name': project_name,
-                    'months': {}
-                }
-
-            # Assign data to the corresponding month
-            tech_net_data[project_id]['months'][month_number] = raw_data
-            logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
+                tech_net_data[project_id]['months'][month_number] = raw_data
+                logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
 
     # Insert or update documents in MongoDB
     for project_id, data in tech_net_data.items():
         try:
-            # Upsert the document: insert if it doesn't exist, update if it does
-            result = collection.update_one(
+            collection.update_one(
                 {'project_id': project_id},
                 {'$set': data},
                 upsert=True
             )
-            if result.upserted_id:
-                logger.info(f"Inserted new tech_net data for project_id '{project_id}'.")
-            else:
-                logger.info(f"Updated existing tech_net data for project_id '{project_id}'.")
+            logger.info(f"Inserted/Updated tech_net data for project_id '{project_id}'.")
         except Exception as e:
             logger.error(f"Failed to insert/update tech_net data for project_id '{project_id}': {e}")
 
-    logger.info("Completed loading eclipse tech_net data into MongoDB.")
-    
-    
-# For loading eclipse social network data from static files into MongoDB
+    logger.info("Completed loading tech_net data into MongoDB.")
+
+
+# Process and load Eclipse social network data
 def load_eclipse_social_net():
-    """Load social_net data into MongoDB grouped by project and month."""
     collection = db.eclipse_social_net
-    base_path = os.path.join(Config.DATA_DIR_STATIC, 'new', 'social_net', 'new_emails')
-    
+    base_path = os.path.join('data', 'new', 'social_net','new_issues')
+
     # Ensure the base_path exists
     if not os.path.exists(base_path):
         logger.error(f"Social network data directory not found: {base_path}")
         return
 
-    # Dictionary to hold all data before insertion
     social_net_data = {}
 
-    # Iterate over all JSON files in the directory
-    for filename in os.listdir(base_path):
-        if filename.endswith('.json'):
-            logger.info(f"Processing file: {filename}")
-            # Extract project_id and month number from filename (e.g., 'abdera_1.json' -> 'abdera', '1')
-            parts = filename.split('_')
-            if len(parts) != 2:
-                logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
-                continue
-            project_id_part = parts[0].strip().lower()  # Normalize to lowercase and strip spaces
-            month_part = parts[1].replace('.json', '').strip()
-            if not month_part.isdigit():
-                logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
-                continue
-            month_number = month_part
+    # Iterate over project folders in the base_path
+    for project_folder in os.listdir(base_path):
+        project_folder_path = os.path.join(base_path, project_folder)
+        if not os.path.isdir(project_folder_path):
+            continue
 
-            logger.debug(f"Extracted project_id: '{project_id_part}', month_number: '{month_number}'")
+        project_id = project_folder.lower().replace(' ', '').replace('-', '').replace('_', '')
+        logger.info(f"Processing project folder: {project_folder}")
 
-            # Retrieve project information
-            project_info = get_project_info(project_id_part)
-            if not project_info:
-                logger.warning(f"Skipping file '{filename}' due to missing project information.")
-                continue
-            project_id = project_info['project_id']
-            project_name = project_info['project_name']
-            logger.debug(f"Found project_info: project_id='{project_id}', project_name='{project_name}'")
+        # Iterate over JSON files inside the project folder
+        for filename in os.listdir(project_folder_path):
+            if filename.endswith('.json'):
+                logger.info(f"Processing file: {filename}")
+                parts = filename.split('_')
+                if len(parts) != 2:
+                    logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
+                    continue
+                month_part = parts[1].replace('.json', '').strip()
+                if not month_part.isdigit():
+                    logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
+                    continue
 
-            filepath = os.path.join(base_path, filename)
-            raw_data = load_json_file(filepath)
-            if raw_data is None:
-                logger.error(f"Skipping file '{filename}' due to failed JSON load.")
-                continue
+                month_number = month_part
+                filepath = os.path.join(project_folder_path, filename)
+                raw_data = load_json_file(filepath)
+                if raw_data is None:
+                    logger.error(f"Skipping file '{filename}' due to failed JSON load.")
+                    continue
 
-            # Initialize project entry if not already present
-            if project_id not in social_net_data:
-                social_net_data[project_id] = {
-                    'project_id': project_id,
-                    'project_name': project_name,
-                    'months': {}
-                }
+                if project_id not in social_net_data:
+                    social_net_data[project_id] = {
+                        'project_id': project_id,
+                        'project_name': project_folder,
+                        'months': {}
+                    }
 
-            # Assign data to the corresponding month
-            social_net_data[project_id]['months'][month_number] = raw_data
-            logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
+                social_net_data[project_id]['months'][month_number] = raw_data
+                logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
 
     # Insert or update documents in MongoDB
     for project_id, data in social_net_data.items():
         try:
-            # Upsert the document: insert if it doesn't exist, update if it does
             collection.update_one(
                 {'project_id': project_id},
                 {'$set': data},
@@ -265,21 +349,518 @@ def load_eclipse_social_net():
         except Exception as e:
             logger.error(f"Failed to insert/update social_net data for project_id '{project_id}': {e}")
 
-    logger.info("Completed loading social_net data into MongoDB.")
+    logger.info("Completed loading tech_net data into MongoDB.")
+
+
+# For loading the graduation forecast, i.e. the health of the projects:
+def load_eclipse_grad_forecast():
+    """Load grad_forecast data into MongoDB grouped by project and month."""
+    collection = db.eclipse_grad_forecast
+    base_path = os.path.join('data', 'new', 'new_forecast')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Grad forecast data directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    grad_forecast_data = {}
+
+    # Iterate over all CSV files in the directory
+    for filename in os.listdir(base_path):
+        if filename.endswith('_f_data.csv'):
+            logger.info(f"Processing file: {filename}")
+            # Extract project_id from filename (e.g., 'abdera_f_data.csv' -> 'abdera')
+            project_id = filename.split('_f_data.csv')[0].replace(' ', '').lower()
+            logger.debug(f"Extracted project_id: '{project_id}'")
+
+            # Retrieve project information
+            logger.debug(f"Found project_info: project_id='{project_id}', project_name='{project_id}'")
+
+            filepath = os.path.join(base_path, filename)
+            raw_data = load_csv_file(filepath)
+            if raw_data is None:
+                logger.error(f"Skipping file '{filename}' due to failed CSV load.")
+                continue
+
+            # Initialize project entry if not already present
+            if project_id not in grad_forecast_data:
+                grad_forecast_data[project_id] = {
+                    'project_id': project_id,
+                    'forecast': {}
+                }
+
+            # Assign data to the corresponding month
+            for row in raw_data:
+                date = row.get('date')
+                close = row.get('close')
+                if not date or not close:
+                    logger.warning(f"Missing 'date' or 'close' in file '{filename}', row: {row}. Skipping row.")
+                    continue
+                if not date.isdigit():
+                    logger.warning(f"Invalid 'date' value '{date}' in file '{filename}'. Skipping row.")
+                    continue
+                try:
+                    date_int = int(date)
+                    close_float = float(close)
+                except ValueError:
+                    logger.warning(f"Invalid data types in file '{filename}', row: {row}. Skipping row.")
+                    continue
+
+                grad_forecast_data[project_id]['forecast'][str(date_int)] = {
+                    'date': date_int,
+                    'close': close_float
+                }
+                logger.debug(f"Added forecast for project '{project_id}', month '{date_int}': {close_float}")
+
+            logger.info(f"Loaded forecast data for project '{project_id}' from '{filename}'.")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in grad_forecast_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated grad_forecast data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update grad_forecast data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading grad_forecast data into MongoDB.")
+
+# Load data for email_measure (data below the socio-tech net for each month)
+def load_eclipse_email_measure():
+    collection = db.eclipse_email_measure
+    base_path = os.path.join('data', 'new', 'emails_measure')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Emails measure data directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    email_measure_data = {}
+    
+    for project_folder in os.listdir(base_path):
+        project_folder_path = os.path.join(base_path, project_folder)
+        if not os.path.isdir(project_folder_path):
+            continue
+
+        project_id = project_folder.lower().replace(' ', '').replace('-', '').replace('_', '')
+        logger.info(f"Processing project folder: {project_folder}")
+
+        # Iterate over JSON files inside the project folder
+        for filename in os.listdir(project_folder_path):
+            if filename.endswith('.json'):
+                logger.info(f"Processing file: {filename}")
+                parts = filename.split('_')
+                if len(parts) != 2:
+                    logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
+                    continue
+                month_part = parts[1].replace('.json', '').strip()
+                if not month_part.isdigit():
+                    logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
+                    continue
+
+                month_number = month_part
+                filepath = os.path.join(project_folder_path, filename)
+                raw_data = load_json_file(filepath)
+                if raw_data is None:
+                    logger.error(f"Skipping file '{filename}' due to failed JSON load.")
+                    continue
+
+                # Initialize project entry if not already present
+                if project_id not in email_measure_data:
+                    email_measure_data[project_id] = {
+                        'project_id': project_id,
+                        'months': {}
+                    }
+
+            # Assign data to the corresponding month
+            email_measure_data[project_id]['months'][month_number] = raw_data
+            logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in email_measure_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated email measure data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update email measure data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading email_measure data into MongoDB.")
+
+
+# Load data for email_measure (data below the socio-tech net for each month)
+def load_eclipse_commit_measure():
+    collection = db.eclipse_commit_measure
+    base_path = os.path.join('data', 'new', 'commits_measure')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Commits measure directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    commit_measure_data = {}
+    
+    for project_folder in os.listdir(base_path):
+        project_folder_path = os.path.join(base_path, project_folder)
+        if not os.path.isdir(project_folder_path):
+            continue
+
+        project_id = project_folder.lower().replace(' ', '').replace('-', '').replace('_', '')
+        logger.info(f"Processing project folder: {project_folder}")
+
+        # Iterate over JSON files inside the project folder
+        for filename in os.listdir(project_folder_path):
+            if filename.endswith('.json'):
+                logger.info(f"Processing file: {filename}")
+                parts = filename.split('_')
+                if len(parts) != 2:
+                    logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
+                    continue
+                month_part = parts[1].replace('.json', '').strip()
+                if not month_part.isdigit():
+                    logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
+                    continue
+
+                month_number = month_part
+                filepath = os.path.join(project_folder_path, filename)
+                raw_data = load_json_file(filepath)
+                if raw_data is None:
+                    logger.error(f"Skipping file '{filename}' due to failed JSON load.")
+                    continue
+
+                # Initialize project entry if not already present
+                if project_id not in commit_measure_data:
+                    commit_measure_data[project_id] = {
+                        'project_id': project_id,
+                        'months': {}
+                    }
+
+            # Assign data to the corresponding month
+            commit_measure_data[project_id]['months'][month_number] = raw_data
+            logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in commit_measure_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated commit measure data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update commit measure data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading commit_measure data into MongoDB.")
+
+
+# Load data for email_measure (data below the socio-tech net for each month)
+def load_eclipse_issues_measure():
+    collection = db.eclipse_issue_measure
+    base_path = os.path.join('data', 'new', 'issues_measure')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Commits measure directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    issues_measure_data = {}
+    
+    for project_folder in os.listdir(base_path):
+        project_folder_path = os.path.join(base_path, project_folder)
+        if not os.path.isdir(project_folder_path):
+            continue
+
+        project_id = project_folder.lower().replace(' ', '').replace('-', '').replace('_', '')
+        logger.info(f"Processing project folder: {project_folder}")
+
+        # Iterate over JSON files inside the project folder
+        for filename in os.listdir(project_folder_path):
+            if filename.endswith('.json'):
+                logger.info(f"Processing file: {filename}")
+                parts = filename.split('_')
+                if len(parts) != 2:
+                    logger.warning(f"Filename '{filename}' does not conform to expected pattern 'projectid_month.json'. Skipping.")
+                    continue
+                month_part = parts[1].replace('.json', '').strip()
+                if not month_part.isdigit():
+                    logger.warning(f"Month part '{month_part}' in filename '{filename}' is not a digit. Skipping.")
+                    continue
+
+                month_number = month_part
+                filepath = os.path.join(project_folder_path, filename)
+                raw_data = load_json_file(filepath)
+                if raw_data is None:
+                    logger.error(f"Skipping file '{filename}' due to failed JSON load.")
+                    continue
+
+                # Initialize project entry if not already present
+                if project_id not in issues_measure_data:
+                    issues_measure_data[project_id] = {
+                        'project_id': project_id,
+                        'months': {}
+                    }
+
+            # Assign data to the corresponding month
+            issues_measure_data[project_id]['months'][month_number] = raw_data
+            logger.info(f"Loaded data for project '{project_id}' month '{month_number}' from '{filename}'.")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in issues_measure_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated issues measure data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update issues measure data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading issues_measure data into MongoDB.")
+
+
+# [Query - There are no emails in Eclipse - why is this loaded? )Load data for email links
+def load_eclipse_email_links_data():
+    """Load commit_links data into MongoDB grouped by project and month."""
+    collection = db.eclipse_email_links  
+    base_path = os.path.join('data', 'new', 'new_emails')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Email links data directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    email_links_data = {}
+
+    # Iterate over each project directory in commit_links
+    for project_dir in os.listdir(base_path):
+        project_path = os.path.join(base_path, project_dir)
+        if not os.path.isdir(project_path):
+            logger.warning(f"Skipping non-directory item: {project_dir}")
+            continue
+        
+        project_id = project_dir.strip().lower()
+        logger.info(f"Processing project: {project_id}")
+
+        # Retrieve project information
+        project_info = get_project_info(project_id)
+        if not project_info:
+            logger.warning(f"Skipping project '{project_id}' due to missing project information.")
+            continue
+        project_id_correct = project_info['project_id']
+        project_name = project_info['project_name']
+        logger.debug(f"Found project_info: project_id='{project_id_correct}', project_name='{project_name}'")
+
+        # Initialize project entry if not already present
+        if project_id_correct not in email_links_data:
+            email_links_data[project_id_correct] = {
+                'project_id': project_id_correct,
+                'project_name': project_name,
+                'months': {}
+            }
+
+        # Iterate over each month directory within the project
+        for month_dir in os.listdir(project_path):
+            month_path = os.path.join(project_path, month_dir)
+            if not os.path.isdir(month_path):
+                logger.warning(f"Skipping non-directory item: {month_dir} in project '{project_id_correct}'")
+                continue
+
+            month_number = month_dir.strip()
+            if not month_number.isdigit():
+                logger.warning(f"Invalid month directory name '{month_number}' in project '{project_id_correct}'. Skipping.")
+                continue
+
+            logger.info(f"Processing month: {month_number} for project: {project_id_correct}")
+
+            # Initialize month entry if not already present
+            if month_number not in email_links_data[project_id_correct]['months']:
+                email_links_data[project_id_correct]['months'][month_number] = []
+
+            # Iterate over each CSV file in the month directory
+            for csv_file in os.listdir(month_path):
+                if not csv_file.endswith('.csv'):
+                    logger.warning(f"Skipping non-CSV file: {csv_file} in project '{project_id_correct}', month '{month_number}'")
+                    continue
+
+                csv_path = os.path.join(month_path, csv_file)
+                logger.info(f"Processing file: {csv_file} in project '{project_id_correct}', month '{month_number}'")
+
+                # Load CSV data
+                csv_data = load_csv_file(csv_path)
+                if csv_data is None:
+                    logger.error(f"Skipping file '{csv_file}' in project '{project_id_correct}', month '{month_number}' due to failed CSV load.")
+                    continue
+
+                # Append each row to the month's list
+                for row in csv_data:
+                    human_date_time = row.get('human_date_time')
+                    link = row.get('link')
+                    dealised_author_full_name = row.get('dealised_author_full_name')
+
+                    if not human_date_time or not link or not dealised_author_full_name:
+                        logger.warning(f"Missing data in file '{csv_file}', project '{project_id_correct}', month '{month_number}'. Skipping row.")
+                        continue
+
+                    email_entry = {
+                        'human_date_time': human_date_time,
+                        'link': link,
+                        'dealised_author_full_name': dealised_author_full_name
+                    }
+
+                    email_links_data[project_id_correct]['months'][month_number].append(email_entry)
+                    logger.debug(f"Added email entry for project '{project_id_correct}', month '{month_number}': {email_entry}")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in email_links_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated email_links data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update email_links data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading email_links data into MongoDB.")
+
+# Load data for commit_links (for the formation of when you click on a certain node, it should load)
+def load_commit_links_data():
+    """Load commit_links data into MongoDB grouped by project and month."""
+    collection = db.eclipse_commit_links  
+    base_path = os.path.join('data', 'new', 'new_emails')
+
+    # Ensure the base_path exists
+    if not os.path.exists(base_path):
+        logger.error(f"Commit links data directory not found: {base_path}")
+        return
+
+    # Dictionary to hold all data before insertion
+    commit_links_data = {}
+
+    # Iterate over each project directory in commit_links
+    for project_dir in os.listdir(base_path):
+        project_path = os.path.join(base_path, project_dir)
+        if not os.path.isdir(project_path):
+            logger.warning(f"Skipping non-directory item: {project_dir}")
+            continue
+        
+        project_id = project_dir.strip().lower()
+        logger.info(f"Processing project: {project_id}")
+
+        # Retrieve project information
+        project_info = get_project_info(project_id)
+        if not project_info:
+            logger.warning(f"Skipping project '{project_id}' due to missing project information.")
+            continue
+        project_id_correct = project_info['project_id']
+        project_name = project_info['project_name']
+        logger.debug(f"Found project_info: project_id='{project_id_correct}', project_name='{project_name}'")
+
+        # Initialize project entry if not already present
+        if project_id_correct not in commit_links_data:
+            commit_links_data[project_id_correct] = {
+                'project_id': project_id_correct,
+                'project_name': project_name,
+                'months': {}
+            }
+
+        # Iterate over each month directory within the project
+        for month_dir in os.listdir(project_path):
+            month_path = os.path.join(project_path, month_dir)
+            if not os.path.isdir(month_path):
+                logger.warning(f"Skipping non-directory item: {month_dir} in project '{project_id_correct}'")
+                continue
+
+            month_number = month_dir.strip()
+            if not month_number.isdigit():
+                logger.warning(f"Invalid month directory name '{month_number}' in project '{project_id_correct}'. Skipping.")
+                continue
+
+            logger.info(f"Processing month: {month_number} for project: {project_id_correct}")
+
+            # Initialize month entry if not already present
+            if month_number not in commit_links_data[project_id_correct]['months']:
+                commit_links_data[project_id_correct]['months'][month_number] = []
+
+            # Iterate over each CSV file in the month directory
+            for csv_file in os.listdir(month_path):
+                if not csv_file.endswith('.csv'):
+                    logger.warning(f"Skipping non-CSV file: {csv_file} in project '{project_id_correct}', month '{month_number}'")
+                    continue
+
+                csv_path = os.path.join(month_path, csv_file)
+                logger.info(f"Processing file: {csv_file} in project '{project_id_correct}', month '{month_number}'")
+
+                # Load CSV data
+                csv_data = load_csv_file(csv_path)
+                if csv_data is None:
+                    logger.error(f"Skipping file '{csv_file}' in project '{project_id_correct}', month '{month_number}' due to failed CSV load.")
+                    continue
+
+                # Append each row to the month's list
+                for row in csv_data:
+                    human_date_time = row.get('human_date_time')
+                    link = row.get('link')
+                    dealised_author_full_name = row.get('dealised_author_full_name')
+
+                    if not human_date_time or not link or not dealised_author_full_name:
+                        logger.warning(f"Missing data in file '{csv_file}', project '{project_id_correct}', month '{month_number}'. Skipping row.")
+                        continue
+
+                    commit_entry = {
+                        'human_date_time': human_date_time,
+                        'link': link,
+                        'dealised_author_full_name': dealised_author_full_name
+                    }
+
+                    commit_links_data[project_id_correct]['months'][month_number].append(commit_entry)
+                    logger.debug(f"Added commit entry for project '{project_id_correct}', month '{month_number}': {commit_entry}")
+
+    # Insert or update documents in MongoDB
+    for project_id, data in commit_links_data.items():
+        try:
+            # Upsert the document: insert if it doesn't exist, update if it does
+            collection.update_one(
+                {'project_id': project_id},
+                {'$set': data},
+                upsert=True
+            )
+            logger.info(f"Inserted/Updated commit_links data for project_id '{project_id}'.")
+        except Exception as e:
+            logger.error(f"Failed to insert/update commit_links data for project_id '{project_id}': {e}")
+
+    logger.info("Completed loading commit_links data into MongoDB.")
 
 def main():
-    # print(fetch_apache_repositories_from_github())
-    # print(fetch_all_podlings())
-    print(load_eclipse_tech_net())
+    # For a fresh insertion to MongoDB, follow this order below
+    
+    # print(process_eclipse_project_info())
+    # print(load_eclipse_tech_net())
     # print(load_eclipse_social_net())
-    # print(process_monthly_ranges())
-    # print(load_project_info())
-    # print(process_project_info())
-    # print(load_email_links_data())
-    # print(load_commit_links_data())
-    # print(load_grad_forecast())
-    # print(load_commit_measure())
-    # print(load_email_measure())
+    # print(load_eclipse_grad_forecast())
+    # print(load_eclipse_email_measure())
+    # print(load_eclipse_commit_measure())
+    # print(load_eclipse_issues_measure())
+    # print(load_eclipse_email_links_data())
     
     logger.info("All data has been processed and loaded into MongoDB.")
 
