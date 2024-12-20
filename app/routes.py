@@ -643,6 +643,36 @@ def get_email_measure(project_id, month):
         logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
+
+# [ECLIPSE] This is to fetch the emails measure data for a month and project   
+@main_routes.route('/eclipse/email_measure/<project_id>/<int:month>', methods=['GET'])
+@cross_origin(origin='*') 
+def get_eclipse_email_measure(project_id, month):
+    """
+    Fetch email measure data for a specific project and month.
+    """
+    try:
+        normalized_project_id = project_id.strip().lower().replace(' ','').replace('-','')
+        project = db.eclipse_email_measure.find_one({'project_id': normalized_project_id})
+        if not project:
+            return jsonify({'error': f"Project '{project_id}' not found."}), 404
+        
+        month_str = str(month)
+        if 'months' not in project or month_str not in project['months']:
+            return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
+        
+        data = project['months'][month_str]
+       # Directly return the data without processing into a list
+        return jsonify({
+            'project_id': project['project_id'],
+            'month': month,
+            'data': data  # Ensure 'data' is a dictionary/object
+        }), 200 
+    except Exception as e:
+        logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+
 # [Discuss] [ECLIPSE] This is to fetch the issues measure data for a month and project - removing email as of now
 @main_routes.route('/eclipse/issue_measure/<project_id>/<int:month>', methods=['GET'])
 @cross_origin(origin='*') 
