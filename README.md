@@ -1,31 +1,27 @@
-# Open source sustainability tracker for Apache foundation
+# Open Source Sustainability Tracker for Apache and Eclipse Foundations
 
-_Support for Eclipse coming soon - Stay tuned_
-
-
-Open source sustainability tracker for ASF
-is a Flask application that fetches and processes github repos and mailing list data from Apache Software Foundation projects (incubated, mature, or incubating). It uses Github GraphQL API and GitHub REST API to collect and analyze data from GitHub repo commits, issues, etc. It also downloads mailing list archives, parses them, and extracts useful information for analysis. 
+Open source sustainability tracker for ASF and ESF is a Flask application that fetches and processes GitHub repos and mailing list data from Apache Software Foundation projects (incubated, mature, or incubating) and Eclipse Software Foundation projects. It uses GitHub GraphQL API and GitHub REST API to collect and analyze data from GitHub repo commits, issues, etc. Currently, this serves as a backend server for OSSPEX (Open Source Sustainability Explorer), and all the data rendered is pushed into the database layer (MongoDB instance).
 
 ## Installation
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/apache-mailing-list-fetcher.git](https://github.com/priyalsoni15/OSS-fetch-github-data.git
+git clone https://github.com/priyalsoni15/OSS-fetch-github-data.git
 cd OSS-fetch-github-data
 ```
 
 ### Create a Virtual Environment
 It's recommended to use a virtual environment to manage your project's dependencies.
 
-For Unix/Linux/MacOS
+For Unix/Linux/MacOS:
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-For Windows
+For Windows:
 ```bash
 python -m venv venv
 venv\Scripts\activate
@@ -49,19 +45,20 @@ flask run
 ```
 By default, the application will run on http://localhost:5000/.
 
-### Defined end-points
+### Defined Endpoints
 Access the following endpoint in your web browser or use a tool like curl:
 
-``` bash
+```bash
 http://127.0.0.1:5000/
 ```
-
 
 ## API Endpoints Documentation
 
 This document provides an overview of the available API endpoints and their functionality.
 
-### Fetching GitHub Repository Data
+### Apache API Endpoints
+
+#### Fetching GitHub Repository Data
 
 ```bash
 GET /api/projects
@@ -73,89 +70,137 @@ GET /api/github_stars
 ```
 - **Description**: Fetches stars, forks, and watch information for each GitHub repository.
 
-### Fetching Project Information
+```bash
+GET /api/github_repositories
+```
+- **Description**: Fetches all GitHub repositories from Apache.
+
+#### Fetching Project Information
 
 ```bash
 GET /api/project_description
 ```
-- **Description**: Fetches project information such as mentors, project status, etc., from the Apache website for all projects.
+- **Description**: Fetches project descriptions such as mentors, project status, etc., from the Apache website for all projects.
 
 ```bash
 GET /api/project_info
 ```
-- **Description**: Fetches all combined project information from the endpoints above.
-
-### Technical and Social Networks (Month-wise)
-
-```bash
-GET /api/tech_net/<project_id>/int:month
-```
-- **Description**: Fetches the technical network for a specific project, filtered by month.
-
-```bash
-GET /api/social_net/<project_id>/int:month
-```
-- **Description**: Fetches the social network for a specific project, filtered by month.
-
-### Commit and Email Information (Month-wise)
-
-```bash
-GET /api/commit_links/<project_id>/int:month
-```
-- **Description**: Fetches commit information for a specific project, filtered by month.
-
-```bash
-GET /api/email_links/<project_id>/int:month
-```
-- **Description**: Fetches email information for a specific project, filtered by month.
-
-### Commit and Email Measures (Month-wise)
-
-```bash
-GET /api/commit_measure/<project_id>/int:month
-```
-- **Description**: Fetches commit measure information for a specific project, filtered by month.
-
-```bash
-GET /api/email_measure/<project_id>/int:month
-```
-- **Description**: Fetches email measure information for a specific project, filtered by month.
-
-### Fetching Monthly Ranges
+- **Description**: Fetches detailed information for all Apache projects.
 
 ```bash
 GET /api/monthly_ranges
 ```
-- **Description**: Fetches the monthly range for all available Apache projects.
+- **Description**: Fetches the monthly ranges for all Apache projects.
 
+#### Technical and Social Networks (Month-wise)
 
-### Notes
-- Replace `<project_id>` with the unique identifier for the project.
-- Replace `int:month` with the specific month you want to query.
+```bash
+GET /api/tech_net/<project_id>/<int:month>
+```
+- **Description**: Fetches the technical network data for a specific Apache project, filtered by month.
+
+```bash
+GET /api/social_net/<project_id>/<int:month>
+```
+- **Description**: Fetches the social network data for a specific Apache project, filtered by month.
+
+#### Commit and Email Information (Month-wise)
+
+```bash
+GET /api/commit_links/<project_id>/<int:month>
+```
+- **Description**: Fetches commit links data for a specific Apache project, filtered by month.
+
+```bash
+GET /api/email_links/<project_id>/<int:month>
+```
+- **Description**: Fetches email links data for a specific Apache project, filtered by month.
+
+#### Forecast and Predictions
+
+```bash
+GET /api/grad_forecast/<project_id>
+```
+- **Description**: Fetches the forecast data for a specific Apache project.
+
+```bash
+GET /api/predictions/<project_id>/<int:month>
+```
+- **Description**: Fetches adjusted forecast predictions for the next three months based on the selected month's value.
 
 ---
 
-## [Feature] Database worker
+### Eclipse API Endpoints
 
-Run the scripts for uploading data into MongoDB using this command (Please note that this takes in static .json/.csv files from the data folder, available on the server and creates collections accordingly)
+#### Fetching GitHub Repository Data
 
-``` bash
+```bash
+GET /eclipse/project_info
+```
+- **Description**: Fetches all Eclipse project information, including month-wise data.
+
+#### Technical and Social Networks (Month-wise)
+
+```bash
+GET /eclipse/tech_net/<project_id>/<int:month>
+```
+- **Description**: Fetches the technical network data for a specific Eclipse project, filtered by month.
+
+```bash
+GET /eclipse/social_net/<project_id>/<int:month>
+```
+- **Description**: Fetches the social network data for a specific Eclipse project, filtered by month.
+
+#### Commit and Email Information (Month-wise)
+
+```bash
+GET /eclipse/commit_links/<project_id>/<int:month>
+```
+- **Description**: Fetches commit links data for a specific Eclipse project, filtered by month.
+
+```bash
+GET /eclipse/email_links/<project_id>/<int:month>
+```
+- **Description**: Fetches email links data for a specific Eclipse project, filtered by month.
+
+#### Forecast and Predictions
+
+```bash
+GET /eclipse/grad_forecast/<project_id>
+```
+- **Description**: Fetches the forecast data for a specific Eclipse project.
+
+```bash
+GET /eclipse/predictions/<project_id>/<int:month>
+```
+- **Description**: Fetches adjusted forecast predictions for the next three months based on the selected month's value.
+
+---
+
+## Notes
+- Replace `<project_id>` with the unique identifier for the project.
+- Replace `<int:month>` with the specific month you want to query.
+
+## [Additional] Database Worker
+
+Run the scripts for uploading data into MongoDB using this command (please note that this takes in static `.json/.csv` files from the data folder, available on the server, and creates collections accordingly):
+
+```bash
 python3 ./workers/apache_mongo_worker.py
+python3 ./workers/eclipse_mongo_worker.py
 ```
 
-### Required
-
+### Requirements
 Ensure you have the following installed on your system:
-
-Python 3.6 or higher
-pip package manager
+- Python 3.6 or higher
+- pip package manager
 
 ### Contributing
-
-Contributions are welcome! Please feel free to open a Pull Request describing your changes. For major changes, please open an issue first to discuss what you'd like to change.
+Contributions are welcome! However, do ensure that you are not committing directly to this repo. Do feel free to fork this though, and open a Pull Request for a minor fix or otherwise. For major changes, please open an issue first to discuss what you'd like to change. And we can work on integrating it!
 
 ### Contact
-In case of any questions, feel free to reach out to priyal15.soni@gmail.com or pdsoni@ucdavis.edu
+In case of any questions, feel free to reach out to priyal15.soni@gmail.com or pdsoni@ucdavis.edu.
 
 ### License
 This project is licensed under the Apache License 2.0.
+
