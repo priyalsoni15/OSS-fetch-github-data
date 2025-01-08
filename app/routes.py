@@ -48,14 +48,6 @@ def handle_invalid_path(invalid_path):
         return jsonify({'error': 'Invalid API endpoint'}), 404
     return redirect(url_for('main_routes.landing_page'))
 
-# Fetch all the repos from the Apache organization
-@main_routes.route('/fetch_repos', methods=['GET'])
-def fetch_repos():
-    fetch_apache_repositories_from_github()
-    repos = list(db.github_repositories.find({}, {'_id': 0}))
-    repos = [sanitize_document(repo) for repo in repos]
-    return jsonify(repos), 200
-
 # Fetch all the Apache projects (combined from Apache and Github)
 @main_routes.route('/api/projects', methods=['GET'])
 @cross_origin(origin='*') 
