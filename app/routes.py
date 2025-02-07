@@ -1,10 +1,11 @@
 # src/routes.py
 
 import math
-from flask import Blueprint, jsonify, redirect, url_for
+from flask import Blueprint, jsonify, redirect, request, url_for
 from flask_cors import cross_origin
 from app.config import Config
 from pymongo import MongoClient
+from app.services.rust_runner import run_rust_code
 import logging
 
 main_routes = Blueprint('main_routes', __name__)
@@ -41,12 +42,6 @@ def sanitize_document(doc):
 def landing_page():
     return "Welcome to the Repository Fetcher for Apache and Eclipse foundations!"
 
-# Redirect invalid API endpoints
-@main_routes.route('/<path:invalid_path>')
-def handle_invalid_path(invalid_path):
-    if invalid_path.startswith('api/'):
-        return jsonify({'error': 'Invalid API endpoint'}), 404
-    return redirect(url_for('main_routes.landing_page'))
 
 # Fetch all the Apache projects (combined from Apache and Github)
 @main_routes.route('/api/projects', methods=['GET'])
@@ -839,3 +834,34 @@ def get_eclipse_predictions_api(project_id, month):
     except Exception as e:
         logger.error(f"Error fetching predictions for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
+
+@main_routes.route('/api/upload_git_link', methods=['POST'])
+@cross_origin(origin='*')
+def upload_git_link():
+    try:
+        data = request.get_json()
+        git_link = data.get('git_link', '').strip()
+        if not git_link:
+            return jsonify({'error': 'No git link provided.'}), 400
+        if not git_link.lower().endswith('.git'):
+            return jsonify({'error': 'Provided URL is not a valid .git link.'}), 400
+        logging.info(f"Received .git link: {git_link}")
+        
+        # Call the rust_runner helper to run the Rust tool commands.
+        rust_output = run_rust_code(git_link)
+        
+        return jsonify({
+            'message': 'Git link received and processed successfully.',
+            'git_link': git_link,
+            'rust_output': rust_output
+        }), 200
+    except Exception as e:
+        logging.error(f"Error processing git link: {e}")
+        return jsonify({'error': 'Internal server error.'}), 500   
+
+# Redirect invalid API endpoints
+@main_routes.route('/<path:invalid_path>', methods=['GET'])
+def handle_invalid_path(invalid_path):
+    if invalid_path.startswith('api/'):
+        return jsonify({'error': 'Invalid API endpoint'}), 404
+    return redirect(url_for('main_routes.landing_page'))
