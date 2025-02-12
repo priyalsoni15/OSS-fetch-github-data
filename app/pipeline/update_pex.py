@@ -1,4 +1,5 @@
 # flask-app/pipeline/update_pex.py
+
 import subprocess
 import os
 import logging
@@ -13,19 +14,24 @@ PEX_GENERATOR_DIR = os.getenv("PEX_GENERATOR_DIR")
 
 def ensure_pex_generator_repo():
     """Ensure the PEX‑Forecaster repository is cloned locally.
-       If the target directory does not exist, create it and clone the repo.
+       If the target directory does not exist, create it and clone the repo using a PAT.
        If it exists and is a git repository, update it.
        Then, install the package in editable mode (pip install -e .).
     """
     if not PEX_GENERATOR_DIR:
         raise Exception("PEX_GENERATOR_DIR is not set in your .env file.")
     
+    # If the directory does not exist, clone the repository.
     if not os.path.exists(PEX_GENERATOR_DIR):
         try:
             os.makedirs(PEX_GENERATOR_DIR, exist_ok=True)
             logging.info(f"Directory {PEX_GENERATOR_DIR} did not exist; cloning repository.")
+            # Build the clone URL with token
+            if GITHUB_PAT is None:
+                raise Exception("GITHUB_TOKEN_1 is not set in your .env file.")
+            clone_url = PEX_GENERATOR_REPO_URL.replace("https://", f"https://{GITHUB_USERNAME}:{GITHUB_PAT}@")
             subprocess.run(
-                ["git", "clone", PEX_GENERATOR_REPO_URL, PEX_GENERATOR_DIR],
+                ["git", "clone", clone_url, PEX_GENERATOR_DIR],
                 check=True
             )
         except Exception as e:
