@@ -1,11 +1,15 @@
 # src/routes.py
 
 import math
-from flask import Blueprint, jsonify, redirect, url_for
+from flask import Blueprint, jsonify, redirect, request, url_for
 from flask_cors import cross_origin
 from app.config import Config
 from pymongo import MongoClient
 import logging
+from app.pipeline.orchestrator import run_pipeline
+from app.pipeline.run_pex import run_forecast
+from app.pipeline.rust_runner import run_rust_code
+from app.pipeline.update_pex import update_pex_generator
 
 main_routes = Blueprint('main_routes', __name__)
 
@@ -838,4 +842,26 @@ def get_eclipse_predictions_api(project_id, month):
 
     except Exception as e:
         logger.error(f"Error fetching predictions for project '{project_id}', month '{month}': {e}")
+        return jsonify({'error': 'Internal server error.'}), 500
+
+# [LOCAL GIT]
+@main_routes.route('/api/upload_git_link', methods=['POST'])
+@cross_origin(origin='*')
+def upload_git_link():
+    """
+    Receives a .git link from the frontend and triggers the pipeline.
+    """
+    try:
+        data = request.get_json()
+        git_link = data.get('git_link', '').strip()
+        if not git_link:
+            return jsonify({'error': 'No git link provided.'}), 400
+        if not git_link.lower().endswith('.git'):
+            return jsonify({'error': 'Provided URL is not a valid .git link.'}), 400
+
+        logging.info(f"Received .git link: {git_link}")
+        pipeline_result = run_pipeline(git_link)
+        return jsonify(pipeline_result), 200
+    except Exception as e:
+        logging.error(f"Error processing git link: {e}")
         return jsonify({'error': 'Internal server error.'}), 500
