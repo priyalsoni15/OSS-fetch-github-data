@@ -49,13 +49,13 @@ def ensure_pex_generator_repo():
         else:
             logging.warning(f"Directory {PEX_GENERATOR_DIR} exists but is not a git repository. Skipping clone/update.")
     
-    # Install the package in editable mode.
-    try:
-        logging.info("Installing pex-forecaster package in editable mode...")
-        subprocess.run(["pip", "install", "-e", "."], cwd=PEX_GENERATOR_DIR, check=True)
-    except Exception as e:
-        logging.error(f"Failed to install pex-forecaster in editable mode: {e}")
-        raise
+    # # Install the package in editable mode.
+    # try:
+    #     logging.info("Installing pex-forecaster package in editable mode...")
+    #     subprocess.run(["pip", "install", "-e", "."], cwd=PEX_GENERATOR_DIR, check=True)
+    # except Exception as e:
+    #     logging.error(f"Failed to install pex-forecaster in editable mode: {e}")
+    #     raise
 
     return os.path.abspath(PEX_GENERATOR_DIR)
 
