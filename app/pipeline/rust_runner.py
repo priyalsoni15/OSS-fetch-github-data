@@ -51,8 +51,14 @@ def run_rust_code(git_link):
     Returns a dictionary with the outputs.
     """
     try:
-        scraper_dir = ensure_oss_scraper_repo()
+        scraper_dir = OSS_SCRAPER_DIR
         logging.info("OSS‑Scraper directory: " + scraper_dir)
+
+        # Ensure the output folder exists (if not, create it)
+        output_folder = os.path.join(scraper_dir, "output")
+        if not os.path.exists(output_folder):
+            logging.info(f"Output folder {output_folder} does not exist. Creating it.")
+            os.makedirs(output_folder, exist_ok=True)
 
         logging.info("Running cargo clean...")
         subprocess.run(["cargo", "clean"], cwd=scraper_dir, check=True)
@@ -100,12 +106,13 @@ def run_rust_code(git_link):
             check=True
         )
         logging.info("Command 2 output: " + cmd2_result.stdout)
-
+        logging.info("Final output directory: " + os.path.abspath(output_folder))
+        
         return {
             "cargo_build": build_result.stdout,
             "fetch_github_issues": cmd1_result.stdout,
             "commit_devs_files": cmd2_result.stdout,
-            "output_dir": os.path.join(scraper_dir, "output")
+            "output_dir": os.path.abspath(output_folder)
         }
     except subprocess.CalledProcessError as e:
         logging.error("Rust tool execution failed: " + str(e))

@@ -28,20 +28,37 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     if not output_dir or not os.path.exists(output_dir):
         result_summary["error"] = "Output directory not found after running OSS‑Scraper."
         return result_summary
+    
+    # Normalize output_dir to an absolute path
+    output_dir = os.path.abspath(output_dir)
+    
+    # Log contents of the output directory for debugging
+    logging.info(f"Output directory: {output_dir}")
+    try:
+        files_in_output = os.listdir(output_dir)
+        logging.info(f"Files in output directory: {files_in_output}")
+    except Exception as e:
+        logging.error(f"Error listing files in output directory: {e}")
 
     # Find the CSV files.
     social_csvs = glob.glob(os.path.join(output_dir, "*_issues.csv"))
     tech_csvs = glob.glob(os.path.join(output_dir, "*-commit-file-dev.csv"))
+    
+    # Try an alternative pattern for technical CSV if not found
+    if not tech_csvs:
+        logging.info("No technical CSV found with pattern '*-commit-file-dev.csv'. Trying alternative pattern '*_commit_file_dev.csv'.")
+        tech_csvs = glob.glob(os.path.join(output_dir, "*_commit_file_dev.csv"))
+    
     if not social_csvs:
         result_summary["error"] = "No social network CSV (_issues.csv) found."
         return result_summary
     if not tech_csvs:
-        result_summary["error"] = "No technical network CSV (-commit-file-dev.csv) found."
+        result_summary["error"] = "No technical network CSV found."
         return result_summary
 
     # For simplicity, pick the first matching files.
-    social_csv = social_csvs[0]
-    tech_csv = tech_csvs[0]
+    social_csv = os.path.abspath(social_csvs[0])
+    tech_csv = os.path.abspath(tech_csvs[0])
     result_summary["social_csv"] = social_csv
     result_summary["tech_csv"] = tech_csv
 
