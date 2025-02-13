@@ -1,4 +1,3 @@
-# flask-app/pipeline/orchestrator.py
 import os
 import glob
 import logging
@@ -24,15 +23,14 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     rust_result = run_rust_code(git_link)
     result_summary["rust_result"] = rust_result
 
+    # Check output folder from OSS‑Scraper
     output_dir = rust_result.get("output_dir")
     if not output_dir or not os.path.exists(output_dir):
         result_summary["error"] = "Output directory not found after running OSS‑Scraper."
         return result_summary
     
-    # Normalize output_dir to an absolute path
+    # Normalize and log output directory
     output_dir = os.path.abspath(output_dir)
-    
-    # Log contents of the output directory for debugging
     logging.info(f"Output directory: {output_dir}")
     try:
         files_in_output = os.listdir(output_dir)
@@ -40,15 +38,12 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     except Exception as e:
         logging.error(f"Error listing files in output directory: {e}")
 
-    # Find the CSV files.
+    # Find CSV files for social and technical networks.
     social_csvs = glob.glob(os.path.join(output_dir, "*_issues.csv"))
     tech_csvs = glob.glob(os.path.join(output_dir, "*-commit-file-dev.csv"))
     
-    # Try an alternative pattern for technical CSV if not found
     if not tech_csvs:
-        logging.info("No technical CSV found with pattern '*-commit-file-dev.csv'. Trying alternative pattern '*_commit_file_dev.csv'.")
-        tech_csvs = glob.glob(os.path.join(output_dir, "*_commit_file_dev.csv"))
-    
+        logging.info("No technical CSV found with pattern '*-commit-file-dev.csv'.")
     if not social_csvs:
         result_summary["error"] = "No social network CSV (_issues.csv) found."
         return result_summary
@@ -56,7 +51,6 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         result_summary["error"] = "No technical network CSV found."
         return result_summary
 
-    # For simplicity, pick the first matching files.
     social_csv = os.path.abspath(social_csvs[0])
     tech_csv = os.path.abspath(tech_csvs[0])
     result_summary["social_csv"] = social_csv
@@ -65,5 +59,14 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     project = extract_project_name(git_link)
     forecast_result = run_forecast(tech_csv, social_csv, project, tasks, month_range)
     result_summary["forecast_result"] = forecast_result
+
+    # --- New: Run the ReACT extractor ---
+    try:
+        from .run_react import run_react
+        react_result = run_react()
+        result_summary["react_result"] = react_result
+    except Exception as e:
+        logging.error("ReACT extractor failed: " + str(e))
+        result_summary["react_result"] = {"error": str(e)}
 
     return result_summary
