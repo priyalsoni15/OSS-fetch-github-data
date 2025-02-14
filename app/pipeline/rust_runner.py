@@ -60,9 +60,12 @@ def run_rust_code(git_link):
             logging.info(f"Output folder {output_folder} does not exist. Creating it.")
             os.makedirs(output_folder, exist_ok=True)
 
+        """
+        # Please note: This is a blocking operation that may take a while. Only enable for debuggin purposes
         logging.info("Running cargo clean...")
         subprocess.run(["cargo", "clean"], cwd=scraper_dir, check=True)
 
+        # Please note: This is a blocking operation that may take a while. Only enable for debuggin purposes
         logging.info("Running cargo build...")
         build_result = subprocess.run(
             ["cargo", "build"],
@@ -73,6 +76,18 @@ def run_rust_code(git_link):
         )
         logging.info("Cargo build output: " + build_result.stdout)
 
+        # Please note: This is a blocking operation that may take a while. Only enable for debuggin purposes
+        logging.info("Running cargo fix bin biner...")
+        build_result = subprocess.run(
+            ["cargo", "fix", "--bin", "miner", "--allow-dirty"],
+            cwd=scraper_dir,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        logging.info("Cargo fix output: " + build_result.stdout)
+        """        
+        
         cmd1 = [
             os.path.join("target", "debug", "miner"),
             "--fetch-github-issues",
@@ -109,7 +124,6 @@ def run_rust_code(git_link):
         logging.info("Final output directory: " + os.path.abspath(output_folder))
         
         return {
-            "cargo_build": build_result.stdout,
             "fetch_github_issues": cmd1_result.stdout,
             "commit_devs_files": cmd2_result.stdout,
             "output_dir": os.path.abspath(output_folder)
