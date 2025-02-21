@@ -79,10 +79,40 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         logging.error("Forecast processing error: " + str(e))
         # Do not add forecast data to the result.
     
-    # --- Step 5: Run ReACT extractor ---
+    # --- Step 4 - (Cache collection) Move CSV files to archive folder ---
     try:
-        from .run_react import run_react
-        react_result = run_react()
+        parent_dir = os.path.dirname(output_dir)  # Get the parent directory of output_dir
+        archive_dir = os.path.join(parent_dir, "archive")
+
+        if not os.path.exists(archive_dir):
+            os.makedirs(archive_dir)
+
+        # Move files
+        social_csv_dest = os.path.join(archive_dir, os.path.basename(social_csv))
+        tech_csv_dest = os.path.join(archive_dir, os.path.basename(tech_csv))
+        
+        os.rename(social_csv, social_csv_dest)
+        os.rename(tech_csv, tech_csv_dest)
+
+        logging.info(f"Moved {social_csv} to {social_csv_dest}")
+        logging.info(f"Moved {tech_csv} to {tech_csv_dest}")
+    except Exception as e:
+        logging.error(f"Error moving CSV files to archive: {e}")
+
+        
+    # --- Step 5: Run ReACT extractor ---
+    # try:
+    #     from .run_react import run_react
+    #     react_result = run_react()
+    #     result_summary["react"] = react_result
+    # except Exception as e:
+    #     logging.error("ReACT extractor failed: " + str(e))
+    #     result_summary["react"] = {"error": str(e)}
+    
+    # --- Step 5: Run ReACT extractor (all months)---
+    try:
+        from .run_react import run_react_all
+        react_result = run_react_all()
         result_summary["react"] = react_result
     except Exception as e:
         logging.error("ReACT extractor failed: " + str(e))

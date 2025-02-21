@@ -59,7 +59,7 @@ def run_rust_code(git_link):
         if not os.path.exists(output_folder):
             logging.info(f"Output folder {output_folder} does not exist. Creating it.")
             os.makedirs(output_folder, exist_ok=True)
-
+        
         """
         # Please note: This is a blocking operation that may take a while. Only enable for debuggin purposes
         logging.info("Running cargo clean...")
