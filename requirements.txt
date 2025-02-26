@@ -21,7 +21,6 @@ contourpy==1.3.1
 cramjam==2.9.1
 cryptography==43.0.1
 cycler==0.12.1
--e git+https://github.com/arjashok/pex-forecaster.git@4471733eec2d78d52388796f3b122d82ba1463a7#egg=decalfc
 decorator==5.1.1
 defusedxml==0.7.1
 Deprecated==1.2.14
@@ -162,3 +161,4 @@ wheel==0.45.0
 wrapt==1.16.0
 yarg==0.1.9
 yarl==1.15.2
+unidecode==1.3.8
