@@ -124,8 +124,8 @@ def run_rust_code(git_link):
         logging.info("Final output directory: " + os.path.abspath(output_folder))
         
         return {
-            "fetch_github_issues": cmd1_result.stdout,
-            "commit_devs_files": cmd2_result.stdout,
+            # "fetch_github_issues": cmd1_result.stdout,
+            # "commit_devs_files": cmd2_result.stdout,
             "output_dir": os.path.abspath(output_folder)
         }
     except subprocess.CalledProcessError as e:

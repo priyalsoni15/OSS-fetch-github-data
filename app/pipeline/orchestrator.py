@@ -107,15 +107,17 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
 
     social_csv = os.path.abspath(social_csvs[0])
     tech_csv = os.path.abspath(tech_csvs[0])
-    result_summary["social_csv"] = social_csv
-    result_summary["tech_csv"] = tech_csv
-
+    
     # --- Step 4: Run pex‑forecaster forecast (run for side effects only) ---
     try:
         _ = run_forecast(tech_csv, social_csv, project_name, tasks, month_range)
     except Exception as e:
         logging.error("Forecast processing error: " + str(e))
 
+    # ✅ Fetch Data from MongoDB and Add to Response (After Processing Completes)
+    mongo_data = fetch_project_data_from_db(project_id)
+    result_summary.update(mongo_data)
+    
     # --- Step 4 - (Cache collection) Move CSV files to archive folder ---
     try:
         parent_dir = os.path.dirname(output_dir)
@@ -136,9 +138,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     except Exception as e:
         logging.error(f"Error moving CSV files to archive: {e}")
 
-    # ✅ Fetch Data from MongoDB and Add to Response (After Processing Completes)
-    mongo_data = fetch_project_data_from_db(project_id)
-    result_summary.update(mongo_data)
+    
 
     # --- Step 5: Run ReACT extractor ---
     # try:

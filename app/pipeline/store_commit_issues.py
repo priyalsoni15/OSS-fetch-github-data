@@ -6,6 +6,7 @@ from datetime import datetime
 from unidecode import unidecode
 from pymongo import MongoClient
 from dotenv import load_dotenv
+import json
 
 # Load environment variables from .env file (if present)
 load_dotenv()
@@ -13,15 +14,34 @@ load_dotenv()
 # Get the MongoDB URI from the environment (default if not set)
 MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017/testdb")
 
-def process_csv_and_store(csv_file: str, project_id: str = None, project_name: str = None):
+def detect_file_type(header_fields: list) -> str:
+    """Determine if the CSV contains commit or issue data by analyzing headers."""
+    lower_fields = [field.lower() for field in header_fields]
+    if "commit_sha" in lower_fields or "commit_url" in lower_fields:
+        return "commit"
+    if "issue_url" in lower_fields:
+        return "issue"
+    print(f"WARNING: Could not determine file type for {csv_file}. Defaulting to 'commit'.")
+    return "commit"
+    
+def parse_datetime(date_str: str, possible_formats: list) -> datetime:
+    """Try parsing a datetime string using multiple formats."""
+    for fmt in possible_formats:
+        try:
+            return datetime.strptime(date_str, fmt)
+        except ValueError:
+            pass
+    return None
+
+def process_csv_and_store(csv_file: str, earliest_dt: str = None, project_id: str = None, project_name: str = None):
     """
     Reads a CSV file of commit/issue data, detects type, groups by 'month index',
     and upserts into MongoDB under either 'commit_links' or 'issue_links'.
     """
 
-    def clean_author_name(name: str) -> str:
-        """Remove diacritics and extra spaces from an author's name."""
-        return unidecode(name).strip() if name else ""
+    # def clean_author_name(name: str) -> str:
+    #     """Remove diacritics and extra spaces from an author's name."""
+    #     return unidecode(name).strip() if name else ""
 
     def get_month_index(event_dt: datetime, earliest_dt: datetime) -> int:
         """Determine which 'month index' a given event_dt belongs to."""
@@ -30,7 +50,7 @@ def process_csv_and_store(csv_file: str, project_id: str = None, project_name: s
     def human_readable_date(dt: datetime) -> str:
         """Convert a datetime into a human-readable format."""
         return dt.strftime("%a %b %d %H:%M:%S %Y")
-
+    
     def detect_file_type(header_fields: list) -> str:
         """Determine if the CSV contains commit or issue data by analyzing headers."""
         lower_fields = [field.lower() for field in header_fields]
@@ -86,9 +106,7 @@ def process_csv_and_store(csv_file: str, project_id: str = None, project_name: s
     if not all_datetimes:
         print(f"No valid {file_type} date/times found in {csv_file}. Aborting.")
         return
-
-    earliest_dt = min(all_datetimes)
-    
+        
     # ✅ Add `last_fetched` outside `months` (human-readable format)
     final_doc = {
         "project_id": project_id,
@@ -104,9 +122,20 @@ def process_csv_and_store(csv_file: str, project_id: str = None, project_name: s
             continue
 
         m_index = str(get_month_index(dt, earliest_dt))
+        if link_type == "local_commit_links":
+            with open("commit_months.json", "a") as f:
+                f.write(f"{m_index}\n")
+        else:
+            with open("issues_months.json", "a") as f:
+                f.write(f"{m_index}\n")
         hr_date = human_readable_date(dt)
-        author = row.get("name", "") or row.get("user_name", "") or row.get("user_login", "")
-        cleaned_author = clean_author_name(author)
+        
+        if file_type == "commit":
+            author = row.get("name", "") 
+        else:
+            author = row.get("user_name", "")
+            
+        cleaned_author = author
         link = row.get("commit_url") or row.get("issue_url") or ""
 
         entry = {
@@ -121,12 +150,12 @@ def process_csv_and_store(csv_file: str, project_id: str = None, project_name: s
     db = client.get_default_database()
     collection = db[link_type]
 
-    result = collection.update_one({"project_id": project_id}, {"$set": final_doc}, upsert=True)
+    result = collection.replace_one({"project_id": project_id}, final_doc, upsert=True)
     client.close()
 
-    print(f"File classified as: {file_type.upper()}")
-    print(f"Successfully upserted data for project_id='{project_id}'.")
-    print(f"MongoDB upsert: matched_count={result.matched_count}, modified_count={result.modified_count}")
+    #print(f"File classified as: {file_type.upper()}")
+    #print(f"Successfully upserted data for project_id='{project_id}'.")
+    #print(f"MongoDB upsert: matched_count={result.matched_count}, modified_count={result.modified_count}")
 
 def process_project_data(folder_path: str, project_id: str = None, project_name: str = None):
     """
@@ -149,15 +178,36 @@ def process_project_data(folder_path: str, project_id: str = None, project_name:
                         commit_csv = file_path
                     elif "issue_url" in [h.lower() for h in headers]:
                         issue_csv = file_path
+                        
+    with open(commit_csv, "r", encoding="utf-8") as f:
+        reader = csv.DictReader(f)
+        rows = list(reader)
+
+    if not rows:
+        print(f"No data in {csv_file}. Nothing to process.")
+        return
+    
+    file_type = detect_file_type(reader.fieldnames or [])
+    date_field = "date" if file_type == "commit" else "created_at"
+    
+    datetime_formats = {
+        "commit": ["%Y-%m-%d %H:%M:%S %Z", "%Y-%m-%d %H:%M:%S", "%Y-%m-%dT%H:%M:%S%z"],
+        "issue": ["%Y-%m-%dT%H:%M:%SZ", "%Y-%m-%dT%H:%M:%S%z", "%Y-%m-%d %H:%M:%S %Z", "%Y-%m-%d %H:%M:%S"]
+    }
+
+    all_datetimes = [parse_datetime(row.get(date_field, "").strip(), datetime_formats[file_type]) for row in rows if row.get(date_field)]
+    all_datetimes = [dt for dt in all_datetimes if dt]
+    
+    earliest_dt = min(all_datetimes)
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         futures = {}
 
         if commit_csv:
-            futures[executor.submit(process_csv_and_store, commit_csv, project_id, project_name)] = "commit"
+            futures[executor.submit(process_csv_and_store, commit_csv, earliest_dt, project_id, project_name)] = "commit"
 
         if issue_csv:
-            futures[executor.submit(process_csv_and_store, issue_csv, project_id, project_name)] = "issue"
+            futures[executor.submit(process_csv_and_store, issue_csv, earliest_dt, project_id, project_name)] = "issue"
 
         for future in concurrent.futures.as_completed(futures):
             try:
