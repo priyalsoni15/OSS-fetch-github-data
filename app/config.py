@@ -3,6 +3,7 @@ import logging
 import urllib.parse
 from dotenv import load_dotenv
 
+# Load environment variables from .env file into os.environ
 load_dotenv()
 
 class Config:
@@ -16,8 +17,8 @@ class Config:
     
     DATA_DIR = os.path.join(os.getcwd(), 'out', 'apache', 'github')
     
-    # Encode username and password
-    MONGODB_URI = environ.get('MONGODB_URI')
+    MONGODB_DB_NAME = 'decal-db'
+    MONGODB_URI = os.environ.get('MONGODB_URI')
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod
