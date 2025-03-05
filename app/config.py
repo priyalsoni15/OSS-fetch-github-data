@@ -1,6 +1,9 @@
 import os
 import logging
 import urllib.parse
+from dotenv import load_dotenv
+
+load_dotenv()
 
 class Config:
     REPOSITORIES = [
@@ -14,10 +17,7 @@ class Config:
     DATA_DIR = os.path.join(os.getcwd(), 'out', 'apache', 'github')
     
     # Encode username and password
-    username = urllib.parse.quote_plus('oss-nav')
-    password = urllib.parse.quote_plus('navuser@98')
-    MONGODB_DB_NAME = 'decal-db'
-    MONGODB_URI = f'mongodb://{username}:{password}@localhost:27017/{MONGODB_DB_NAME}?retryWrites=true&w=majority'
+    MONGODB_URI = environ.get('MONGODB_URI')
 
     # Automatically collect all GITHUB_TOKEN_* variables and put them into a list
     @staticmethod

@@ -16,7 +16,7 @@ load_dotenv()
 executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)  # Ensures non-blocking execution
 
 # ✅ **Correct MongoDB Connection**
-MONGODB_URI = os.environ.get("MONGODB_URI", "mongodb://localhost:27017")
+MONGODB_URI = os.environ.get("MONGODB_URI")
 # Change default from "testdb" to "decal-db" so that the correct DB is used
 db_name = os.environ.get("MONGO_DB_NAME", "decal-db")  # Use the correct DB name
 client = MongoClient(MONGODB_URI)
