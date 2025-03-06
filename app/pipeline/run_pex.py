@@ -42,18 +42,15 @@ def run_forecast(tech_csv, social_csv, project, tasks, month_range):
     try:
         tech_df = process_tech_data(tech_csv)
         social_df = process_social_data(social_csv)
-    except Exception as e:
-        return {"error": str(e)}
-    
-    request_pkg = {
+        
+        request_pkg = {
         "project_name": project,
         "tech_data": tech_df,
         "social_data": social_df,
         "tasks": tasks.split(","),
         "month_range": [int(x) for x in month_range.split(",")]
-    }
-    
-    try:
+        }
+        
         original_dir = os.getcwd()
         os.chdir(PEX_GENERATOR_DIR)
         try:
@@ -65,4 +62,4 @@ def run_forecast(tech_csv, social_csv, project, tasks, month_range):
             result = result.to_dict(orient='records')
         return result
     except Exception as e:
-        return {"error": str(e), "traceback": traceback.format_exc()}
+        return {"error": str(e)}

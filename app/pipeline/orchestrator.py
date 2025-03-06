@@ -119,7 +119,8 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     
     # --- Step 4: Run pex‑forecaster forecast (run for side effects only) ---
     try:
-        _ = run_forecast(tech_csv, social_csv, project_name, tasks, month_range)
+        pex_result = run_forecast(tech_csv, social_csv, project_name, tasks, month_range)
+        logging.info(f"pex-forecaster result {pex_result}")
     except Exception as e:
         logging.error("Forecast processing error: " + str(e))
 
@@ -163,7 +164,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         from .run_react import run_react_all
         react_result = run_react_all()
         result_summary["react"] = react_result
-        logging.info(f"ReACT result: {result_summary['react']}")
+        logging.info(f"ReACT result obtained.")
     except Exception as e:
         logging.error("ReACT extractor failed: " + str(e))
         result_summary["react"] = {"error": str(e)}
