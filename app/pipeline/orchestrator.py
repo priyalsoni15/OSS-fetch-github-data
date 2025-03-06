@@ -72,11 +72,11 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     result_summary["metadata"] = metadata
     
     # --- Step 1: Update and ensure PEX‑Forecaster ---
-    try:
-        pex_update = update_pex_generator()
-    except Exception as e:
-        pex_update = {"error": str(e)}
-    result_summary["pex_update"] = pex_update
+    # try:
+    #     pex_update = update_pex_generator()
+    # except Exception as e:
+    #     pex_update = {"error": str(e)}
+    # result_summary["pex_update"] = pex_update
 
     # --- Step 2: Run the Rust scraper ---
     try:
@@ -186,6 +186,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
             result_summary["tech_net"] = {"error": f"File {net_vis_file} not found"}
             result_summary["social_net"] = {"error": f"File {net_vis_file} not found"}
     except Exception as e:
+        logging.error("Process net-vis JSON file failed: " + str(e))
         result_summary["tech_net"] = {"error": str(e)}
         result_summary["social_net"] = {"error": str(e)}
 
@@ -199,6 +200,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         else:
             result_summary["forecast_json"] = {"error": f"File {forecasts_file} not found"}
     except Exception as e:
+        logging.error("Read forecasts JSON file: " + str(e))
         result_summary["forecast_json"] = {"error": str(e)}
 
     return result_summary
