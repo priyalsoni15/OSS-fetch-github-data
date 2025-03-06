@@ -163,6 +163,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         from .run_react import run_react_all
         react_result = run_react_all()
         result_summary["react"] = react_result
+        logging.info(f"ReACT result: {result_summary['react']}")
     except Exception as e:
         logging.error("ReACT extractor failed: " + str(e))
         result_summary["react"] = {"error": str(e)}
@@ -185,6 +186,8 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
         else:
             result_summary["tech_net"] = {"error": f"File {net_vis_file} not found"}
             result_summary["social_net"] = {"error": f"File {net_vis_file} not found"}
+        logging.info(f"Process net-vis JSON file tech_net result: {result_summary['tech_net']}")
+        logging.info(f"Process net-vis JSON file social_net result: {result_summary['social_net']}")
     except Exception as e:
         logging.error("Process net-vis JSON file failed: " + str(e))
         result_summary["tech_net"] = {"error": str(e)}
@@ -199,6 +202,7 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
             result_summary["forecast_json"] = forecasts_data
         else:
             result_summary["forecast_json"] = {"error": f"File {forecasts_file} not found"}
+        logging.info(f"Read forecasts JSON file result: {result_summary['forecast_json']}")
     except Exception as e:
         logging.error("Read forecasts JSON file: " + str(e))
         result_summary["forecast_json"] = {"error": str(e)}
