@@ -2,7 +2,7 @@
 
 import math
 from flask import Blueprint, jsonify, redirect, request, url_for
-from flask_cors import cross_origin
+# Removed: from flask_cors import cross_origin
 from app.config import Config
 from pymongo import MongoClient
 import logging
@@ -41,7 +41,6 @@ def sanitize_document(doc):
 
 # Homepage
 @main_routes.route('/')
-@cross_origin(origin='*') 
 def landing_page():
     return "Welcome to the Repository Fetcher for Apache and Eclipse foundations!"
 
@@ -54,7 +53,6 @@ def handle_invalid_path(invalid_path):
 
 # Fetch all the Apache projects (combined from Apache and Github)
 @main_routes.route('/api/projects', methods=['GET'])
-@cross_origin(origin='*') 
 def get_all_projects():
     try:
         projects = list(db.github_repositories.find({}, {'_id': 0}))
@@ -88,7 +86,6 @@ def get_github_repositories():
 
 # [Tested] [Currently used by Vue.js] Fetch project descriptions from Apache scraping
 @main_routes.route('/api/project_description', methods=['GET'])
-@cross_origin(origin='*') 
 def get_project_description():
     try:
         description = list(db.apache_projects.find({}, {'_id': 0}))
@@ -100,7 +97,6 @@ def get_project_description():
 
 # [APACHE] Fetch all Apache projects project_info
 @main_routes.route('/api/project_info', methods=['GET'])
-@cross_origin(origin='*') 
 def get_all_project_info():
     """
     Fetch all project information.
@@ -116,7 +112,6 @@ def get_all_project_info():
 # [ECLIPSE] Fetch all Eclipse projects project_info
 # Note that this would fetch the month-wise data too
 @main_routes.route('/eclipse/project_info', methods=['GET'])
-@cross_origin(origin='*') 
 def get_all_eclipse_project_info():
     """
     Fetch all project information.
@@ -131,7 +126,6 @@ def get_all_eclipse_project_info():
 
 # [APACHE] Fetch all Apache month ranges for a project
 @main_routes.route('/api/monthly_ranges', methods=['GET'])
-@cross_origin(origin='*') 
 def get_all_monthly_ranges():
     """
     Fetch all monthly ranges for all projects.
@@ -142,13 +136,13 @@ def get_all_monthly_ranges():
         return jsonify({'project_ranges': projects}), 200
     except Exception as e:
         logger.error(f"Error fetching project_ranges from MongoDB: {e}")
+        return jsonify({'error': 'Failed to fetch project_ranges.'}), 500
 
 
 # ------------------ New API Endpoint: Tech Net Data ------------------
 
 # [APACHE]
 @main_routes.route('/api/tech_net/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_tech_net(project_id, month):
     """
     Fetch technical network data for a specific project and month.
@@ -191,7 +185,6 @@ def get_tech_net(project_id, month):
 
 # [ECLIPSE]
 @main_routes.route('/eclipse/tech_net/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_tech_net(project_id, month):
     """
     Fetch technical network data for a specific project and month.
@@ -234,7 +227,6 @@ def get_eclipse_tech_net(project_id, month):
 
 # [APACHE] This is to fetch the social network data for a specific project and month
 @main_routes.route('/api/social_net/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*')
 def get_social_net(project_id, month):
     """
     Fetch social network data for a specific project and month.
@@ -274,7 +266,7 @@ def get_social_net(project_id, month):
                 sanitized_entry = [
                     name if isinstance(name, str) else '',
                     relation if isinstance(relation, str) else '',
-                    value  # Use the converted numeric value
+                    value
                 ]
                 sanitized_data.append(sanitized_entry)
             else:
@@ -292,10 +284,8 @@ def get_social_net(project_id, month):
         logger.error(f"Error fetching social_net data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-
 # [ECLIPSE] This is to fetch the social network data for a specific project and month
 @main_routes.route('/eclipse/social_net/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*')
 def get_eclipse_social_net(project_id, month):
     """
     Fetch social network data for a specific project and month.
@@ -330,12 +320,12 @@ def get_eclipse_social_net(project_id, month):
                     value = int(value) if isinstance(value, str) and value.isdigit() else float(value)
                 except ValueError:
                     logger.warning(f"Invalid value in entry: {entry}")
-                    continue  # Skip this entry if value conversion fails
+                    continue
 
                 sanitized_entry = [
                     name if isinstance(name, str) else '',
                     relation if isinstance(relation, str) else '',
-                    value  # Use the converted numeric value
+                    value
                 ]
                 sanitized_data.append(sanitized_entry)
             else:
@@ -354,7 +344,6 @@ def get_eclipse_social_net(project_id, month):
 
 # This is to fetch commit links data for a particular project for a particular month
 @main_routes.route('/api/commit_links/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_commit_links(project_id, month):
     """
     Fetch commit links data for a specific project and month.
@@ -399,7 +388,6 @@ def get_commit_links(project_id, month):
 
 # [ECLIPSE] This is to fetch commit links data for a particular project for a particular month
 @main_routes.route('/eclipse/commit_links/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_commit_links(project_id, month):
     """
     Fetch commit links data for a specific project and month.
@@ -443,7 +431,6 @@ def get_eclipse_commit_links(project_id, month):
 
 # [APACHE] This is to fetch email links data for a particular project for a particular month
 @main_routes.route('/api/email_links/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_email_links(project_id, month):
     """
     Fetch email links data for a specific project and month.
@@ -488,7 +475,6 @@ def get_email_links(project_id, month):
 
 # [ECLIPSE] This is to fetch email links data for a particular project for a particular month
 @main_routes.route('/eclipse/email_links/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_email_links(project_id, month):
     """
     Fetch email links data for a specific project and month.
@@ -532,7 +518,6 @@ def get_eclipse_email_links(project_id, month):
 
 # [APACHE] Fetch project_info for a specific project_id
 @main_routes.route('/api/project_info/<project_id>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_project_info_api(project_id):
     """
     Fetch combined project information for a specific project.
@@ -551,10 +536,8 @@ def get_project_info_api(project_id):
         logger.error(f"Error fetching project_info for project '{project_id}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-
 # [APACHE] Fetch commit_measures for projects month-wise
 @main_routes.route('/api/commit_measure/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_commit_measure(project_id, month):
     """
     Fetch commit measure data for a specific project and month.
@@ -570,12 +553,11 @@ def get_commit_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-        # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'project_name': project['project_name'],
             'month': month,
-            'data': data  # Ensure 'data' is a dictionary/object
+            'data': data
         }), 200
     except Exception as e:
         logger.error(f"Error fetching commit_measure data for project '{project_id}', month '{month}': {e}")
@@ -583,7 +565,6 @@ def get_commit_measure(project_id, month):
 
 # [ECLIPSE] Fetch commit_measures for projects month-wise
 @main_routes.route('/eclipse/commit_measure/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_commit_measure(project_id, month):
     """
     Fetch commit measure data for a specific project and month.
@@ -599,20 +580,17 @@ def get_eclipse_commit_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-        # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'month': month,
-            'data': data  # Ensure 'data' is a dictionary/object
+            'data': data
         }), 200
     except Exception as e:
         logger.error(f"Error fetching commit_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-
 # [APACHE] This is to fetch the emails measure data for a month and project   
 @main_routes.route('/api/email_measure/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_email_measure(project_id, month):
     """
     Fetch email measure data for a specific project and month.
@@ -628,21 +606,18 @@ def get_email_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-       # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'project_name': project['project_name'],
             'month': month,
-            'data': data  # Ensure 'data' is a dictionary/object
+            'data': data
         }), 200 
     except Exception as e:
         logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-
-# [ECLIPSE] This is to fetch the emails measure data for a month and project   
+# [ECLIPSE] This is to fetch the emails measure data for a month and project
 @main_routes.route('/eclipse/email_measure/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_email_measure(project_id, month):
     """
     Fetch email measure data for a specific project and month.
@@ -658,23 +633,20 @@ def get_eclipse_email_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-       # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'month': month,
-            'data': data  # Ensure 'data' is a dictionary/object
+            'data': data
         }), 200 
     except Exception as e:
         logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
 
-
 # [Discuss] [ECLIPSE] This is to fetch the issues measure data for a month and project - removing email as of now
 @main_routes.route('/eclipse/issue_measure/<project_id>/<int:month>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_issue_measure(project_id, month):
     """
-    Fetch email measure data for a specific project and month.
+    Fetch issue measure data for a specific project and month.
     """
     try:
         normalized_project_id = project_id.strip().lower().replace(' ','').replace('-','')
@@ -687,20 +659,17 @@ def get_eclipse_issue_measure(project_id, month):
             return jsonify({'error': f"Month '{month}' data not found for project '{project_id}'."}), 404
         
         data = project['months'][month_str]
-       # Directly return the data without processing into a list
         return jsonify({
             'project_id': project['project_id'],
             'month': month,
-            'data': data  # Ensure 'data' is a dictionary/object
+            'data': data
         }), 200 
     except Exception as e:
-        logger.error(f"Error fetching email_measure data for project '{project_id}', month '{month}': {e}")
+        logger.error(f"Error fetching issue_measure data for project '{project_id}', month '{month}': {e}")
         return jsonify({'error': 'Internal server error.'}), 500
-
 
 # [APACHE] Fetch grad_forecast for a specific project_id
 @main_routes.route('/api/grad_forecast/<project_id>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_grad_forecast_api(project_id):
     """
     Fetch forecast data for a specific project.
@@ -719,7 +688,6 @@ def get_grad_forecast_api(project_id):
 
 # [ECLIPSE] Fetch grad_forecast for a specific project_id
 @main_routes.route('/eclipse/grad_forecast/<project_id>', methods=['GET'])
-@cross_origin(origin='*') 
 def get_eclipse_grad_forecast_api(project_id):
     """
     Fetch forecast data for a specific project.
@@ -758,7 +726,7 @@ def get_predictions_api(project_id, month):
         current_close = forecast[month_str]['close']
 
         # Determine adjustment factor (reduced from 5% to 3%)
-        adjustment_factor = 1.03 if current_close > 0.5 else 0.97  # Increase by 3% if > 0.5, else decrease by 3%
+        adjustment_factor = 1.03 if current_close > 0.5 else 0.97
 
         # Adjust the next three months
         adjusted_forecast = {}
@@ -776,9 +744,7 @@ def get_predictions_api(project_id, month):
                     "close": adjusted_close
                 }
             else:
-                # Handle missing months if necessary
                 logger.warning(f"Forecast data for month '{next_month}' is missing for project '{project_id}'.")
-                continue
 
         return jsonify({
             'project_id': project_id,
@@ -812,7 +778,7 @@ def get_eclipse_predictions_api(project_id, month):
         current_close = forecast[month_str]['close']
 
         # Determine adjustment factor (reduced from 5% to 3%)
-        adjustment_factor = 1.03 if current_close > 0.5 else 0.97  # Increase by 3% if > 0.5, else decrease by 3%
+        adjustment_factor = 1.03 if current_close > 0.5 else 0.97
 
         # Adjust the next three months
         adjusted_forecast = {}
@@ -830,9 +796,7 @@ def get_eclipse_predictions_api(project_id, month):
                     "close": adjusted_close
                 }
             else:
-                # Handle missing months if necessary
                 logger.warning(f"Forecast data for month '{next_month}' is missing for project '{project_id}'.")
-                continue
 
         return jsonify({
             'project_id': project_id,
@@ -846,7 +810,6 @@ def get_eclipse_predictions_api(project_id, month):
 
 # [LOCAL GIT]
 @main_routes.route('/api/upload_git_link', methods=['POST'])
-@cross_origin(origin='*')
 def upload_git_link():
     """
     Receives a .git link from the frontend and triggers the pipeline.
@@ -859,9 +822,9 @@ def upload_git_link():
         if not git_link.lower().endswith('.git'):
             return jsonify({'error': 'Provided URL is not a valid .git link.'}), 400
 
-        logging.info(f"Received .git link: {git_link}")
+        logger.info(f"Received .git link: {git_link}")
         pipeline_result = run_pipeline(git_link)
         return jsonify(pipeline_result), 200
     except Exception as e:
-        logging.error(f"Error processing git link: {e}")
+        logger.error(f"Error processing git link: {e}")
         return jsonify({'error': 'Internal server error.'}), 500
