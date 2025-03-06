@@ -10,6 +10,7 @@ from .update_pex import update_pex_generator
 from .rust_runner import run_rust_code
 from .run_pex import run_forecast  # Still imported so forecast can run if needed
 from .store_commit_issues import process_project_data  # Import MongoDB processing
+from .github_metadata import get_github_metadata
 
 load_dotenv()
 
@@ -61,7 +62,15 @@ def run_pipeline(git_link, tasks="ALL", month_range="0,-1"):
     # Extract project_name and compute project_id early
     project_name = extract_project_name(git_link)
     project_id = generate_project_id(project_name)
-
+    
+    # --- Step 0: Fetch GitHub Repository Metadata ---
+    try:
+        metadata = get_github_metadata(git_link)
+          # Add it to the final JSON response
+    except Exception as e:
+        metadata = {"error": str(e)}
+    result_summary["metadata"] = metadata
+    
     # --- Step 1: Update and ensure PEX‑Forecaster ---
     try:
         pex_update = update_pex_generator()
