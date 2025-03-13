@@ -1,10 +1,7 @@
-# Open source sustainability tracker for Apache foundation
-
-_Support for Eclipse coming soon - Stay tuned_
+# Open source sustainability Web server for OSPEX
 
 
-Open source sustainability tracker for ASF
-is a Flask application that fetches and processes github repos and mailing list data from Apache Software Foundation projects (incubated, mature, or incubating). It uses Github GraphQL API and GitHub REST API to collect and analyze data from GitHub repo commits, issues, etc. It also downloads mailing list archives, parses them, and extracts useful information for analysis. 
+This servers as the host API Web server, providing data for projects belonging to either Apache Software Foundation , or Eclipse Software Foundation. Now, it is also facilitated to support the Local mode for OSPEX (Open source sustainability project explorer), which means, it can process data for any Github repository! Apart from serving Github REST APIs, which fetch social network, technical network, commits history, emails/issues history, graduation forecast, project details, number of senders, total emails/issues, and emails/issues per sender, commits, committers and commits per committer, it also doubles up as the sole point of control where OSPEX functionality is hosted from. This means supporting POST request for Github APIs, orchestrating that different functionalities work together, (ReACTs, RUST scraper and pex-forecaster), it also fetches and stores data to different collections in MongoDB.
 
 ## Installation
 
