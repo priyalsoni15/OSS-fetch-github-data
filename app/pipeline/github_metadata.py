@@ -85,12 +85,9 @@ def get_github_metadata(repo_url):
             "stars": repo_data.get("stargazers_count", 0),
             "watchers": repo_data.get("watchers_count", 0),
             "forks": repo_data.get("forks_count", 0),
-            "license": repo_data.get("license", {}).get("name", "No license"),
             "created_at": repo_data.get("created_at"),  # Start date of the repository
             "updated_at": repo_data.get("updated_at"),
-            "open_issues": repo_data.get("open_issues_count", 0),
             "languages": languages,  # Programming languages used
-            "latest_release": latest_release  # Latest release info
         }
 
         return metadata
